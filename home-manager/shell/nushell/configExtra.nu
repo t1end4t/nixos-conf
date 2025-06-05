@@ -1,0 +1,54 @@
+# -----------------------------------------------------
+# ADD MORE CONFIG
+# -----------------------------------------------------
+# atuin
+$env.config = {
+    show_banner: false
+    keybindings: []
+}
+source ~/.local/share/atuin/init.nu
+
+# add to PATH
+# $env.PATH = ($env.PATH | split row (char esep) | append "~/.cargo/bin")
+
+# zoxide
+source ~/.zoxide.nu
+
+# -----------------------------------------------------
+# ALIASES
+# -----------------------------------------------------
+
+alias ze = zeditor $env.PWD
+def h [file?: string] {
+    if $file == null {
+        hx $env.PWD
+    } else {
+        hx $file
+    }
+}
+def l [] {ls | sort-by type}
+alias c = clear
+alias e = exit
+alias y = yazi
+alias g = lazygit
+alias tp = trash-put
+alias bt = bluetuith
+def ld [level: int = 2] {
+    eza -DR --tree --level=($level | into string)
+}
+alias wifi = nmtui
+alias about = neofetch
+alias a = aichat -r general # begin with and role senior-dev
+
+# -----------------------------------------------------
+# GIT
+# -----------------------------------------------------
+
+alias gs = git status
+alias ga = git add
+alias gc = git clone
+alias gcm = git commit -m
+alias gp = git push
+alias gpl = git pull
+alias gst = git stash
+alias gcheck = git checkout

@@ -1,0 +1,11 @@
+model: gemini:gemini-2.0-flash
+
+# repl_prelude: role:senior-dev
+wrap: 95
+wrap_code: true
+
+clients:
+- type: gemini
+  api_key: [GEMINI-API]
+  models:
+    - name: gemini-2.0-flash

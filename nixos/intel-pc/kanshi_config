@@ -1,0 +1,9 @@
+### source: https://www.reddit.com/r/swaywm/comments/x0m8ju/having_trouble_setting_display_position_correctly/
+profile single {
+	output "DP-3" position 0,0
+}
+
+profile dual {
+	output "DP-3" position 0,0
+	output "HDMI-A-1" position 1920,0 mode 1360x768 
+}

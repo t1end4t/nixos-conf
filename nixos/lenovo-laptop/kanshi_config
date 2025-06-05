@@ -1,0 +1,9 @@
+### source: https://www.reddit.com/r/swaywm/comments/x0m8ju/having_trouble_setting_display_position_correctly/
+profile single {
+	output "eDP-1" position 0,0
+}
+
+profile dual {
+	output "HDMI-A-1" mode 1366x768 position 0,0 
+    output "eDP-1" position 1366,0
+}

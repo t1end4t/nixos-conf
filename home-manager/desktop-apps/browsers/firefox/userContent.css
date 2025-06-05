@@ -1,0 +1,6 @@
+/* apply grayscale for content in firefox */
+@-moz-document url-prefix(http) {
+  html {
+    filter: grayscale(100%) !important;
+  }
+}
