@@ -5,6 +5,5 @@
     ./aichat/aichat.nix
     ./lsp-ai.nix
     ./aider.nix
-    ./vibe_coding.nix
   ];
 }
