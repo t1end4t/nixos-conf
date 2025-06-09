@@ -13,20 +13,6 @@
     default_area = "navbar";
   };
 
-  # Disconnect
-  "2.0@disconnect.me" = {
-    install_url = "https://addons.mozilla.org/firefox/downloads/latest/disconnect/latest.xpi";
-    installation_mode = "force_installed";
-    default_area = "menupanel";
-  };
-
-  # Refined GitHub
-  "{a4c4eda4-fb84-4a84-b4a1-f7c1cbf2a1ad}" = {
-    install_url = "https://addons.mozilla.org/firefox/downloads/latest/refined-github-/latest.xpi";
-    installation_mode = "force_installed";
-    default_area = "menupanel";
-  };
-
   # Browsec VPN - Free VPN for Firefox
   "browsec@browsec.com" = {
     install_url = "https://addons.mozilla.org/firefox/downloads/latest/browsec/latest.xpi";
@@ -34,30 +20,9 @@
     default_area = "navbar";
   };
 
-  # Ghostery Tracker Ad Blocker - Privacy AdBlock
-  "firefox@ghostery.com" = {
-    install_url = "https://addons.mozilla.org/firefox/downloads/latest/ghostery/latest.xpi";
-    installation_mode = "force_installed";
-    default_area = "menupanel";
-  };
-
-  # Privacy Badger
-  "jid1-MnnxcxisBPnSXQ@jetpack" = {
-    install_url = "https://addons.mozilla.org/firefox/downloads/latest/privacy-badger17/latest.xpi";
-    installation_mode = "force_installed";
-    default_area = "menupanel";
-  };
-
   # DuckDuckGo
   "jid1-ZAdIEUB7XOzOJw@jetpack" = {
     install_url = "https://addons.mozilla.org/firefox/downloads/latest/duckduckgo-for-firefox/latest.xpi";
-    installation_mode = "force_installed";
-    default_area = "menupanel";
-  };
-
-  # uBlock Origin
-  "uBlock0@raymondhill.net" = {
-    install_url = "https://addons.mozilla.org/firefox/downloads/latest/ublock-origin/latest.xpi";
     installation_mode = "force_installed";
     default_area = "menupanel";
   };
@@ -104,6 +69,13 @@
     default_area = "menupanel";
   };
 
+  # Refined GitHub
+  "{a4c4eda4-fb84-4a84-b4a1-f7c1cbf2a1ad}" = {
+    install_url = "https://addons.mozilla.org/firefox/downloads/latest/refined-github-/latest.xpi";
+    installation_mode = "force_installed";
+    default_area = "menupanel";
+  };
+
   # Authenticator app to login github
   "authenticator@mymindstorm" = {
     install_url = "https://addons.mozilla.org/firefox/downloads/latest/auth-helper/latest.xpi";
@@ -117,6 +89,34 @@
     installation_mode = "force_installed";
     default_area = "menupanel";
   };
+
+  # uBlock Origin
+  # "uBlock0@raymondhill.net" = {
+  #   install_url = "https://addons.mozilla.org/firefox/downloads/latest/ublock-origin/latest.xpi";
+  #   installation_mode = "force_installed";
+  #   default_area = "menupanel";
+  # };
+
+  # Privacy Badger
+  # "jid1-MnnxcxisBPnSXQ@jetpack" = {
+  #   install_url = "https://addons.mozilla.org/firefox/downloads/latest/privacy-badger17/latest.xpi";
+  #   installation_mode = "force_installed";
+  #   default_area = "menupanel";
+  # };
+
+  # Disconnect
+  # "2.0@disconnect.me" = {
+  #   install_url = "https://addons.mozilla.org/firefox/downloads/latest/disconnect/latest.xpi";
+  #   installation_mode = "force_installed";
+  #   default_area = "menupanel";
+  # };
+
+  # Ghostery Tracker Ad Blocker - Privacy AdBlock
+  # "firefox@ghostery.com" = {
+  #   install_url = "https://addons.mozilla.org/firefox/downloads/latest/ghostery/latest.xpi";
+  #   installation_mode = "force_installed";
+  #   default_area = "menupanel";
+  # };
 
   # Popup Blocker Ultimate
   # "{60B7679C-BED9-11E5-998D-8526BB8E7F8B}" = {
