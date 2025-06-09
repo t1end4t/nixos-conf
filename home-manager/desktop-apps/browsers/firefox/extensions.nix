@@ -91,29 +91,29 @@
   };
 
   # uBlock Origin
-  # "uBlock0@raymondhill.net" = {
-  #   install_url = "https://addons.mozilla.org/firefox/downloads/latest/ublock-origin/latest.xpi";
-  #   installation_mode = "force_installed";
-  #   default_area = "menupanel";
-  # };
+  "uBlock0@raymondhill.net" = {
+    install_url = "https://addons.mozilla.org/firefox/downloads/latest/ublock-origin/latest.xpi";
+    installation_mode = "force_installed";
+    default_area = "menupanel";
+  };
 
   # Privacy Badger
-  # "jid1-MnnxcxisBPnSXQ@jetpack" = {
-  #   install_url = "https://addons.mozilla.org/firefox/downloads/latest/privacy-badger17/latest.xpi";
-  #   installation_mode = "force_installed";
-  #   default_area = "menupanel";
-  # };
+  "jid1-MnnxcxisBPnSXQ@jetpack" = {
+    install_url = "https://addons.mozilla.org/firefox/downloads/latest/privacy-badger17/latest.xpi";
+    installation_mode = "force_installed";
+    default_area = "menupanel";
+  };
+
+  # Ghostery Tracker Ad Blocker - Privacy AdBlock
+  "firefox@ghostery.com" = {
+    install_url = "https://addons.mozilla.org/firefox/downloads/latest/ghostery/latest.xpi";
+    installation_mode = "force_installed";
+    default_area = "menupanel";
+  };
 
   # Disconnect
   # "2.0@disconnect.me" = {
   #   install_url = "https://addons.mozilla.org/firefox/downloads/latest/disconnect/latest.xpi";
-  #   installation_mode = "force_installed";
-  #   default_area = "menupanel";
-  # };
-
-  # Ghostery Tracker Ad Blocker - Privacy AdBlock
-  # "firefox@ghostery.com" = {
-  #   install_url = "https://addons.mozilla.org/firefox/downloads/latest/ghostery/latest.xpi";
   #   installation_mode = "force_installed";
   #   default_area = "menupanel";
   # };
