@@ -61,6 +61,8 @@ k = "normal_mode" # Maps `jk` to exit insert mode
 # better work with project
 [keys.normal.space]
 B = "file_picker_in_current_buffer_directory"
+f = "file_picker_in_current_directory"
+F = "file_picker"
 
 [keys.normal]
 y = ["yank_main_selection_to_clipboard"]

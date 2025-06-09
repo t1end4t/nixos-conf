@@ -83,13 +83,6 @@
     default_area = "menupanel";
   };
 
-  # LeechBlock NG
-  "leechblockng@proginosko.com" = {
-    install_url = "https://addons.mozilla.org/firefox/downloads/latest/leechblock-ng/latest.xpi";
-    installation_mode = "force_installed";
-    default_area = "menupanel";
-  };
-
   # uBlock Origin
   "uBlock0@raymondhill.net" = {
     install_url = "https://addons.mozilla.org/firefox/downloads/latest/ublock-origin/latest.xpi";
@@ -110,6 +103,13 @@
     installation_mode = "force_installed";
     default_area = "menupanel";
   };
+
+  # LeechBlock NG
+  # "leechblockng@proginosko.com" = {
+  #   install_url = "https://addons.mozilla.org/firefox/downloads/latest/leechblock-ng/latest.xpi";
+  #   installation_mode = "force_installed";
+  #   default_area = "menupanel";
+  # };
 
   # Disconnect
   # "2.0@disconnect.me" = {
