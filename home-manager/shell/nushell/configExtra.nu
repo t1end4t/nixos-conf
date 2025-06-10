@@ -38,7 +38,6 @@ def ld [level: int = 2] {
 }
 alias wifi = nmtui
 alias about = neofetch
-alias a = aichat -r general # begin with and role senior-dev
 
 # -----------------------------------------------------
 # GIT
