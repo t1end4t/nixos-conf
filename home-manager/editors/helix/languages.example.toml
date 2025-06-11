@@ -76,17 +76,3 @@ name = "haskell"
 language-servers = ["haskell-language-server", "harper", "lsp-ai"]
 formatter = { command = "stylish-haskell", args = [] }
 auto-format = true
-
-[[language]]
-name = "c"
-language-servers = ["clangd", "harper", "lsp-ai"]
-indent = { tab-width = 4, unit = "    " }
-formatter = { command = 'clang-format' }
-auto-format = true
-
-[[language]]
-name = "cpp"
-language-servers = ["clangd", "harper", "lsp-ai"]
-indent = { tab-width = 4, unit = "    " }
-formatter = { command = 'clang-format' }
-auto-format = true
