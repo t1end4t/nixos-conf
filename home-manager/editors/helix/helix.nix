@@ -23,11 +23,6 @@ in
     source = "${ROOT}/languages.example.toml";
   };
 
-  # config for lsp-ai
-  home.file.".config/helix/lsp-ai.toml" = {
-    source = "${ROOT}/lsp-ai.toml";
-  };
-
   # italics for comments sections
   catppuccin.helix.useItalics = true;
 }
