@@ -19,8 +19,8 @@ in
   ];
 
   # example of language.toml
-  home.file.".config/helix/languages.example.toml" = {
-    source = "${ROOT}/languages.example.toml";
+  home.file.".config/helix/languages.toml" = {
+    source = "${ROOT}/languages.toml";
   };
 
   # italics for comments sections

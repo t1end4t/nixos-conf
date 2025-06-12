@@ -71,8 +71,3 @@ language-servers = ["pyright", "ruff", "harper", "lsp-ai"]
 formatter = { command = "ruff", args = ["format", "-", "--line-length", "80"] }
 auto-format = true
 
-[[language]]
-name = "haskell"
-language-servers = ["haskell-language-server", "harper", "lsp-ai"]
-formatter = { command = "stylish-haskell", args = [] }
-auto-format = true
