@@ -63,6 +63,7 @@ k = "normal_mode" # Maps `jk` to exit insert mode
 B = "file_picker_in_current_buffer_directory"
 f = "file_picker_in_current_directory"
 F = "file_picker"
+r = "reload"
 
 [keys.normal]
 y = ["yank_main_selection_to_clipboard"]
