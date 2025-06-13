@@ -1,3 +1,4 @@
+{ pkgs, ... }:
 {
   home.sessionVariables = {
     # source: https://nixos.wiki/wiki/Firefox#Screen_Sharing_under_Wayland
@@ -6,7 +7,8 @@
     EDITOR = "hx";
     BROWSER = "firefox";
 
-    # for using aichat
-    # AICHAT_FUNCTIONS_DIR = "~/.config/aichat/functions";
+    # for using aider
+    PLAYWRIGHT_BROWSERS_PATH = "${pkgs.playwright-driver.browsers}";
+    PLAYWRIGHT_SKIP_VALIDATE_HOST_REQUIREMENTS = true;
   };
 }
