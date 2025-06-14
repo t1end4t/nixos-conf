@@ -2,6 +2,6 @@
 
 {
   home.packages = with pkgs; [
-    unstable.aider-chat # try this tools
+    unstable.aider-chat-with-playwright # best programming tools
   ];
 }
