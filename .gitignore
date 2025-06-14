@@ -1,3 +1,2 @@
-env.example
-.env
 .aider*
+aider.conf.yml
