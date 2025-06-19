@@ -4,6 +4,5 @@
     ./lsp.nix
     ./aider.nix
     ./playwright.nix
-    ./jan.nix
   ];
 }
