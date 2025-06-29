@@ -18,9 +18,13 @@ in
     unstable.harper
   ];
 
-  # example of language.toml
-  home.file.".config/helix/languages.toml" = {
+  # example of language.toml and lsp-ai
+  home.file.".config/helix/languages.example.toml" = {
     source = "${ROOT}/languages.toml";
+  };
+
+  home.file.".config/helix/lsp-ai.toml" = {
+    source = "${ROOT}/lsp-ai.toml";
   };
 
   # italics for comments sections
