@@ -62,36 +62,36 @@ auto-format = true
 
 [[language]]
 name = "python"
-language-servers = ["pyright", "ruff", "harper"]
+language-servers = ["pyright", "ruff", "harper", "lsp-ai"]
 formatter = { command = "ruff", args = ["format", "-", "--line-length", "80"] }
 auto-format = true
 
 [[language]]
 name = "rust"
 auto-format = true
-language-servers = ["rust-analyzer", "harper"]
+language-servers = ["rust-analyzer", "harper", "lsp-ai"]
 
 [[language]]
 name = "haskell"
-language-servers = ["haskell-language-server", "harper"]
+language-servers = ["haskell-language-server", "harper", "lsp-ai"]
 formatter = { command = "stylish-haskell", args = [] }
 auto-format = true
 
 [[language]]
 name = "c"
-language-servers = ["clangd", "harper"]
+language-servers = ["clangd", "harper", "lsp-ai"]
 indent = { tab-width = 4, unit = "    " }
 formatter = { command = 'clang-format' }
 auto-format = true
 
 [[language]]
 name = "typescript"
-language-servers = ["typescript-language-server", "harper"]
+language-servers = ["typescript-language-server", "harper", "lsp-ai"]
 indent = { tab-width = 4, unit = "    " }
 
 [[language]]
 name = "cpp"
-language-servers = ["clangd", "harper"]
+language-servers = ["clangd", "harper", "lsp-ai"]
 indent = { tab-width = 4, unit = "    " }
 formatter = { command = 'clang-format' }
 auto-format = true
