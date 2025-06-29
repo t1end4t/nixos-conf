@@ -9,7 +9,7 @@
     ./zellij/zellij.nix
     ./catppuccin.nix
     ./qt.nix
-    ./kitty/kitty.nix
     ./mako.nix
+    ./alacritty/alacritty.nix
   ];
 }
