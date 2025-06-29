@@ -1,6 +1,6 @@
 { ... }:
 {
-  programs.kitty = {
+  programs.alacritty = {
     enable = true;
   };
 }

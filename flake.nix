@@ -40,12 +40,6 @@
       url = "github:catppuccin/qutebrowser";
       flake = false;
     };
-
-    # vi-mode for nvim
-    kitty-scrollback-nvim = {
-      url = "github:mikesmithgh/kitty-scrollback.nvim";
-      flake = false;
-    };
   };
 
   outputs =
@@ -54,7 +48,6 @@
       nixpkgs,
       home-manager,
       nushell-defaultConfig,
-      kitty-scrollback-nvim,
       betterfox,
       catppuccin,
       catppuccin-qutebrowser,
@@ -143,7 +136,6 @@
               nushell-defaultConfig
               catppuccin-qutebrowser
               betterfox
-              kitty-scrollback-nvim
               ;
           };
           modules = [

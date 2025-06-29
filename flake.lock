@@ -71,22 +71,6 @@
         "type": "github"
       }
     },
-    "kitty-scrollback-nvim": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1750950374,
-        "narHash": "sha256-UNBQMh7No5tMpgFFzjKPloqJNhy2V58nR4aFFjqOH0E=",
-        "owner": "mikesmithgh",
-        "repo": "kitty-scrollback.nvim",
-        "rev": "36d19dc85c0a1d0193e7c52d41129c4aa28b72e8",
-        "type": "github"
-      },
-      "original": {
-        "owner": "mikesmithgh",
-        "repo": "kitty-scrollback.nvim",
-        "type": "github"
-      }
-    },
     "nixpkgs": {
       "locked": {
         "lastModified": 1744463964,
@@ -157,7 +141,6 @@
         "catppuccin": "catppuccin",
         "catppuccin-qutebrowser": "catppuccin-qutebrowser",
         "home-manager": "home-manager",
-        "kitty-scrollback-nvim": "kitty-scrollback-nvim",
         "nixpkgs": "nixpkgs_2",
         "nixpkgs-unstable": "nixpkgs-unstable",
         "nushell-defaultConfig": "nushell-defaultConfig"

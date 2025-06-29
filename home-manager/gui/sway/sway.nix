@@ -27,7 +27,7 @@ in
         "*".bg = "${ROOT}/wallpapers/aesthetic_deer.jpg fill";
       };
       modifier = "Mod4";
-      terminal = "kitty";
+      terminal = "alacritty";
       bars = [ { command = "waybar"; } ];
 
       # source: https://www.youtube.com/watch?v=QAmTUkzpIiM

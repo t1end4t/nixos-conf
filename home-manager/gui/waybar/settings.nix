@@ -77,7 +77,7 @@
     "format-linked" = "{ifname} (No IP) ";
     "format-disconnected" = "Disconnected ⚠";
     "format-alt" = "{ifname}: {ipaddr}/{cidr}";
-    "on-click-right" = "kitty nmtui";
+    "on-click-right" = "alacritty -e nmtui";
   };
 
   "pulseaudio" = {

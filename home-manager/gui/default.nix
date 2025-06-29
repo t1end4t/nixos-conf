@@ -10,6 +10,6 @@
     ./catppuccin.nix
     ./qt.nix
     ./mako.nix
-    ./alacritty/alacritty.nix
+    ./alacritty.nix
   ];
 }
