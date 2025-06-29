@@ -2,11 +2,7 @@
 
 {
   home.packages = with pkgs; [
-    # unstable.aichat # cli LLM
-    nodejs # to install gemini
-    python311Packages.pipx
+    unstable.gemini-cli # to work with gemini
+    unstable.lsp-ai # for helix
   ];
-
-  # try to run: npm set prefix ~/.npm-global
-  # npm install -g @google/gemini-cli
 }
