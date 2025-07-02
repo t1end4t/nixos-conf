@@ -7,5 +7,6 @@
     ./wine.nix
     ./yazi.nix
     ./ai
+    ./proxy.nix
   ];
 }

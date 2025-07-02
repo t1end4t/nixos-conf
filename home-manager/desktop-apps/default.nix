@@ -5,6 +5,5 @@
     ./thunderbird.nix
     ./others.nix
     ./office.nix
-    ./vpn.nix
   ];
 }
