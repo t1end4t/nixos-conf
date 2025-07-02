@@ -15,6 +15,8 @@
     unzip # .zip files
     nh # nix cli helper
     neofetch # system info script
+
+    proxychains4
   ];
 
   programs.bat.enable = true; # alternative of cat
