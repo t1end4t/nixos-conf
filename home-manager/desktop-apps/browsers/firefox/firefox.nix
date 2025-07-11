@@ -23,6 +23,11 @@ in
         # source: https://github.com/Jamir-boop/minimalisticfox
         userChrome = builtins.readFile "${ROOT}/userChrome.css";
         userContent = builtins.readFile "${ROOT}/userContent.css";
+
+        # overriding to install eextensions
+        extensions = {
+          force = true;
+        };
       };
     };
 
