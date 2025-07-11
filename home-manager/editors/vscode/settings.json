@@ -1,8 +1,0 @@
-{
-  "catppuccin.accentColor": "blue",
-  "editor.semanticHighlighting.enabled": true,
-  "terminal.integrated.minimumContrastRatio": 1,
-  "window.titleBarStyle": "custom",
-  "workbench.colorTheme": "Catppuccin Mocha",
-  "workbench.iconTheme": "material-icon-theme"
-}
