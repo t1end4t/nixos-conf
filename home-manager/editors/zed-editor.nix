@@ -26,7 +26,13 @@
             "activate_script" = "nushell";
           };
         };
+      };
 
+      agent = {
+        default_model = {
+          provider = "copilot";
+          model = "gpt-4o";
+        };
       };
 
     };
