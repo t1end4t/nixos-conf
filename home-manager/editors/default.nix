@@ -2,7 +2,7 @@
   imports = [
     ./helix/helix.nix
     ./lsp.nix
-    ./zed-editor/zed-editor.nix
+    ./zed-editor.nix
     ./vscode.nix
   ];
 }
