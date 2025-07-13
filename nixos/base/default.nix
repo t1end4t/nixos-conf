@@ -7,6 +7,5 @@
     ./daemon
     ./catppuccin.nix
     ./hosts/hosts.nix
-    ./dns/dns.nix
   ];
 }
