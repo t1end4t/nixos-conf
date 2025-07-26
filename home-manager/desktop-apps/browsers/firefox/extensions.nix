@@ -112,11 +112,11 @@
   };
 
   # Disconnect
-  # "2.0@disconnect.me" = {
-  #   install_url = "https://addons.mozilla.org/firefox/downloads/latest/disconnect/latest.xpi";
-  #   installation_mode = "force_installed";
-  #   default_area = "menupanel";
-  # };
+  "2.0@disconnect.me" = {
+    install_url = "https://addons.mozilla.org/firefox/downloads/latest/disconnect/latest.xpi";
+    installation_mode = "force_installed";
+    default_area = "menupanel";
+  };
 
   # Popup Blocker Ultimate
   # "{60B7679C-BED9-11E5-998D-8526BB8E7F8B}" = {
