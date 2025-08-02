@@ -23,9 +23,9 @@ in
 
         "type:pointer".accel_profile = "flat";
       };
-      # output = {
-      #   "*".bg = "${ROOT}/wallpapers/aesthetic_deer.jpg fill";
-      # };
+      output = {
+        "*".bg = "${ROOT}/wallpapers/aesthetic_deer.jpg fill";
+      };
       modifier = "Mod4";
       terminal = "alacritty";
       bars = [ { command = "waybar"; } ];
