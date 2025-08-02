@@ -15,7 +15,7 @@ in
 
   # grammar checker
   home.packages = with pkgs; [
-    unstable.harper
+    harper
   ];
 
   # italics for comments sections

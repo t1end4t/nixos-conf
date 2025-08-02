@@ -43,7 +43,7 @@
 
     # set theme and font
     stylix = {
-      url = "github:danth/stylix";
+      url = "github:nix-community/stylix/release-25.05";
       inputs.nixpkgs.follows = "nixpkgs";
     };
   };
@@ -149,6 +149,7 @@
           modules = [
             ./home-manager/hosts/${user}.nix
             catppuccin.homeModules.catppuccin
+            stylix.homeModules.stylix
           ];
         }
       ) userToAttrs;
