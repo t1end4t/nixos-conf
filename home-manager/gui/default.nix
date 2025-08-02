@@ -7,10 +7,9 @@
     ./daemon.nix
     ./cursor.nix
     ./zellij/zellij.nix
-    # ./catppuccin.nix
+    ./catppuccin.nix
     ./qt.nix
     ./mako.nix
     ./alacritty.nix
-    ./stylix.nix
   ];
 }

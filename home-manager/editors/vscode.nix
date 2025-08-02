@@ -7,6 +7,7 @@
         pkief.material-icon-theme
       ];
       userSettings = {
+        "workbench.iconTheme" = "material-icon-theme";
         "editor.minimap.enabled" = false;
         "baml.bamlPanelOpen" = true;
       };
