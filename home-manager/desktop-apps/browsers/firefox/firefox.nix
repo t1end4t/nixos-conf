@@ -48,6 +48,7 @@ in
         "font.name.monospace.x-western" = "IntoneMono Nerd Font Propo";
         "browser.compactmode.show" = true;
         "browser.startup.homepage" = "https://duckduckgo.com";
+        "layout.css.prefers-color-scheme.content-override" = 0;
       };
 
       # source: about:support
