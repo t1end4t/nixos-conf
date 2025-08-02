@@ -7,16 +7,26 @@
     packages = with pkgs; [
       nerd-fonts.intone-mono
       corefonts
-      noto-fonts
-      noto-fonts-cjk-sans
+      # noto-fonts
+      # noto-fonts-cjk-sans
+      noto-fonts-emoji
       font-awesome # for waybar
       papirus-icon-theme # for rofi
+
+      # font to pptx
+      (google-fonts.override {
+        fonts = [
+          "Roboto Slab" # title
+          "Roboto" # body
+          "Inter" # body
+        ];
+      })
     ];
     fontconfig.defaultFonts = {
-      serif = [ "IntoneMono Nerd Font Propo" ];
-      sansSerif = [ "IntoneMono Nerd Font Propo" ];
+      serif = [ "Inter" ];
+      sansSerif = [ "Inter" ];
       monospace = [ "IntoneMono Nerd Font Propo" ];
-      emoji = [ "IntoneMono Nerd Font Propo" ];
+      emoji = [ "Noto Color Emoji" ];
     };
   };
 }
