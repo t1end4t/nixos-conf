@@ -5,8 +5,9 @@ in
 {
   stylix = {
     enable = true;
-    base16Scheme = "${pkgs.base16-schemes}/share/themes/gruvbox-dark-hard.yaml";
-    image = "${ROOT}/wallpapers/aesthetic_deer.jpg";
+    base16Scheme = "${pkgs.base16-schemes}/share/themes/catppuccin-mocha.yaml";
+    # image = "${ROOT}/wallpapers/aesthetic_deer.jpg";
+    image = ./wallpapers/aesthetic_deer.jpg;
 
     targets.firefox.profileNames = [
       "default"
