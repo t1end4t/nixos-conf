@@ -5,7 +5,8 @@
     ./environment.nix
     ./apps
     ./daemon
-    ./catppuccin.nix
+    # ./catppuccin.nix
     ./hosts/hosts.nix
+    ./stylix.nix
   ];
 }

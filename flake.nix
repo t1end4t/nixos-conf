@@ -40,6 +40,12 @@
       url = "github:catppuccin/qutebrowser";
       flake = false;
     };
+
+    # set theme and font
+    stylix = {
+      url = "github:danth/stylix";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs =
@@ -51,6 +57,7 @@
       betterfox,
       catppuccin,
       catppuccin-qutebrowser,
+      stylix,
       ...
     }@inputs:
     let
@@ -119,6 +126,7 @@
           modules = [
             ./nixos/${host}/configuration.nix
             catppuccin.nixosModules.catppuccin
+            stylix.nixosModules.stylix
           ];
         }
       ) hostToAttrs;
