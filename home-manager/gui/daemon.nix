@@ -13,6 +13,7 @@
     sov # workspace overview app
     swayest-workstyle # icons in workspace
     playerctl # mpris media player command-line
+    nwg-look # to set theme for gtk
   ];
 
   programs.swaylock = {

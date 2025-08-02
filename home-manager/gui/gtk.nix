@@ -12,10 +12,10 @@
     # source: https://discourse.nixos.org/t/struggling-to-configure-gtk-qt-theme-on-laptop/42268/4
     iconTheme = {
       name = "Papirus-Dark";
-      package = pkgs.catppuccin-papirus-folders.override {
-        flavor = "mocha";
-        accent = "blue";
-      };
+      # package = pkgs.catppuccin-papirus-folders.override {
+      #   flavor = "mocha";
+      #   accent = "blue";
+      # };
     };
   };
 }

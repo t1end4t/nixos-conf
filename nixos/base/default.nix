@@ -6,5 +6,6 @@
     ./daemon
     ./hosts/hosts.nix
     ./catppuccin.nix
+    ./fonts.nix
   ];
 }
