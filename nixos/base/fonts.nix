@@ -19,12 +19,13 @@
           "Roboto Slab" # title
           "Roboto" # body
           "Inter" # body
+          "Fira Sans" # default firefox
         ];
       })
     ];
     fontconfig.defaultFonts = {
-      serif = [ "Inter" ];
-      sansSerif = [ "Inter" ];
+      serif = [ "Fira Sans" ];
+      sansSerif = [ "Fira Sans" ];
       monospace = [ "IntoneMono Nerd Font Propo" ];
       emoji = [ "Noto Color Emoji" ];
     };
