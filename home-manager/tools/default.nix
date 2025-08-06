@@ -6,6 +6,5 @@
     ./git.nix
     ./wine.nix
     ./yazi.nix
-    ./ai
   ];
 }

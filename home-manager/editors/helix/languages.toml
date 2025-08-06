@@ -13,7 +13,6 @@ args = ["--enable-config"]
 #################################
 ## Configuration for languages ##
 #################################
-## Every file type we intend to chat in needs to have lsp-ai enabled 
 #source: https://github.com/helix-editor/helix/blob/master/languages.toml
 
 [[language]]
@@ -62,36 +61,11 @@ auto-format = true
 
 [[language]]
 name = "python"
-language-servers = ["pyright", "ruff", "harper", "lsp-ai"]
+language-servers = ["pyright", "ruff", "harper"]
 formatter = { command = "ruff", args = ["format", "-", "--line-length", "80"] }
 auto-format = true
 
 [[language]]
 name = "rust"
 auto-format = true
-language-servers = ["rust-analyzer", "harper", "lsp-ai"]
-
-[[language]]
-name = "haskell"
-language-servers = ["haskell-language-server", "harper", "lsp-ai"]
-formatter = { command = "stylish-haskell", args = [] }
-auto-format = true
-
-[[language]]
-name = "c"
-language-servers = ["clangd", "harper", "lsp-ai"]
-indent = { tab-width = 4, unit = "    " }
-formatter = { command = 'clang-format' }
-auto-format = true
-
-[[language]]
-name = "typescript"
-language-servers = ["typescript-language-server", "harper", "lsp-ai"]
-indent = { tab-width = 4, unit = "    " }
-
-[[language]]
-name = "cpp"
-language-servers = ["clangd", "harper", "lsp-ai"]
-indent = { tab-width = 4, unit = "    " }
-formatter = { command = 'clang-format' }
-auto-format = true
+language-servers = ["rust-analyzer", "harper"]

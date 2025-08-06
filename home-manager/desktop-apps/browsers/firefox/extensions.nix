@@ -105,11 +105,11 @@
   };
 
   # LeechBlock NG
-  "leechblockng@proginosko.com" = {
-    install_url = "https://addons.mozilla.org/firefox/downloads/latest/leechblock-ng/latest.xpi";
-    installation_mode = "force_installed";
-    default_area = "menupanel";
-  };
+  # "leechblockng@proginosko.com" = {
+  #   install_url = "https://addons.mozilla.org/firefox/downloads/latest/leechblock-ng/latest.xpi";
+  #   installation_mode = "force_installed";
+  #   default_area = "menupanel";
+  # };
 
   # Disconnect
   "2.0@disconnect.me" = {
