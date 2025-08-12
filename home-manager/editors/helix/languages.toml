@@ -38,7 +38,7 @@ auto-format = true
 
 [[language]]
 name = "markdown"
-language-servers = ["markdown-oxide"]
+language-servers = ["markdown-oxide", "harper"]
 formatter = { command = 'deno', args = [
   "fmt",
   "-",
