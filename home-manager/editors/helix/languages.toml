@@ -45,7 +45,7 @@ formatter = { command = 'deno', args = [
   "--ext",
   "md",
   "--line-width",
-  "80",
+  "110",
 ] }
 auto-format = true
 

@@ -12,7 +12,7 @@ completion-replace = true
 end-of-line-diagnostics = "error"
 continue-comments = false
 jump-label-alphabet = "jfkdls;aurieowpqnvmcxz"
-text-width = 100
+text-width = 110
 
 [editor.statusline]
 left = [
