@@ -5,6 +5,7 @@
     wdisplays # wlroots compositors
     networkmanagerapplet # NetworkManager control applet for GNOME
     gnome-pomodoro # focus time
+    discord # to know more things
   ];
 
   programs.obs-studio = {
