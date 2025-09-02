@@ -6,7 +6,7 @@
       "::1"
     ];
     # If using dhcpcd:
-    dhcpcd.extraConfig = "nohook resolv.conf";
+    # dhcpcd.extraConfig = "nohook resolv.conf";
     # If using NetworkManager:
     networkmanager.dns = "none";
   };

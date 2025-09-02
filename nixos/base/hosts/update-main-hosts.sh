@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Define the URL and output file
-URL="https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/fakenews-gambling-porn/hosts"
+URL="https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/fakenews-gambling-porn-social/hosts"
 OUTPUT_FILE="main-hosts"
 
 # Fetch the hosts content and write it to the main-hosts file
