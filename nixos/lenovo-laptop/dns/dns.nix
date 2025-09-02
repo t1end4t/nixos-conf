@@ -1,5 +1,6 @@
 let
   ROOT = builtins.toString ./.;
+  schedules_toml = (builtins.readFile "${ROOT}/schedules.toml");
 in
 {
   imports = [
@@ -28,7 +29,10 @@ in
       # server_names = [ ... ];
 
       ###### my own config ######
-      forwarding_rules = "${ROOT} ./forwarding-rules.txt";
+      cloaking_rules = "${ROOT}/cloaking-rules.txt";
+      blocked_names = "${ROOT}/blocked-names.txt";
+      allowed_names = "${ROOT}/allowed-names.txt";
+      schedules = (builtins.fromTOML schedules_toml);
     };
   };
 }

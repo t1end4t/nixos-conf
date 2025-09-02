@@ -43,3 +43,17 @@ eth0.me
 
 # *.youtube.*  @time-to-sleep
 # facebook.com @work
+
+####### My own config #######
+*manga*
+*anime*
+*truyen*
+
+# NSFW
+*sex*
+*porn*
+*hentai*
+*vlxx*
+*sextop1*
+*nangcuc*
+*rule34*
