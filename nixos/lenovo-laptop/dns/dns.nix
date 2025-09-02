@@ -1,3 +1,6 @@
+let
+  ROOT = builtins.toString ./.;
+in
 {
   imports = [
     ./nameservers.nix
@@ -24,7 +27,8 @@
       # You can choose a specific set of servers from https://github.com/DNSCrypt/dnscrypt-resolvers/blob/master/v3/public-resolvers.md
       # server_names = [ ... ];
 
-      # my own config
+      ###### my own config ######
+      forwarding_rules = "${ROOT} ./forwarding-rules.txt";
     };
   };
 }
