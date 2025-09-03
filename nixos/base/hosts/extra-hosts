@@ -1,5 +1,6 @@
 # not good habit
-0.0.0.0 truyenqqto.com
-0.0.0.0 mangadex.org
-0.0.0.0 animevietsub.bio
 0.0.0.0 www.twitch.tv
+0.0.0.0 kick.com
+
+# specific NSFW
+0.0.0.0 sextop1.men

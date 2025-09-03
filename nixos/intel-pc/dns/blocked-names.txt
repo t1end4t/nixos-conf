@@ -51,8 +51,13 @@ eth0.me
 # NSFW
 *sex*
 *porn*
+*rule34*
 *hentai*
 *vlxx*
 *sextop1*
 *nangcuc*
-*rule34*
+
+# other NSFW
+*.sextop1.*
+*.nangcuc.*
+*.vlxx.*
