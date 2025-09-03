@@ -57,7 +57,3 @@ eth0.me
 *sextop1*
 *nangcuc*
 
-# other NSFW
-*.sextop1.*
-*.nangcuc.*
-*.vlxx.*
