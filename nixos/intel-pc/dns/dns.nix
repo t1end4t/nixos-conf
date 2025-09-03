@@ -36,13 +36,11 @@ in
       ###### my own config ######
       cloaking_rules = "${ROOT}/cloaking-rules.txt";
 
-      blocked_names = {
-        blocked_names_file = "${ROOT}/blocked-names.txt";
-      };
+      blocked_names.blocked_names_file = "${ROOT}/blocked-names.txt";
 
-      allowed_names = {
-        allowed_names_file = "${ROOT}/allowed-names.txt";
-      };
+      # allowed_names = {
+      #   allowed_names_file = "${ROOT}/allowed-names.txt";
+      # };
 
       schedules = (builtins.fromTOML schedules_toml);
     };
