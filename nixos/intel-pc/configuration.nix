@@ -8,6 +8,7 @@ in
     ./systemd.nix
     ./swap.nix
     ../base
+    ./dns/dns.nix
   ];
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
