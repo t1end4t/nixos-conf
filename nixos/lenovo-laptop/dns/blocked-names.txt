@@ -38,11 +38,6 @@ eth0.me
 # mask-api.icloud.com
 # doh.dns.apple.com
 
-
-## Time-based rules
-# *.youtube.*  @work
-*.* @time-to-sleep
-
 ####### My own config #######
 *manga*
 *anime*
@@ -51,8 +46,12 @@ eth0.me
 # NSFW
 *sex*
 *porn*
+*rule34*
 *hentai*
 *vlxx*
 *sextop1*
 *nangcuc*
-*rule34*
+
+## Time-based rules
+# *.youtube.*  @work
+*.* @time-to-sleep
