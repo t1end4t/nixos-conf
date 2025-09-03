@@ -26,7 +26,12 @@ in
       };
 
       # You can choose a specific set of servers from https://github.com/DNSCrypt/dnscrypt-resolvers/blob/master/v3/public-resolvers.md
-      # server_names = [ ... ];
+      # NOTE: faster
+      server_names = [
+        "cloudflare"
+        # "google"
+        # "quad9-dnscrypt-ip4-filter-pri"
+      ];
 
       ###### my own config ######
       cloaking_rules = "${ROOT}/cloaking-rules.txt";
