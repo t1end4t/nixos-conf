@@ -40,7 +40,7 @@ eth0.me
 
 
 ## Time-based rules
-*.youtube.*  @work
+# *.youtube.*  @work
 *.* @time-to-sleep
 
 ####### My own config #######

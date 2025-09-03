@@ -26,20 +26,25 @@ in
       };
 
       # You can choose a specific set of servers from https://github.com/DNSCrypt/dnscrypt-resolvers/blob/master/v3/public-resolvers.md
-      # server_names = [ ... ];
+      # NOTE: prevent to work place network block github
+      server_names = [
+        "cloudflare"
+        # "google"
+        # "quad9-dnscrypt-ip4-filter-pri"
+      ];
 
       ###### my own config ######
       cloaking_rules = "${ROOT}/cloaking-rules.txt";
 
-      # blocked_names = {
-      #   blocked_names_file = "${ROOT}/blocked-names.txt";
-      # };
+      blocked_names = {
+        blocked_names_file = "${ROOT}/blocked-names.txt";
+      };
 
-      # allowed_names = {
-      #   allowed_names_file = "${ROOT}/allowed-names.txt";
-      # };
+      allowed_names = {
+        allowed_names_file = "${ROOT}/allowed-names.txt";
+      };
 
-      # schedules = (builtins.fromTOML schedules_toml);
+      schedules = (builtins.fromTOML schedules_toml);
     };
   };
 }
