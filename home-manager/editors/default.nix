@@ -4,5 +4,6 @@
     ./lsp.nix
     ./vscode.nix
     ./ai.nix
+    ./zed-editor.nix
   ];
 }
