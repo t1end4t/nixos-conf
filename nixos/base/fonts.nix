@@ -18,14 +18,15 @@
         fonts = [
           "Roboto Slab" # title
           "Roboto" # body
-          "Inter" # body
-          "Fira Sans" # default firefox
+          "Inter" # san-serif
+          "Merriweather" # serif
+          # "Fira Sans" # default firefox
         ];
       })
     ];
     fontconfig.defaultFonts = {
-      serif = [ "Fira Sans" ];
-      sansSerif = [ "Fira Sans" ];
+      serif = [ "Inter" ];
+      sansSerif = [ "Merriweather" ];
       monospace = [ "IntoneMono Nerd Font Propo" ];
       emoji = [ "Noto Color Emoji" ];
     };
