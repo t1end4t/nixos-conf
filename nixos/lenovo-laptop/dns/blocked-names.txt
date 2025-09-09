@@ -53,5 +53,5 @@ eth0.me
 *nangcuc*
 
 ## Time-based rules
-# *.youtube.*  @work
+*.youtube.* @work
 *.* @time-to-sleep
