@@ -12,4 +12,5 @@
   # download path: https://gitflic.ru/project/magnolia1234/bpc_uploads
 
   # zlib extension: https://www.reddit.com/r/zlibrary/wiki/index/access/
+  # path: https://go-to-library.sk/#browser_extensions_tab
 }
