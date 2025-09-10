@@ -5,5 +5,6 @@
     koodo-reader # epub reader
     libreoffice-qt # office tools
     inkscape # paper drawing
+    obsidian # second brain
   ];
 }
