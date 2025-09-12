@@ -1,4 +1,7 @@
 { pkgs, ... }:
+let
+  ROOT = builtins.toString ./.;
+in
 {
   home.packages = with pkgs; [
     unstable.aider-chat-with-playwright # will replace by hinty soon
@@ -10,4 +13,9 @@
     # npm install -g @google/gemini-cli
     nodejs
   ];
+
+  # create symlink for secret aider and aider example
+  home.file."aider.conf.yml.gpg" = {
+    source = "${ROOT}/aider.conf.yml.gpg";
+  };
 }
