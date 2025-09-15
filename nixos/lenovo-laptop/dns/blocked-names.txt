@@ -54,4 +54,4 @@ eth0.me
 
 ## Time-based rules
 *.youtube.* @work
-*.* @time-to-sleep
+# *.* @time-to-sleep
