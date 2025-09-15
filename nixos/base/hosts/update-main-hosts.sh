@@ -12,9 +12,26 @@ curl -fsSL "$URL" -o "$OUTPUT_FILE"
 if [ $? -eq 0 ]; then
     echo "Successfully updated $OUTPUT_FILE"
     
-    # Comment out reddit and twitter sections
-    echo "Commenting out reddit and twitter sections..."
-    sed -i 's/^\(.*reddit.*\)$/# \1/' "$OUTPUT_FILE"
+    # Comment out Reddit section (starting with "# Reddit" and all following non-comment lines until next comment or EOF)
+    echo "Commenting out Reddit section..."
+    awk '
+    /^# Reddit$/ { 
+        in_reddit_section = 1
+        print "# " $0
+        next
+    }
+    in_reddit_section && /^[0-9]/ { 
+        print "# " $0
+        next
+    }
+    in_reddit_section && /^#/ { 
+        in_reddit_section = 0
+    }
+    { print }
+    ' "$OUTPUT_FILE" > "$OUTPUT_FILE.tmp" && mv "$OUTPUT_FILE.tmp" "$OUTPUT_FILE"
+    
+    # Comment out twitter sections
+    echo "Commenting out twitter sections..."
     sed -i 's/^\(.*twitter.*\)$/# \1/' "$OUTPUT_FILE"
     
     echo "Reddit and twitter sections commented out"
