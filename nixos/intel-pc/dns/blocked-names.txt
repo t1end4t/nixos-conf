@@ -53,7 +53,7 @@ eth0.me
 *nangcuc*
 
 ## Time-based rules
-www.reddit.com @work
 x.com @work
+www.reddit.com @work
 *.youtube.*  @work
 *.* @go-home
