@@ -5,6 +5,7 @@ in
 {
   home.packages = with pkgs; [
     unstable.aider-chat-with-playwright # will replace by hinty soon
+    unstable.aichat # quick LLM
 
     # to install gemini-cli and claude-code
     # npm set prefix ~/.npm-global
