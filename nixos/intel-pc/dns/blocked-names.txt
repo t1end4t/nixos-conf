@@ -54,6 +54,6 @@ eth0.me
 
 ## Time-based rules
 x.com @work
-youtube.com  @work
 reddit.com @work
+*.youtube.*  @work
 *.* @go-home
