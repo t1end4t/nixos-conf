@@ -1,7 +1,6 @@
 { pkgs, ... }:
 let
   ROOT = builtins.toString ./.;
-  keymap_json = (builtins.readFile "${ROOT}/keymap.json");
 in
 {
   programs.zed-editor = {
@@ -12,12 +11,17 @@ in
       "toml"
       "git-firefly"
     ];
-    userKeymaps = (builtins.fromJSON keymap_json);
     userSettings = {
       terminal = {
         detect_venv = "off";
       };
       helix_mode = true;
+      relative_line_numbers = true;
+      show_wrap_guides = true;
+      wrap_guides = [ 80 ];
+      scrollbar = {
+        show = "never";
+      };
 
       # languages setup
       languages = {
@@ -46,4 +50,9 @@ in
 
   # enable keyring
   services.gnome-keyring.enable = true;
+
+  # NOTE: keymap setting (can not set it from programs.zed-editor)
+  home.file.".config/zed/keymap.json" = {
+    source = "${ROOT}/keymap.json";
+  };
 }
