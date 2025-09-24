@@ -22,6 +22,7 @@ in
       scrollbar = {
         show = "never";
       };
+      cursor_blink = false;
 
       # languages setup
       languages = {

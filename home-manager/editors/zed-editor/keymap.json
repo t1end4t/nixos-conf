@@ -7,7 +7,7 @@
 // from the command palette.
 [
   {
-    "context": "!Terminal && !AgentPanel && !ProjectPanel && !CommandPalette",
+    "context": "!Terminal && !AgentPanel && !ProjectPanel && !CommandPalette && !Editor",
     "bindings": {
       // prevent use mouse
       "space f": "file_finder::Toggle",
