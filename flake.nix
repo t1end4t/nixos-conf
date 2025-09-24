@@ -20,8 +20,9 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    # catppuccin for nix
-    catppuccin.url = "github:catppuccin/nix";
+    # NOTE: catppuccin for nix, change release because it break!
+    # catppuccin.url = "github:catppuccin/nix";
+    catppuccin.url = "github:catppuccin/nix/release-25.05";
 
     # non-flake repositories
     nushell-defaultConfig = {
