@@ -6,18 +6,19 @@
 // To see the default key bindings run `zed: open default keymap`
 // from the command palette.
 [
-  {
-    "bindings": {
-      // prevent use mouse
-      "space f": "file_finder::Toggle",
+  // {
+  //   "context": "!Terminal && !AgentPanel && !ProjectPanel && !showing_completions",
+  //   "bindings": {
+  //     // prevent use mouse
+  //     "space f": "file_finder::Toggle",
 
-      // customize
-      "ctrl-f": "workspace::ToggleZoom",
-      "ctrl-m": "terminal_panel::Toggle",
-      "ctrl-n": "workspace::ToggleRightDock",
-      "space e": "workspace::ToggleLeftDock"
-    }
-  },
+  //     // customize
+  //     "ctrl-f": "workspace::ToggleZoom",
+  //     "ctrl-m": "terminal_panel::Toggle",
+  //     "ctrl-n": "workspace::ToggleRightDock",
+  //     "space e": "workspace::ToggleLeftDock"
+  //   }
+  // },
   {
     "context": "Editor && vim_mode == insert",
     "bindings": {
@@ -59,7 +60,7 @@
       "ctrl-f": "workspace::ToggleZoom",
       "ctrl-m": "terminal_panel::Toggle",
       "ctrl-n": "workspace::ToggleRightDock",
-      "space e": "workspace::ToggleLeftDock",
+      // "space e": "workspace::ToggleLeftDock",
 
       "ctrl-h": "workspace::ActivatePaneLeft",
       "ctrl-l": "workspace::ActivatePaneRight",
@@ -74,7 +75,7 @@
       "ctrl-f": "workspace::ToggleZoom",
       "ctrl-m": "terminal_panel::Toggle",
       "ctrl-n": "workspace::ToggleRightDock",
-      "space e": "workspace::ToggleLeftDock",
+      // "space e": "workspace::ToggleLeftDock",
 
       "ctrl-h": "workspace::ActivatePaneLeft",
       "ctrl-l": "workspace::ActivatePaneRight",
