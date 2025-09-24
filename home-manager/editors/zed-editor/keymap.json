@@ -6,19 +6,19 @@
 // To see the default key bindings run `zed: open default keymap`
 // from the command palette.
 [
-  // {
-  //   "context": "!Terminal && !AgentPanel && !ProjectPanel && !showing_completions",
-  //   "bindings": {
-  //     // prevent use mouse
-  //     "space f": "file_finder::Toggle",
+  {
+    "context": "!Terminal && !AgentPanel && !ProjectPanel && !CommandPalette",
+    "bindings": {
+      // prevent use mouse
+      "space f": "file_finder::Toggle",
 
-  //     // customize
-  //     "ctrl-f": "workspace::ToggleZoom",
-  //     "ctrl-m": "terminal_panel::Toggle",
-  //     "ctrl-n": "workspace::ToggleRightDock",
-  //     "space e": "workspace::ToggleLeftDock"
-  //   }
-  // },
+      // customize
+      "ctrl-f": "workspace::ToggleZoom",
+      "ctrl-m": "terminal_panel::Toggle",
+      "ctrl-n": "workspace::ToggleRightDock",
+      "space e": "workspace::ToggleLeftDock"
+    }
+  },
   {
     "context": "Editor && vim_mode == insert",
     "bindings": {
@@ -97,6 +97,19 @@
       "ctrl-l": "workspace::ActivatePaneRight",
       "ctrl-k": "workspace::ActivatePaneUp",
       "ctrl-j": "workspace::ActivatePaneDown"
+    }
+  },
+  {
+    "context": "ProjectPanel && not_editing",
+    "bindings": {
+      "a": "project_panel::NewFile",
+      "shift-a": "project_panel::NewDirectory",
+      "x": "project_panel::Cut",
+      "y": "project_panel::Copy",
+      "p": "project_panel::Paste",
+      "c c": "project_panel::CopyPath",
+      "r": "project_panel::Rename",
+      "d": ["project_panel::Trash", { "skip_prompt": true }]
     }
   }
 ]
