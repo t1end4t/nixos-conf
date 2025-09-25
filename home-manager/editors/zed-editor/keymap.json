@@ -111,5 +111,12 @@
       "r": "project_panel::Rename",
       "d": ["project_panel::Trash", { "skip_prompt": true }]
     }
+  },
+  {
+    "context": "Editor && showing_completions",
+    "bindings": {
+      "tab": "editor::ContextMenuNext",
+      "shift-tab": "editor::ContextMenuPrevious"
+    }
   }
 ]
