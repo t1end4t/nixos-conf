@@ -102,6 +102,8 @@
   {
     "context": "ProjectPanel && not_editing",
     "bindings": {
+      "tab": "project_panel::CollapseSelectedEntry",
+      "shift-tab": "project_panel::ExpandSelectedEntry",
       "a": "project_panel::NewFile",
       "shift-a": "project_panel::NewDirectory",
       "x": "project_panel::Cut",
