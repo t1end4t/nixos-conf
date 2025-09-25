@@ -1,7 +1,7 @@
 * {
   /* reference the color by using @color-name */
   color: @text;
-  font-family: "IntoneMono Nerd Font Propo", "Font Awesome 6 Free";
+  font-family: "Lilex Nerd Font Propo", "Font Awesome 6 Free";
 }
 
 window#waybar {

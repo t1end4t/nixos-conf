@@ -11,7 +11,7 @@ c.colors.webpage.darkmode.enabled = False
 c.auto_save.session = True
 
 # font 
-c.fonts.default_family = "IntoneMono Nerd Font Propo"
+c.fonts.default_family = "Lilex Nerd Font Propo"
 # c.content.user_stylesheets = [ "./css/font.css" ]
 
 # try to block some sites 

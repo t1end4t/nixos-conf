@@ -45,7 +45,7 @@ in
         # "browser.display.use_document_fonts" = 0; # not default
         "browser.fullscreen.autohide" = false;
         "browser.startup.page" = 3;
-        "font.name.monospace.x-western" = "IntoneMono Nerd Font Propo";
+        "font.name.monospace.x-western" = "Lilex Nerd Font Propo";
         "browser.compactmode.show" = true;
         "browser.startup.homepage" = "https://duckduckgo.com";
         "layout.css.prefers-color-scheme.content-override" = 0;

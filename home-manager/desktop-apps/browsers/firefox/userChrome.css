@@ -4,8 +4,8 @@
 	--tab-inactive-bg-color: #45475a; /* Surface 1 */
 	--toolbar-bgcolor: #1e1e2e !important; /* Base */
 
-	--tab-font: 'IntoneMono Nerd Font Propo';
-	--urlbar-font: 'IntoneMono Nerd Font Propo';
+	--tab-font: 'Lilex Nerd Font Propo';
+	--urlbar-font: 'Lilex Nerd Font Propo';
 
 	/* try increasing if you encounter problems */
 	--urlbar-height-setting: 24px;

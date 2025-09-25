@@ -6,7 +6,7 @@
 
   programs.rofi = {
     enable = true;
-    font = "IntoneMono Nerd Font 12";
+    font = "Lilex Nerd Font Propo 12";
     extraConfig = {
       modi = "run,drun";
       lines = 5;
