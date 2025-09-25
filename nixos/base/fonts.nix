@@ -5,7 +5,7 @@
   fonts = {
     fontDir.enable = true;
     packages = with pkgs; [
-      nerd-fonts.intone-mono
+      nerd-fonts.lilex # default mono
       corefonts
       # noto-fonts
       # noto-fonts-cjk-sans
@@ -16,6 +16,7 @@
       # font to pptx
       (google-fonts.override {
         fonts = [
+          "IBM Plex Sans" # default sans
           "Roboto Slab" # title
           "Roboto" # body
           "Inter" # san-serif
@@ -25,9 +26,9 @@
       })
     ];
     fontconfig.defaultFonts = {
-      serif = [ "Inter" ];
-      sansSerif = [ "Inter" ];
-      monospace = [ "IntoneMono Nerd Font Propo" ];
+      serif = [ "IBM Plex Sans" ];
+      sansSerif = [ "IBM Plex Sans" ];
+      monospace = [ "Lilex Nerd Font Propo" ];
       emoji = [ "Noto Color Emoji" ];
     };
   };

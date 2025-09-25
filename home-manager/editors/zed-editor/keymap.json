@@ -107,7 +107,7 @@
       "x": "project_panel::Cut",
       "y": "project_panel::Copy",
       "p": "project_panel::Paste",
-      "c c": "project_panel::CopyPath",
+      "c c": "workspace::CopyPath",
       "r": "project_panel::Rename",
       "d": ["project_panel::Trash", { "skip_prompt": true }]
     }

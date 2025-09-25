@@ -10,6 +10,7 @@ in
       "nix"
       "toml"
       "git-firefly"
+      "baml"
     ];
     userSettings = {
       terminal = {
