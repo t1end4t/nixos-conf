@@ -53,4 +53,4 @@ eth0.me
 *nangcuc*
 
 ## Time-based rules
-*.* @go-home
+# *.* @go-home

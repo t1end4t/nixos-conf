@@ -1,6 +1,8 @@
 { pkgs, ... }:
 {
   home.packages = with pkgs; [
-    arduino # for upload iot
+    arduino-ide # for upload iot
+    screen # check port
+    python310 # to build
   ];
 }
