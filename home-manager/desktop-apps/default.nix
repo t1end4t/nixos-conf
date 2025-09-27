@@ -5,5 +5,6 @@
     ./thunderbird.nix
     ./others.nix
     ./office.nix
+    ./iot.nix
   ];
 }
