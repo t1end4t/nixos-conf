@@ -76,7 +76,7 @@ in
   };
 
   # enable keyring
-  services.gnome-keyring.enable = true;
+  # services.gnome-keyring.enable = true;
 
   # NOTE: keymap setting (can not set it from programs.zed-editor)
   home.file.".config/zed/keymap.json" = {
