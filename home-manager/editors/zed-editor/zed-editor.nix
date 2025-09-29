@@ -48,27 +48,30 @@ in
       };
 
       # agent setup
-      agent = {
-        default_model = {
-          provider = "openrouter";
-          model = "anthropic/claude-sonnet-4";
-        };
+      disable_ai = true;
 
-        inline_assistant_model = {
-          provider = "openrouter";
-          model = "qwen/qwen3-coder";
-        };
+      # agent = {
+      #   default_model = {
+      #     provider = "openrouter";
+      #     model = "anthropic/claude-sonnet-4";
+      #   };
 
-        commit_message_model = {
-          provider = "google";
-          model = "gemini-2.0-flash";
-        };
+      #   inline_assistant_model = {
+      #     provider = "openrouter";
+      #     model = "qwen/qwen3-coder";
+      #   };
 
-        thread_summary_model = {
-          provider = "google";
-          model = "gemini-2.0-flash";
-        };
-      };
+      #   commit_message_model = {
+      #     provider = "google";
+      #     model = "gemini-2.0-flash";
+      #   };
+
+      #   thread_summary_model = {
+      #     provider = "google";
+      #     model = "gemini-2.0-flash";
+      #   };
+      # };
+
     };
   };
 
