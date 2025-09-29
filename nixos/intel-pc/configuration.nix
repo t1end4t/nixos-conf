@@ -20,7 +20,6 @@ in
       "video"
       "docker"
       "libvirtd"
-      "dialout"
     ];
     packages = [ inputs.home-manager.packages.${pkgs.system}.default ];
   };
