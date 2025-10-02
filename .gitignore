@@ -1,3 +1,4 @@
 .aider*
 aider.conf.yml
 claude-code-router-config.json
+aichat-config.yaml
