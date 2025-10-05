@@ -27,7 +27,7 @@ in
     source = "${ROOT}/secrets/claude-code-router-config.json.gpg";
   };
 
-  home.file."~/.config/aichat/config.yaml.gpg" = {
+  home.file.".config/aichat/config.yaml.gpg" = {
     source = "${ROOT}/secrets/aichat-config.yaml.gpg";
   };
 }
