@@ -54,3 +54,6 @@ eth0.me
 
 ## Time-based rules
 *.* @time-to-sleep
+*.youtube.* @not-social-networks
+*.reddit.* @not-social-networks
+x.com @not-social-networks
