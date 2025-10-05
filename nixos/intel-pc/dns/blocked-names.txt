@@ -54,6 +54,6 @@ eth0.me
 
 ## Time-based rules
 *.* @go-home
-*.youtube.* @not-social-networks
-*.reddit.* @not-social-networks
+www.reddit.com @not-social-networks
 x.com @not-social-networks
+www.youtube.com @not-social-networks
