@@ -13,7 +13,6 @@ filenames=(
 
   # host file
   "../nixos/base/hosts/hosts.nix"
-  "../nixos/base/hosts/social-hosts"
   "../nixos/base/hosts/main-hosts"
   "../nixos/base/hosts/extra-hosts"
 
