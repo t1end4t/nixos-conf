@@ -22,6 +22,11 @@ filenames=(
   "../nixos/lenovo-laptop/dns/blocked-names.txt"
   "../nixos/lenovo-laptop/dns/cloaking-rules.txt"
   "../nixos/lenovo-laptop/dns/allowed-names.txt"
+
+  "../nixos/intel-pc/dns/dns.nix"
+  "../nixos/intel-pc/dns/blocked-names.txt"
+  "../nixos/intel-pc/dns/cloaking-rules.txt"
+  "../nixos/intel-pc/dns/allowed-names.txt"
 )
 
 # Loop through each filename in the array
