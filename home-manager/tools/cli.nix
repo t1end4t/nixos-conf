@@ -15,6 +15,7 @@
     unzip # .zip files
     nh # nix cli helper
     neofetch # system info script
+    unar # unrar .rar file
   ];
 
   programs.bat.enable = true; # alternative of cat
