@@ -5,11 +5,12 @@
     profiles.default = {
       extensions = with pkgs.vscode-extensions; [
         # pkief.material-icon-theme
+        ms-python.python
       ];
       userSettings = {
-        # "workbench.iconTheme" = "material-icon-theme";
         "editor.minimap.enabled" = false;
         "baml.bamlPanelOpen" = true;
+        "python.analysis.typeCheckingMode" = "standard";
       };
     };
   };
