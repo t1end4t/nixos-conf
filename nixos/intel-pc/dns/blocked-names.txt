@@ -56,4 +56,4 @@ eth0.me
 # www.reddit.com @not-social-networks
 # x.com @not-social-networks
 # www.youtube.com @not-social-networks
-*.* @go-home
+# *.* @go-home
