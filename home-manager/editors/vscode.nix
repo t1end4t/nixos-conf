@@ -5,7 +5,7 @@
     profiles.default = {
       extensions = with pkgs.vscode-extensions; [
         # pkief.material-icon-theme
-        ms-python.python
+        # ms-python.python
       ];
       userSettings = {
         "editor.minimap.enabled" = false;
