@@ -1,7 +1,6 @@
 {
   imports = [
     ../default.nix
-    ./tiendat/iot.nix
   ];
 
   home.username = "tiendat";
