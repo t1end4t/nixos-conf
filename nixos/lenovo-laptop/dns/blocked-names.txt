@@ -52,8 +52,8 @@ eth0.me
 *sextop1*
 *nangcuc*
 
-## Time-based rules
+# Time-based rules
 # www.reddit.com @not-social-networks
 # x.com @not-social-networks
 # www.youtube.com @not-social-networks
-# *.* @time-to-sleep
+*.* @time-to-sleep
