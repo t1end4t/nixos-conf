@@ -53,7 +53,7 @@ eth0.me
 *nangcuc*
 
 # Time-based rules
-www.reddit.com @not-social-networks
-x.com @not-social-networks
-www.youtube.com @not-social-networks
+# www.reddit.com @not-social-networks
+# x.com @not-social-networks
+# www.youtube.com @not-social-networks
 *.* @go-home
