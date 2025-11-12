@@ -11,3 +11,9 @@ env NIX_CONFIG="access-tokens = github.com=ghp_my_own_token_here" nix flake upda
 ```nu
 $env.GITHUB_TOKEN = "ghp_my_own_token_here"
 ```
+
+2. Put this on nix.conf file
+
+```~/.config/nix/nix.conf
+access-tokens = github.com=ghp_my_own_token
+```
