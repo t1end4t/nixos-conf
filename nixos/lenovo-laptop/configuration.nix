@@ -11,6 +11,12 @@ in
     ./dns/dns.nix
   ];
 
+  # allow your normal user to use extra substituters
+  nix.settings.trusted-users = [
+    "root"
+    "tiendat"
+  ];
+
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.${userName} = {
     isNormalUser = true;
