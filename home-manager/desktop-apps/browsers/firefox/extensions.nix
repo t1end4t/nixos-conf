@@ -27,12 +27,12 @@
     default_area = "menupanel";
   };
 
-  # Bitwarden - Free Password Manager
-  "{446900e4-71c2-419f-a6a7-df9c091e268b}" = {
-    install_url = "https://addons.mozilla.org/firefox/downloads/latest/bitwarden-password-manager/latest.xpi";
-    installation_mode = "force_installed";
-    default_area = "navbar";
-  };
+  # # Bitwarden - Free Password Manager
+  # "{446900e4-71c2-419f-a6a7-df9c091e268b}" = {
+  #   install_url = "https://addons.mozilla.org/firefox/downloads/latest/bitwarden-password-manager/latest.xpi";
+  #   installation_mode = "force_installed";
+  #   default_area = "navbar";
+  # };
 
   # Auto Tab Discard
   "{c2c003ee-bd69-42a2-b0e9-6f34222cb046}" = {
