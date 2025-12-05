@@ -64,9 +64,11 @@ B = "file_picker_in_current_buffer_directory"
 f = "file_picker_in_current_directory"
 F = "file_picker"
 r = ":reload"
+R = ":lsp-restart"
 x = ":bclose"
 
 [keys.normal]
+R = "replace_selections_with_clipboard"
 y = ["yank_main_selection_to_clipboard"]
 d = ["yank_main_selection_to_clipboard", "delete_selection"]
 p = ["paste_clipboard_after"]
