@@ -54,7 +54,8 @@ in
   "${modifier}+e" = "exec ${pkgs.alacritty}/bin/alacritty -e ${pkgs.yazi}/bin/yazi";
   "${modifier}+v" =
     "exec ${pkgs.cliphist}/bin/cliphist list | ${pkgs.rofi}/bin/rofi -dmenu | ${pkgs.cliphist}/bin/cliphist decode | ${pkgs.wl-clipboard}/bin/wl-copy";
-  "${modifier}+Return" = "exec ${pkgs.alacritty}/bin/alacritty -e ${pkgs.zellij}/bin/zellij";
+  # "${modifier}+Return" = "exec ${pkgs.alacritty}/bin/alacritty -e ${pkgs.zellij}/bin/zellij";
+  "${modifier}+Return" = "exec ${pkgs.alacritty}/bin/alacritty";
   "${modifier}+tab" = "workspace back_and_forth";
   "${modifier}+s" = "exec ${ROOT}/swap_container.sh";
   "${modifier}+Shift+s" = "exec ${ROOT}/swap_workspaces.sh";

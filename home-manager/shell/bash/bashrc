@@ -5,7 +5,6 @@
 [[ $- != *i* ]] && return
 PS1='[\u@\h \W]\$ '
 
-if command -v nu &> /dev/null; then 
-  exec nu 
+if [[ -z "$ZELLIJ" ]]; then
+  zellij
 fi
-
