@@ -6,7 +6,7 @@
     zoxide # alternative of cd
     ripgrep # recursively searches directories
     eza # a modern replacement for ls
-    du-dust # a more intuitive version of du in rust
+    dust # a more intuitive version of du in rust
     silver-searcher # a code-searching tool similar to ack, but faster
     tldr # collaborative cheatsheets for console commands
     atuin # history shell

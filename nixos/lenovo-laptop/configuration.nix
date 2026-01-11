@@ -30,7 +30,8 @@ in
     ];
     packages = [
       # source: https://github.com/Misterio77/nix-starter-configs?tab=readme-ov-file#use-home-manager-as-a-nixos-module
-      inputs.home-manager.packages.${pkgs.system}.default
+      # evaluation warning: 'system' has been renamed to/replaced by 'stdenv.hostPlatform.system'
+      inputs.home-manager.packages.${pkgs.stdenv.hostPlatform.system}.default
     ];
   };
 

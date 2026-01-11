@@ -9,7 +9,7 @@
       corefonts
       # noto-fonts
       # noto-fonts-cjk-sans
-      noto-fonts-emoji
+      noto-fonts-color-emoji
       font-awesome # for waybar
       papirus-icon-theme # for rofi
 
