@@ -27,7 +27,6 @@ in
       "docker"
       "libvirtd"
     ];
-    # evaluation warning: 'system' has been renamed to/replaced by 'stdenv.hostPlatform.system'
     packages = [ inputs.home-manager.packages.${pkgs.stdenv.hostPlatform.system}.default ];
   };
 
