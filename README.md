@@ -2,6 +2,10 @@
 
 # NOTE:
 
+0. Link
+
+- (Setting token)[https://github.com/settings/tokens]
+
 1. Command to prevent Github limit
 
 ```nu
