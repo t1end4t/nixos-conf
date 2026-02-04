@@ -4,8 +4,8 @@
     pavucontrol # PulseAudio Volume Control
     wdisplays # wlroots compositors
     networkmanagerapplet # NetworkManager control applet for GNOME
-    gnome-pomodoro # focus time
     discord # to know more things
+    # gnome-pomodoro # focus time
   ];
 
   programs.obs-studio = {
