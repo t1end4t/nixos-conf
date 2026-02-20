@@ -1,6 +1,6 @@
 # Define the filenames as an array
 filenames=(
-  "../nixos/intel-pc/configuration.nix"
+  "../nixos/nvidia-pc/configuration.nix"
   "../nixos/lenovo-laptop/configuration.nix"
 
   # "../home-manager/desktop-apps/firefox/firefox.nix"
@@ -9,7 +9,7 @@ filenames=(
   # "../home-manager/desktop-apps/qutebrowser/blocked-hosts"
 
   "../nixos/lenovo-laptop/systemd.nix"
-  "../nixos/intel-pc/systemd.nix"
+  "../nixos/nvidia-pc/systemd.nix"
 
   # host file
   "../nixos/base/hosts/hosts.nix"
@@ -22,10 +22,10 @@ filenames=(
   "../nixos/lenovo-laptop/dns/cloaking-rules.txt"
   "../nixos/lenovo-laptop/dns/allowed-names.txt"
 
-  "../nixos/intel-pc/dns/dns.nix"
-  "../nixos/intel-pc/dns/blocked-names.txt"
-  "../nixos/intel-pc/dns/cloaking-rules.txt"
-  "../nixos/intel-pc/dns/allowed-names.txt"
+  "../nixos/nvidia-pc/dns/dns.nix"
+  "../nixos/nvidia-pc/dns/blocked-names.txt"
+  "../nixos/nvidia-pc/dns/cloaking-rules.txt"
+  "../nixos/nvidia-pc/dns/allowed-names.txt"
 )
 
 # Loop through each filename in the array
