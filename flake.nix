@@ -40,11 +40,6 @@
       flake = false;
     };
 
-    # catppuccin for qutebrowser
-    catppuccin-qutebrowser = {
-      url = "github:catppuccin/qutebrowser";
-      flake = false;
-    };
   };
 
   outputs =
@@ -55,7 +50,6 @@
       nushell-defaultConfig,
       betterfox,
       catppuccin,
-      catppuccin-qutebrowser,
       ...
     }@inputs:
     let
@@ -66,7 +60,7 @@
       ];
       hosts = [
         "lenovo-laptop"
-        "intel-pc"
+        "nvidia-pc"
       ];
       userToAttrs = builtins.listToAttrs (
         builtins.map (user: {
@@ -139,7 +133,6 @@
               inputs
               outputs
               nushell-defaultConfig
-              catppuccin-qutebrowser
               betterfox
               ;
           };
