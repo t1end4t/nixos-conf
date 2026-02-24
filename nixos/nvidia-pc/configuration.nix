@@ -1,6 +1,6 @@
 { inputs, pkgs, ... }:
 let
-  userName = "icslab";
+  userName = "tiendat";
 in
 {
   imports = [
@@ -14,7 +14,7 @@ in
   # allow your normal user to use extra substituters
   nix.settings.trusted-users = [
     "root"
-    "icslab"
+    "tiendat"
   ];
 
   # Define a user account. Don't forget to set a password with ‘passwd’.

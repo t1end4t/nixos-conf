@@ -56,12 +56,12 @@
       # custom user and host
       users = [
         "tiendat"
-        "icslab"
       ];
       hosts = [
         "lenovo-laptop"
         "nvidia-pc"
       ];
+
       userToAttrs = builtins.listToAttrs (
         builtins.map (user: {
           name = user;

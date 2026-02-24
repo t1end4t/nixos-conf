@@ -9,6 +9,7 @@ in
     ./systemd.nix
     ../base
     ./dns/dns.nix
+    ./swap.nix
   ];
 
   # allow your normal user to use extra substituters
