@@ -3,8 +3,8 @@ let
   ROOT = builtins.toString ./.;
 in
 {
-  home.packages = with pkgs; [
-    hyprpaper # for wallpaper
+  imports = [
+    ./hyprpaper.nix
   ];
 
   wayland.windowManager.hyprland = {
@@ -12,47 +12,22 @@ in
     xwayland.enable = true;
 
     settings = {
-      "$mod" = "SUPER";
-      "$left" = "H";
-      "$down" = "J";
-      "$up" = "K";
-      "$right" = "L";
-
       # daemon
       exec-once = [
         "waybar"
+        "hyprpaper"
       ];
 
-      # wallpapers
+      # gaps
       general = {
-        gaps_in = 1;
-        gaps_out = 1;
+        gaps_in = 2;
+        gaps_out = 2;
       };
 
       # keybindings
-      # bind = [
-      #   "$mod, B, exec, firefox"
-      #   "$mod, F, exec, alacritty"
-      # ]
-      # ++ (
-      #   # workspaces
-      #   # binds $mod + [shift +] {1..9} to [move to] workspace {1..9}
-      #   builtins.concatLists (
-      #     builtins.genList (
-      #       i:
-      #       let
-      #         ws = i + 1;
-      #       in
-      #       [
-      #         "$mod, code:1${toString i}, workspace, ${toString ws}"
-      #         "$mod SHIFT, code:1${toString i}, movetoworkspace, ${toString ws}"
-      #       ]
-      #     ) 9
-      #   )
-      # );
       bind = import "${ROOT}/keybindings.nix" { inherit pkgs; };
     };
 
-    # extraConfig = builtins.readFile "${ROOT}/extraConfig";
+    # extraConfig = builtins.readFile "${ROOT}/extraConfig.nix";
   };
 }
