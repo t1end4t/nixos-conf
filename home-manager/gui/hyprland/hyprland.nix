@@ -14,8 +14,8 @@ in
     settings = {
       # daemon
       exec-once = [
-        "waybar"
         "hyprpaper"
+        "waybar"
       ];
 
       # gaps
@@ -28,6 +28,6 @@ in
       bind = import "${ROOT}/keybindings.nix" { inherit pkgs; };
     };
 
-    # extraConfig = builtins.readFile "${ROOT}/extraConfig.nix";
+    extraConfig = builtins.readFile "${ROOT}/extraConfig.nix";
   };
 }
