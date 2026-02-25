@@ -11,5 +11,6 @@
     ./qt.nix
     ./mako.nix
     ./alacritty.nix
+    # ./hyprland/hyprland.nix
   ];
 }
