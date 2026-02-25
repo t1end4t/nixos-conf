@@ -6,7 +6,6 @@ let
   down = "J";
   up = "K";
   right = "L";
-  ROOT = builtins.toString ./.;
 in
 
 [
@@ -38,8 +37,9 @@ in
 
   # launchers
   "${mod} SHIFT, RETURN, exec, ${pkgs.rofi}/bin/rofi -show drun"
+  "${mod}, D, exec, ${pkgs.rofi}/bin/rofi -show run"
   "${mod} SHIFT, Q, exec, ${pkgs.wlogout}/bin/wlogout"
-  "${mod} CTRL, L, exec, ${pkgs.swaylock-effects}/bin/swaylock --clock --indicator"
+  "${mod} CTRL, L, exec, ${pkgs.hyprlock}/bin/hyprlock"
 
   # window actions
   "${mod}, Q, killactive"
@@ -49,7 +49,6 @@ in
   # apps
   "${mod}, B, exec, firefox"
   "${mod}, M, exec, ${pkgs.thunderbird}/bin/thunderbird"
-  "${mod}, D, exec, ${pkgs.rofi}/bin/rofi -show run"
   "${mod}, E, exec, ${pkgs.alacritty}/bin/alacritty -e ${pkgs.yazi}/bin/yazi"
   "${mod}, RETURN, exec, ${pkgs.alacritty}/bin/alacritty"
 

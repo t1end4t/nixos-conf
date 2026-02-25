@@ -1,23 +1,25 @@
 { pkgs, ... }:
 {
   home.packages = with pkgs; [
-    autotiling # tiling behavior like hyprland
-    swayidle # lock screen after time
+    # autotiling # tiling behavior like hyprland
+    # swayidle # lock screen after time
+    # wlsunset # control display temperature
+    hyprlock # alternative lock
+    hyprsunset # alternative nightlight
+    hypridle # alternative daemon
+    wlogout # logout menu
     libnotify # to test mako
     wl-clipboard # copy/paste utilities
-    wlogout # logout menu
     cliphist # clipboard manager
     grim # screenshot
     slurp # region screenshot
-    wlsunset # control display temperature
-    sov # workspace overview app
     swayest-workstyle # icons in workspace
     playerctl # mpris media player command-line
     nwg-look # to set theme for gtk
   ];
 
-  programs.swaylock = {
-    enable = true;
-    package = pkgs.swaylock-effects;
-  };
+  # programs.swaylock = {
+  #   enable = true;
+  #   package = pkgs.swaylock-effects;
+  # };
 }
