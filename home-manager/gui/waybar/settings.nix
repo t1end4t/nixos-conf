@@ -3,8 +3,8 @@
   "layer" = "top";
 
   "modules-left" = [
-    "sway/workspaces"
-    "sway/window"
+    "hyprland/workspaces"
+    "hyprland/window"
   ];
   "modules-center" = [ "clock" ];
   "modules-right" = [
@@ -15,7 +15,7 @@
     "battery"
   ];
 
-  "sway/window" = {
+  "hyprland/window" = {
     "max-length" = 25;
   };
 
