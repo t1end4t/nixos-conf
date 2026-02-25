@@ -9,6 +9,7 @@ in
     ./swap.nix
     ../base
     ./dns/dns.nix
+    ./nvidia.nix
   ];
 
   # allow your normal user to use extra substituters
