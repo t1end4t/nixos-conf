@@ -77,11 +77,11 @@
   };
 
   # Authenticator app to login github
-  "authenticator@mymindstorm" = {
-    install_url = "https://addons.mozilla.org/firefox/downloads/latest/auth-helper/latest.xpi";
-    installation_mode = "force_installed";
-    default_area = "menupanel";
-  };
+  # "authenticator@mymindstorm" = {
+  #   install_url = "https://addons.mozilla.org/firefox/downloads/latest/auth-helper/latest.xpi";
+  #   installation_mode = "force_installed";
+  #   default_area = "menupanel";
+  # };
 
   # uBlock Origin
   "uBlock0@raymondhill.net" = {
@@ -105,11 +105,11 @@
   };
 
   # LeechBlock NG
-  "leechblockng@proginosko.com" = {
-    install_url = "https://addons.mozilla.org/firefox/downloads/latest/leechblock-ng/latest.xpi";
-    installation_mode = "force_installed";
-    default_area = "menupanel";
-  };
+  # "leechblockng@proginosko.com" = {
+  #   install_url = "https://addons.mozilla.org/firefox/downloads/latest/leechblock-ng/latest.xpi";
+  #   installation_mode = "force_installed";
+  #   default_area = "menupanel";
+  # };
 
   # Disconnect
   "2.0@disconnect.me" = {
@@ -119,11 +119,11 @@
   };
 
   # Hide recommend in twitch
-  "{4262db2c-adc6-481f-b8e3-828877c148b1}" = {
-    install_url = "https://addons.mozilla.org/firefox/downloads/latest/remove-twitch-recommendations/latest.xpi";
-    installation_mode = "force_installed";
-    default_area = "menupanel";
-  };
+  # "{4262db2c-adc6-481f-b8e3-828877c148b1}" = {
+  #   install_url = "https://addons.mozilla.org/firefox/downloads/latest/remove-twitch-recommendations/latest.xpi";
+  #   installation_mode = "force_installed";
+  #   default_area = "menupanel";
+  # };
 
   # Popup Blocker Ultimate
   # "{60B7679C-BED9-11E5-998D-8526BB8E7F8B}" = {
