@@ -4,6 +4,7 @@
     # autotiling # tiling behavior like hyprland
     # swayidle # lock screen after time
     # wlsunset # control display temperature
+    brightnessctl
     hyprlock # alternative lock
     hyprsunset # alternative nightlight
     hypridle # alternative daemon
