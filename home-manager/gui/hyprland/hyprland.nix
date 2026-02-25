@@ -15,7 +15,8 @@ in
       "$mod" = "SUPER";
       # terminal = "alacritty";
       bind = [
-        "$mod, b, exec, firefox"
+        "$mod, B, exec, firefox"
+        "$mod, F, exec, alacritty"
       ]
       ++ (
         # workspaces
