@@ -13,27 +13,46 @@ in
 
     settings = {
       "$mod" = "SUPER";
-      # terminal = "alacritty";
-      bind = [
-        "$mod, B, exec, firefox"
-        "$mod, F, exec, alacritty"
-      ]
-      ++ (
-        # workspaces
-        # binds $mod + [shift +] {1..9} to [move to] workspace {1..9}
-        builtins.concatLists (
-          builtins.genList (
-            i:
-            let
-              ws = i + 1;
-            in
-            [
-              "$mod, code:1${toString i}, workspace, ${toString ws}"
-              # "$mod SHIFT, code:1${toString i}, movetoworkspace, ${toString ws}"
-            ]
-          ) 9
-        )
-      );
+      "$left" = "H";
+      "$down" = "J";
+      "$up" = "K";
+      "$right" = "L";
+
+      # daemon
+      exec-once = [
+        "waybar"
+      ];
+
+      # wallpapers
+      general = {
+        gaps_in = 1;
+        gaps_out = 1;
+      };
+
+      # keybindings
+      # bind = [
+      #   "$mod, B, exec, firefox"
+      #   "$mod, F, exec, alacritty"
+      # ]
+      # ++ (
+      #   # workspaces
+      #   # binds $mod + [shift +] {1..9} to [move to] workspace {1..9}
+      #   builtins.concatLists (
+      #     builtins.genList (
+      #       i:
+      #       let
+      #         ws = i + 1;
+      #       in
+      #       [
+      #         "$mod, code:1${toString i}, workspace, ${toString ws}"
+      #         "$mod SHIFT, code:1${toString i}, movetoworkspace, ${toString ws}"
+      #       ]
+      #     ) 9
+      #   )
+      # );
+      bind = import "${ROOT}/keybindings.nix" { inherit pkgs; };
     };
+
+    # extraConfig = builtins.readFile "${ROOT}/extraConfig";
   };
 }
