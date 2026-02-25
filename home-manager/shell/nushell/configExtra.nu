@@ -52,3 +52,11 @@ alias gp = git push
 alias gpl = git pull
 alias gst = git stash
 alias gcheck = git checkout
+
+# custom prompt
+$env.PROMPT_COMMAND = {||
+    let dir = (pwd)
+    let home = $nu.home-path
+    let shown = ($dir | str replace $home "~")
+    $"($shown)"
+}
