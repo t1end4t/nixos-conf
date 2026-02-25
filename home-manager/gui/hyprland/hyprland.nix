@@ -5,7 +5,6 @@ in
 {
   imports = [
     ./hyprpaper.nix
-    ./hypridle.nix
   ];
 
   wayland.windowManager.hyprland = {
@@ -17,13 +16,13 @@ in
       exec-once = [
         "fcitx5"
         "systemctl --user start kanshi.service"
-
-        "${pkgs.hyprpaper}/bin/hyprpaper"
+        "systemctl --user import-environment" # ensure that the environment variables are correctly set for the user systemd units
+        "${pkgs.hyprpaper}/bin/hyprpaper" # wallpaper
         "${pkgs.waybar}/bin/waybar"
-        "${pkgs.mako}/bin/mako --default-timeout 5000"
-        "${pkgs.wl-clipboard}/bin/wl-paste --watch ${pkgs.cliphist}/bin/cliphist store" # Stores only image data
+        "${pkgs.mako}/bin/mako --default-timeout 5000" # notification
+        "${pkgs.wl-clipboard}/bin/wl-paste --watch ${pkgs.cliphist}/bin/cliphist store" # clipboard
         "${pkgs.swayest-workstyle}/bin/sworkstyle" # better workspace
-        "${pkgs.hypridle}/bin/hypridle"
+        "${pkgs.wlsunset}/bin/wlsunset -t 0 -l 21.0 -L 105.8" # # Hanoi lat/long for wlsunset and max warm
       ];
 
       # gaps

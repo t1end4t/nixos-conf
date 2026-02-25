@@ -3,10 +3,9 @@
   home.packages = with pkgs; [
     # autotiling # tiling behavior like hyprland
     # swayidle # lock screen after time
-    # wlsunset # control display temperature
-    brightnessctl
+    # hyprsunset # alternative nightlight
     hyprlock # alternative lock
-    hyprsunset # alternative nightlight
+    wlsunset # control display temperature
     hypridle # alternative daemon
     wlogout # logout menu
     libnotify # to test mako
