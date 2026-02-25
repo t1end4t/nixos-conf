@@ -3,7 +3,7 @@
   # source: https://nixos.wiki/wiki/Nvidia
 
   # Load nvidia driver for Xorg and Wayland
-  services.xserver.videoDrivers = [ "nouveau" ];
+  services.xserver.videoDrivers = [ "nvidia" ];
 
   hardware.nvidia = {
     # Modesetting is required.

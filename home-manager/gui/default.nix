@@ -1,6 +1,6 @@
 {
   imports = [
-    ./sway/sway.nix
+    # ./sway/sway.nix
     ./rofi.nix
     ./waybar/waybar.nix
     ./gtk.nix
@@ -11,6 +11,6 @@
     ./qt.nix
     ./mako.nix
     ./alacritty.nix
-    # ./hyprland/hyprland.nix
+    ./hyprland/hyprland.nix
   ];
 }
