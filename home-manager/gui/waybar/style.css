@@ -43,6 +43,7 @@ tooltip {
 #workspaces button {
   padding: 0 5px;
 } 
-#workspaces button.focused {
+/* https://wiki.hypr.land/Useful-Utilities/Status-Bars/ */
+#workspaces button.active {
   background-color: @surface0;
 }
