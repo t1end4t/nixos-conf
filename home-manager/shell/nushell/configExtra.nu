@@ -58,5 +58,5 @@ $env.PROMPT_COMMAND = {||
     let dir = (pwd)
     let home = $nu.home-path
     let shown = ($dir | str replace $home "~")
-    $"($shown)"
+    (ansi cyan_bold) + $shown + (ansi reset)
 }

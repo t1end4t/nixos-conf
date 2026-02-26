@@ -21,8 +21,7 @@ in
         "${pkgs.waybar}/bin/waybar"
         "${pkgs.mako}/bin/mako --default-timeout 5000" # notification
         "${pkgs.wl-clipboard}/bin/wl-paste --watch ${pkgs.cliphist}/bin/cliphist store" # clipboard
-        "${pkgs.swayest-workstyle}/bin/sworkstyle" # better workspace
-        "${pkgs.wlsunset}/bin/wlsunset -t 0 -l 21.0 -L 105.8" # # Hanoi lat/long for wlsunset and max warm
+        "${pkgs.wlsunset}/bin/wlsunset -t 0 -l 21.0 -L 105.8" # Hanoi lat/long for wlsunset and max warm
       ];
 
       # gaps
@@ -32,14 +31,15 @@ in
 
       };
 
-      # General idle behavior
-      general = {
-      };
-
       # cursor
       cursor = {
         hide_on_key_press = true;
         inactive_timeout = 3;
+      };
+
+      # turn off animations
+      animations = {
+        enabled = false;
       };
 
       # keybindings
