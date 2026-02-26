@@ -7,7 +7,6 @@
     ./opengl.nix
     ./thunar.nix
     ./virt-manager.nix
-    ./nix-ld.nix
     ./flatpak.nix
   ];
 }
