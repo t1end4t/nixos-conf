@@ -9,12 +9,6 @@ let
 in
 
 [
-  # container swap
-  "${mod}, S, movewindow, mon:+1"
-  # "${mod}, S, focusmonitor, +1"
-  # "${mod}, S, movewindow, mon:-1"
-  # "${mod}, S, focusmonitor, -1"
-
   # focus movement
   "${mod}, ${left}, movefocus, l"
   "${mod}, ${down}, movefocus, d"
