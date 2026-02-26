@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ ... }:
 {
   services.hypridle = {
     enable = true;
@@ -10,22 +10,22 @@
       };
 
       listener = [
-        # --- TEST: notify after 10s idle ---
-        {
-          timeout = 10;
-          on-timeout = "${pkgs.libnotify}/bin/notify-send 'Idle 10s' 'No interaction detected'";
-          on-resume = "${pkgs.libnotify}/bin/notify-send 'Active again'";
-        }
+        # --- dim screen after 4.5 min ---
+        # {
+        #   timeout = 270;
+        #   on-timeout = "brightnessctl set 20%";
+        #   on-resume = "brightnessctl set 100%";
+        # }
 
-        # --- lock after 15 min ---
+        # --- lock after 5 min ---
         {
-          timeout = 900;
+          timeout = 300;
           on-timeout = "hyprlock";
         }
 
-        # --- DPMS off after 20 min ---
+        # --- screen off after 10 min ---
         {
-          timeout = 1200;
+          timeout = 600;
           on-timeout = "hyprctl dispatch dpms off";
           on-resume = "hyprctl dispatch dpms on";
         }
