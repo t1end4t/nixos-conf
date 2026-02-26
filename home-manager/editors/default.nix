@@ -1,8 +1,8 @@
 {
   imports = [
-    ./helix/helix.nix
+    ./helix
     ./lsp.nix
     ./vscode.nix
-    ./ai-cli/ai-cli.nix
+    ./ai-cli
   ];
 }
