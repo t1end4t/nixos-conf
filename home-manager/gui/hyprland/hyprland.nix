@@ -6,6 +6,7 @@ in
   imports = [
     ./hyprpaper.nix
     ./hypridle.nix
+    ./hyprsunset.nix
   ];
 
   wayland.windowManager.hyprland = {
@@ -22,6 +23,7 @@ in
         "waybar" # status bar
         "mako --default-timeout 5000" # notification
         "wl-paste --watch cliphist store" # clipboard
+        # "wlsunset -t 0 -l 21.0 -L 105.8" # Hanoi lat/long for wlsunset and max warm
       ];
 
       # "${pkgs.wlsunset}/bin/wlsunset -t 0 -l 21.0 -L 105.8" # Hanoi lat/long for wlsunset and max warm

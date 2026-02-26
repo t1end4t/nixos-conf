@@ -6,7 +6,7 @@ in
   imports = [
     ./hardware-configuration.nix
     ./systemd.nix
-    # ./swap.nix
+    ./swap.nix
     ../base
     ./dns/dns.nix
     ./nvidia.nix
