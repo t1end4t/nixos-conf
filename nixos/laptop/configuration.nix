@@ -5,10 +5,11 @@ in
 {
   imports = [
     ./hardware-configuration.nix
-    ./systemd.nix
-    ./swap.nix
     ./laptop.nix
-    ../../default.nix
+    ./systemd.nix
+    ../base
+    ./dns/dns.nix
+    ./swap.nix
   ];
 
   # allow your normal user to use extra substituters
@@ -26,6 +27,7 @@ in
       "video"
       "docker"
       "libvirtd"
+      "dialout"
     ];
     packages = [
       # source: https://github.com/Misterio77/nix-starter-configs?tab=readme-ov-file#use-home-manager-as-a-nixos-module

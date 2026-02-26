@@ -117,7 +117,7 @@
             # inherit inputs outputs platformio-udev;
           };
           modules = [
-            ./nixos/hosts/${host}/configuration.nix
+            ./nixos/${host}/configuration.nix
             catppuccin.nixosModules.catppuccin
           ];
         }
