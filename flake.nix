@@ -55,11 +55,12 @@
     let
       # custom user and host
       users = [
-        "tiendat"
+        "workstation"
+        "laptop"
       ];
       hosts = [
-        "lenovo-laptop"
-        "nvidia-pc"
+        "workstation"
+        "laptop"
       ];
 
       userToAttrs = builtins.listToAttrs (

@@ -3,18 +3,8 @@ let
   ROOT = builtins.toString ./.;
 in
 {
-  # source: https://nixos.wiki/wiki/Sway#Systemd_services
-  # kanshi systemd service
-  # systemd.user.services.kanshi = {
-  #   description = "kanshi daemon for multiple monitor layout";
-  #   serviceConfig = {
-  #     Type = "simple";
-  #     ExecStart = "${pkgs.kanshi}/bin/kanshi -c ${ROOT}/kanshi_config";
-  #   };
-  # };
-
-  # # turn off computer everyday
-  # # source: https://wiki.nixos.org/wiki/Systemd/timers
+  # turn off computer everyday
+  # source: https://wiki.nixos.org/wiki/Systemd/timers
   # systemd.timers."shutdown-daily" = {
   #   description = "daily shutdown timer";
   #   wantedBy = [ "timers.target" ];

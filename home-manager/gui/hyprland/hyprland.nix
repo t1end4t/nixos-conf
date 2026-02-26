@@ -16,17 +16,13 @@ in
     settings = {
       # daemon
       exec-once = [
-        "systemctl --user start kanshi.service"
         "systemctl --user start hyprpolkitagent"
         "fcitx5" # unikey
         "hyprpaper" # wallpaper
         "waybar" # status bar
         "mako --default-timeout 5000" # notification
         "wl-paste --watch cliphist store" # clipboard
-        # "wlsunset -t 0 -l 21.0 -L 105.8" # Hanoi lat/long for wlsunset and max warm
       ];
-
-      # "${pkgs.wlsunset}/bin/wlsunset -t 0 -l 21.0 -L 105.8" # Hanoi lat/long for wlsunset and max warm
 
       # gui settings
       general = {
@@ -52,6 +48,16 @@ in
         "1, monitor:DP-3"
         "2, monitor:HDMI-A-1"
       ];
+
+      # touchpad + mouse input configuration (Windows-like behavior)
+      input = {
+        touchpad = {
+          natural_scroll = true; # like Windows/macOS
+          drag_lock = 2; # better drag behavior
+          middle_button_emulation = true;
+        };
+        accel_profile = "adaptive"; # similar to Windows acceleration
+      };
 
       # cursor hiding
       cursor = {
