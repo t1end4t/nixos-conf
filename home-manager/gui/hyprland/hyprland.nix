@@ -26,11 +26,11 @@ in
 
       # "${pkgs.wlsunset}/bin/wlsunset -t 0 -l 21.0 -L 105.8" # Hanoi lat/long for wlsunset and max warm
 
-      # gaps settings
+      # gui settings
       general = {
         gaps_in = 2;
         gaps_out = 2;
-
+        layout = "master";
       };
 
       # turn off several effect
