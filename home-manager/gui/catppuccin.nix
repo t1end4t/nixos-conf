@@ -3,7 +3,8 @@
     enable = true;
     flavor = "mocha";
     accent = "blue";
-    # NOTE: it not works ???
-    # cache.enable = true;
+
+    # NOTE: disable to prevent error `visual_mark_color`
+    sioyek.enable = false;
   };
 }
