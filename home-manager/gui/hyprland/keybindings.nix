@@ -17,8 +17,8 @@ in
   "${mod}, ${right}, movefocus, r"
 
   # sway container and workspace
-  "${mod}, s, exec, ${ROOT}/swap_container.sh"
-  "${mod} SHIFT, s, exec, ${ROOT}/swap_workspaces.sh"
+  "${mod}, S, exec, sh ${ROOT}/swap_container.sh"
+  "${mod} SHIFT, S, exec, sh ${ROOT}/swap_workspaces.sh"
 
   # move window
   "${mod} SHIFT, ${left}, movewindow, l"
