@@ -1,0 +1,5 @@
+{
+  imports = [
+    ./local-llm.nix
+  ];
+}
