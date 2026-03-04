@@ -4,6 +4,6 @@ let
 in
 {
   home.packages = with pkgs; [
-    ollama # quick test
+    ollama-cuda # quick test
   ];
 }
