@@ -13,11 +13,6 @@ in
     # npm install -g @google/gemini-cli
     # npm install -g openclaw@latest
     nodejs
-
-    # for openclaw
-    cmake
-    gnumake
-    gcc
   ];
 
   # remember login

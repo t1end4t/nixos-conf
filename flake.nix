@@ -39,9 +39,6 @@
       url = "github:yokoffing/Betterfox";
       flake = false;
     };
-
-    # NOTE: try openclaw
-    nix-openclaw.url = "github:openclaw/nix-openclaw";
   };
 
   outputs =
@@ -52,7 +49,6 @@
       nushell-defaultConfig,
       betterfox,
       catppuccin,
-      nix-openclaw,
       ...
     }@inputs:
     let
@@ -139,7 +135,6 @@
           modules = [
             ./home-manager/hosts/${user}.nix
             catppuccin.homeModules.catppuccin
-            nix-openclaw.homeManagerModules.openclaw
           ];
         }
       ) userToAttrs;

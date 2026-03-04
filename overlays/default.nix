@@ -21,6 +21,4 @@
       config.allowUnfree = true;
     };
   };
-
-  openclaw = inputs.nix-openclaw.overlays.default;
 }
