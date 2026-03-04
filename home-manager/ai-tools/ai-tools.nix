@@ -11,7 +11,13 @@ in
     # npm install -g @musistudio/claude-code-router
     # npm install -g @anthropic-ai/claude-code
     # npm install -g @google/gemini-cli
+    # npm install -g openclaw@latest
     nodejs
+
+    # for openclaw
+    cmake
+    gnumake
+    gcc
   ];
 
   # remember login
