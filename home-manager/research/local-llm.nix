@@ -4,6 +4,7 @@ let
 in
 {
   home.packages = with pkgs; [
-    ollama-cuda # quick test
+    unstable.ollama-cuda # quick test
+    unstable.llama-cpp # deep dive
   ];
 }
