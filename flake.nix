@@ -39,6 +39,16 @@
       url = "github:yokoffing/Betterfox";
       flake = false;
     };
+
+    # ai-tools
+    opencode = {
+      url = "github:anomalyco/opencode";
+    };
+
+    zeroclaw = {
+      url = "github:zeroclaw-labs/zeroclaw";
+    };
+
   };
 
   outputs =
@@ -49,6 +59,8 @@
       nushell-defaultConfig,
       betterfox,
       catppuccin,
+      opencode,
+      zeroclaw,
       ...
     }@inputs:
     let
@@ -130,6 +142,8 @@
               outputs
               nushell-defaultConfig
               betterfox
+              opencode
+              zeroclaw
               ;
           };
           modules = [

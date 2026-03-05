@@ -1,19 +1,26 @@
-{ pkgs, ... }:
+{
+  pkgs,
+  opencode,
+  zeroclaw,
+  ...
+}:
 let
   ROOT = builtins.toString ./.;
-  claude-code = import ./claude-code.nix { pkgs = pkgs.unstable; };
 in
 {
   home.packages = with pkgs; [
-    unstable.aider-chat-with-playwright # will replace by hinty soon
-    claude-code
+    unstable.aider-chat-with-playwright
+
+    # using nix flake to install
+    opencode.packages.${pkgs.system}.default
+    # zeroclaw.packages.${pkgs.system}.default
 
     # to install gemini-cli and claude-code
     # npm set prefix ~/.npm-global
-    # npm install -g @musistudio/claude-code-router
-    # npm install -g @anthropic-ai/claude-code
-    # npm install -g @google/gemini-cli
-    # npm install -g openclaw@latest
+    # npm i -g @musistudio/claude-code-router
+    # npm i -g @anthropic-ai/claude-code
+    # npm i -g @google/gemini-cli
+    # npm i -g @openai/codex
     nodejs
   ];
 
