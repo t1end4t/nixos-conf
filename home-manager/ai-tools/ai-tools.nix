@@ -1,10 +1,12 @@
 { pkgs, ... }:
 let
   ROOT = builtins.toString ./.;
+  claude-code = import ./claude-code.nix { pkgs = pkgs.unstable; };
 in
 {
   home.packages = with pkgs; [
     unstable.aider-chat-with-playwright # will replace by hinty soon
+    claude-code
 
     # to install gemini-cli and claude-code
     # npm set prefix ~/.npm-global
@@ -13,11 +15,6 @@ in
     # npm install -g @google/gemini-cli
     # npm install -g openclaw@latest
     nodejs
-
-    # for openclaw
-    cmake
-    gnumake
-    gcc
   ];
 
   # remember login
