@@ -22,6 +22,10 @@ in
     # npm i -g @google/gemini-cli
     # npm i -g @openai/codex
     nodejs
+
+    # to install gptme
+    python312
+    uv
   ];
 
   # remember login
