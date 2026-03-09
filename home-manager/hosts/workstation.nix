@@ -1,6 +1,7 @@
 {
   imports = [
     ../default.nix
+    ../research
   ];
 
   home.username = "tiendat";

@@ -8,6 +8,5 @@
     ./shell
     ./tools
     ./ai-tools/ai-tools.nix
-    ./research
   ];
 }
