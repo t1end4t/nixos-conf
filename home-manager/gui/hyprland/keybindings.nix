@@ -59,10 +59,6 @@ in
   # clipboard
   "${mod}, V, exec, ${pkgs.cliphist}/bin/cliphist list | ${pkgs.rofi}/bin/rofi -dmenu | ${pkgs.cliphist}/bin/cliphist decode | ${pkgs.wl-clipboard}/bin/wl-copy"
 
-  # scripts
-  # "${mod}, S, exec, ${ROOT}/swap_container.sh"
-  # "${mod} SHIFT, S, exec, ${ROOT}/swap_workspaces.sh"
-
   # screenshots
   ", PRINT, exec, ${pkgs.grim}/bin/grim -g \"$(${pkgs.slurp}/bin/slurp -d)\" - | ${pkgs.wl-clipboard}/bin/wl-copy -t image/png"
   "${mod} SHIFT, PRINT, exec, ${pkgs.grim}/bin/grim -o $(${pkgs.hyprland}/bin/hyprctl monitors -j | ${pkgs.jq}/bin/jq -r '.[] | select(.focused) | .name')"
