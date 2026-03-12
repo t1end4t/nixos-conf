@@ -1,27 +1,45 @@
 #!/bin/bash
 
-# Swap active workspaces between exactly 2 monitors in Hyprland
+MON_JSON=$(hyprctl monitors -j)
+WS_JSON=$(hyprctl workspaces -j)
 
-# Get monitor names
-readarray -t MONITORS < <(hyprctl monitors -j | jq -r '.[].name')
+MON1=$(echo "$MON_JSON" | jq -r '.[0].name')
+MON2=$(echo "$MON_JSON" | jq -r '.[1].name')
 
-# Ensure exactly 2 monitors
-if [ "${#MONITORS[@]}" -ne 2 ]; then
-    notify-send "Workspace Swap Error" \
-        "This script requires exactly 2 monitors.\nDetected:\n${MONITORS[*]}" \
-        -u critical
+if [ -z "$MON1" ] || [ -z "$MON2" ]; then
+    notify-send "Workspace Swap" "Could not detect monitors." -u critical
     exit 1
 fi
 
-MON1="${MONITORS[0]}"
-MON2="${MONITORS[1]}"
+# Save active workspaces for focus restoration
+ACTIVE_WS1=$(echo "$MON_JSON" | jq -r '.[0].activeWorkspace.id')
+ACTIVE_WS2=$(echo "$MON_JSON" | jq -r '.[1].activeWorkspace.id')
 
-notify-send "Swapping Workspaces" \
-    "$MON1  ⇄  $MON2"
+# Collect all workspace IDs per monitor before moving anything
+WS_ON_MON1=$(echo "$WS_JSON" | jq -r --arg mon "$MON1" '.[] | select(.monitor == $mon) | .id')
+WS_ON_MON2=$(echo "$WS_JSON" | jq -r --arg mon "$MON2" '.[] | select(.monitor == $mon) | .id')
 
-# Atomic swap (no new workspace creation)
-if hyprctl dispatch swapactiveworkspaces "$MON1" "$MON2"; then
-    notify-send "Workspace Swap" "Swap completed successfully."
-else
-    notify-send "Workspace Swap Failed" "An error occurred during swap." -u critical
-fi
+###################################
+# Move all MON1 workspaces -> MON2
+###################################
+for ws in $WS_ON_MON1; do
+    hyprctl dispatch moveworkspacetomonitor "$ws" "$MON2"
+done
+
+###################################
+# Move all MON2 workspaces -> MON1
+###################################
+for ws in $WS_ON_MON2; do
+    hyprctl dispatch moveworkspacetomonitor "$ws" "$MON1"
+done
+
+###################################
+# Restore active workspace per monitor
+###################################
+hyprctl dispatch focusmonitor "$MON1"
+hyprctl dispatch workspace "$ACTIVE_WS2"
+
+hyprctl dispatch focusmonitor "$MON2"
+hyprctl dispatch workspace "$ACTIVE_WS1"
+
+notify-send "Workspace Swap" "Workspaces swapped successfully."
