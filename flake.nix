@@ -39,17 +39,6 @@
       url = "github:yokoffing/Betterfox";
       flake = false;
     };
-
-    # ai-tools
-    opencode = {
-      url = "github:anomalyco/opencode";
-    };
-
-    # mcp tools for large codebase
-    serena = {
-      url = "github:oraios/serena";
-    };
-
   };
 
   outputs =
@@ -60,8 +49,6 @@
       nushell-defaultConfig,
       betterfox,
       catppuccin,
-      opencode,
-      serena,
       ...
     }@inputs:
     let
@@ -143,8 +130,6 @@
               outputs
               nushell-defaultConfig
               betterfox
-              opencode
-              serena
               ;
           };
           modules = [

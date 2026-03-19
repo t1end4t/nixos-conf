@@ -1,7 +1,5 @@
 {
   pkgs,
-  opencode,
-  serena,
   ...
 }:
 let
@@ -9,11 +7,11 @@ let
 in
 {
   home.packages = with pkgs; [
-    unstable.aider-chat-with-playwright
+    # unstable.aider-chat-with-playwright
 
     # using nix flake to install
-    opencode.packages.${pkgs.system}.default
-    serena.packages.${pkgs.system}.default
+    # opencode.packages.${pkgs.system}.default
+    # serena.packages.${pkgs.system}.default
     # zeroclaw.packages.${pkgs.system}.default
 
     # to install gemini-cli and claude-code
