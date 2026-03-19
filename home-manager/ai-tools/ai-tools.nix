@@ -1,7 +1,7 @@
 {
   pkgs,
   opencode,
-  zeroclaw,
+  serena,
   ...
 }:
 let
@@ -13,6 +13,7 @@ in
 
     # using nix flake to install
     opencode.packages.${pkgs.system}.default
+    serena.packages.${pkgs.system}.default
     # zeroclaw.packages.${pkgs.system}.default
 
     # to install gemini-cli and claude-code
@@ -24,8 +25,8 @@ in
     nodejs
 
     # to install gptme
-    python312
-    uv
+    # python312
+    # uv
   ];
 
   # remember login

@@ -45,8 +45,9 @@
       url = "github:anomalyco/opencode";
     };
 
-    zeroclaw = {
-      url = "github:zeroclaw-labs/zeroclaw";
+    # mcp tools for large codebase
+    serena = {
+      url = "github:oraios/serena";
     };
 
   };
@@ -60,7 +61,7 @@
       betterfox,
       catppuccin,
       opencode,
-      zeroclaw,
+      serena,
       ...
     }@inputs:
     let
@@ -143,7 +144,7 @@
               nushell-defaultConfig
               betterfox
               opencode
-              zeroclaw
+              serena
               ;
           };
           modules = [
