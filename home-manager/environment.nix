@@ -8,8 +8,8 @@
     BROWSER = "firefox";
 
     # for using aider
-    PLAYWRIGHT_BROWSERS_PATH = "${pkgs.playwright-driver.browsers}";
-    PLAYWRIGHT_SKIP_VALIDATE_HOST_REQUIREMENTS = "true";
+    # PLAYWRIGHT_BROWSERS_PATH = "${pkgs.playwright-driver.browsers}";
+    # PLAYWRIGHT_SKIP_VALIDATE_HOST_REQUIREMENTS = "true";
 
     # unset based on suggestion
     GTK_IM_MODULE = "";
