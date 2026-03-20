@@ -7,5 +7,6 @@
     ./xdg.nix
     ./boot.nix
     ./pipewire.nix
+    ./nix-ld.nix
   ];
 }
