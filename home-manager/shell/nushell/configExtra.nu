@@ -9,8 +9,12 @@ $env.config = {
 source ~/.local/share/atuin/init.nu
 
 # add to PATH
-$env.PATH = ($env.PATH | split row (char esep) | append "~/.npm-global/bin" | append "~/.local/bin" )
-
+$env.PATH = (
+  $env.PATH
+  | split row (char esep)
+  | append [~/.npm-global/bin ~/.local/bin ~/.bun/bin]
+  | uniq
+)
 
 # zoxide
 source ~/.zoxide.nu

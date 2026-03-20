@@ -9,11 +9,6 @@ in
   home.packages = with pkgs; [
     # unstable.aider-chat-with-playwright
 
-    # using nix flake to install
-    # opencode.packages.${pkgs.system}.default
-    # serena.packages.${pkgs.system}.default
-    # zeroclaw.packages.${pkgs.system}.default
-
     # to install gemini-cli and claude-code
     # npm set prefix ~/.npm-global
     # npm i -g @musistudio/claude-code-router
@@ -22,9 +17,12 @@ in
     # npm i -g @openai/codex
     nodejs
 
+    # bun add -g opencode-ai
+    bun
+
     # to install gptme
-    # python312
-    # uv
+    python313
+    uv
   ];
 
   # remember login
