@@ -20,7 +20,7 @@ in
     # bun add -g opencode-ai
     bun
 
-    # to install gptme
+    # uvx --from git+https://github.com/oraios/serena serena
     python313
     uv
   ];
