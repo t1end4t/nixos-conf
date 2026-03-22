@@ -19,6 +19,15 @@ ACTIVE_WS2=$(echo "$MON_JSON" | jq -r '.[1].activeWorkspace.id')
 WS_ON_MON1=$(echo "$WS_JSON" | jq -r --arg mon "$MON1" '.[] | select(.monitor == $mon) | .id')
 WS_ON_MON2=$(echo "$WS_JSON" | jq -r --arg mon "$MON2" '.[] | select(.monitor == $mon) | .id')
 
+# Ensure active workspaces are included — empty active workspaces may be
+# missing from `hyprctl workspaces` output
+if ! echo "$WS_ON_MON1" | grep -qx "$ACTIVE_WS1"; then
+    WS_ON_MON1=$(printf "%s\n%s" "$WS_ON_MON1" "$ACTIVE_WS1" | grep -v '^$')
+fi
+if ! echo "$WS_ON_MON2" | grep -qx "$ACTIVE_WS2"; then
+    WS_ON_MON2=$(printf "%s\n%s" "$WS_ON_MON2" "$ACTIVE_WS2" | grep -v '^$')
+fi
+
 ###################################
 # Move all MON1 workspaces -> MON2
 ###################################
