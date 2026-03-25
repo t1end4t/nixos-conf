@@ -50,7 +50,7 @@ alias about = neofetch
 
 alias gs = git status
 alias ga = git add
-alias gc = git clone
+alias gc = git clone --recurse-submodules
 alias gcm = git commit -m
 alias gp = git push
 alias gpl = git pull
