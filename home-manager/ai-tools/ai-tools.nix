@@ -13,8 +13,8 @@ in
     # npm set prefix ~/.npm-global
     # npm i -g @musistudio/claude-code-router
     # npm i -g @anthropic-ai/claude-code
-    # npm i -g @google/gemini-cli
     # npm i -g @openai/codex
+    bubblewrap # for codex
     nodejs
 
     # bun add -g opencode-ai
