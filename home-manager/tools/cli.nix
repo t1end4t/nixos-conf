@@ -16,6 +16,7 @@
     nh # nix cli helper
     neofetch # system info script
     unar # unrar .rar file
+    gh # github cli tools, run `gh auth login`
   ];
 
   programs.bat.enable = true; # alternative of cat
