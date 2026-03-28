@@ -8,7 +8,7 @@
       profile = [
         # Morning – Neutral
         {
-          time = "7:30";
+          time = "6:00";
           identity = true;
         }
 
