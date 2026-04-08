@@ -14,5 +14,8 @@
     # unset based on suggestion
     GTK_IM_MODULE = "";
     QT_IM_MODULE = "";
+
+    # disable claude config for opencode
+    OPENCODE_DISABLE_CLAUDE_CODE = 1;
   };
 }
