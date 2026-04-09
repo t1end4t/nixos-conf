@@ -7,11 +7,15 @@ let
 in
 {
   home.packages = with pkgs; [
+    ############ aider ############
     # unstable.aider-chat-with-playwright
 
-    # to install gemini-cli and claude-code
+    ############ claude-code ############
+    # curl -fsSL https://claude.ai/install.sh | bash
+    # npm install -g @anthropic-ai/sandbox-runtime
+
+    ############ codex ############
     # npm set prefix ~/.npm-global
-    # npm i -g @musistudio/claude-code-router
     # npm i -g @anthropic-ai/claude-code
     # npm i -g @openai/codex
     nodejs

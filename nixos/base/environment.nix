@@ -9,8 +9,9 @@
       curl
       xdg-utils
 
-      # for codex
+      # for codex and claude-code
       bubblewrap
+      socat
     ];
     sessionVariables = {
       NIXOS_OZONE_WL = 1;

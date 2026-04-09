@@ -17,5 +17,8 @@
 
     # disable claude config for opencode
     OPENCODE_DISABLE_CLAUDE_CODE = 1;
+
+    # local model only
+    OLLAMA_NO_CLOUD = 1;
   };
 }
