@@ -16,9 +16,12 @@ in
 
     ############ codex ############
     # npm set prefix ~/.npm-global
-    # npm i -g @anthropic-ai/claude-code
     # npm i -g @openai/codex
+    # npm install -g @qwen-code/qwen-code@latest
     nodejs
+
+    ############ router ############
+    # npm install -g 9router
 
     # bun add -g opencode-ai
     bun
@@ -30,13 +33,4 @@ in
 
   # remember login
   services.gnome-keyring.enable = true;
-
-  # create symlink for secret aider and aider example
-  home.file.".aider.conf.yml.gpg" = {
-    source = "${ROOT}/secrets/aider.conf.yml.gpg";
-  };
-
-  home.file.".claude-code-router/config.json.gpg" = {
-    source = "${ROOT}/secrets/claude-code-router-config.json.gpg";
-  };
 }
