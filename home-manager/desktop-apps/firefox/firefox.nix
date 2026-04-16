@@ -49,6 +49,13 @@ in
         "browser.compactmode.show" = true;
         "browser.startup.homepage" = "https://duckduckgo.com";
         "layout.css.prefers-color-scheme.content-override" = 0;
+
+        # enable AI
+        "browser.ml.enable" = true;
+        "browser.ml.chat.enabled" = true;
+        "browser.ml.chat.shortcuts" = true;
+        "browser.ml.chat.shortcuts.custom" = true;
+        "browser.ml.chat.sidebar" = true;
       };
 
       # source: about:support
