@@ -1,6 +1,6 @@
-{ pkgs, ... }:
+{ inputs, pkgs, ... }:
 {
-  home.packages = with pkgs; [
-    code-cursor # just use it for free-tier
+  home.packages = [
+    inputs.cursor.packages.${pkgs.system}.default
   ];
 }
