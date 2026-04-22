@@ -60,4 +60,4 @@ eth0.me
 youtu.be
 
 # Time-based rules
-# *.* @time-to-sleep
+*.* @time-to-sleep
