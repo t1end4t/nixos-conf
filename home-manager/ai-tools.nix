@@ -20,6 +20,9 @@ in
     # uvx --from git+https://github.com/oraios/serena serena
     python313
     uv
+
+    # download model
+    python313Packages.huggingface-hub
   ];
 
   # remember login
