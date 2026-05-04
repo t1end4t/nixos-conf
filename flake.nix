@@ -39,9 +39,6 @@
       url = "github:yokoffing/Betterfox";
       flake = false;
     };
-
-    # flake for cursor ide (use free tier)
-    cursor.url = "github:omarcresp/cursor-flake";
   };
 
   outputs =
@@ -52,7 +49,6 @@
       nushell-defaultConfig,
       betterfox,
       catppuccin,
-      cursor,
       ...
     }@inputs:
     let
