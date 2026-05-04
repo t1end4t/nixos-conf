@@ -1,15 +1,15 @@
 # Define the filenames as an array
 filenames=(
-  "../nixos/nvidia-pc/configuration.nix"
-  "../nixos/lenovo-laptop/configuration.nix"
+  "../nixos/workstation/configuration.nix"
+  "../nixos/laptop/configuration.nix"
 
   # "../home-manager/desktop-apps/firefox/firefox.nix"
   # "../home-manager/desktop-apps/firefox/filter.nix"
 
   # "../home-manager/desktop-apps/qutebrowser/blocked-hosts"
 
-  "../nixos/lenovo-laptop/systemd.nix"
-  "../nixos/nvidia-pc/systemd.nix"
+  "../nixos/laptop/systemd.nix"
+  "../nixos/workstation/systemd.nix"
 
   # host file
   "../nixos/base/hosts/hosts.nix"
@@ -17,15 +17,15 @@ filenames=(
   "../nixos/base/hosts/extra-hosts"
 
   # dns file
-  "../nixos/lenovo-laptop/dns/dns.nix"
-  "../nixos/lenovo-laptop/dns/blocked-names.txt"
-  "../nixos/lenovo-laptop/dns/cloaking-rules.txt"
-  "../nixos/lenovo-laptop/dns/allowed-names.txt"
+  "../nixos/laptop/dns/dns.nix"
+  "../nixos/laptop/dns/blocked-names.txt"
+  "../nixos/laptop/dns/cloaking-rules.txt"
+  "../nixos/laptop/dns/allowed-names.txt"
 
-  "../nixos/nvidia-pc/dns/dns.nix"
-  "../nixos/nvidia-pc/dns/blocked-names.txt"
-  "../nixos/nvidia-pc/dns/cloaking-rules.txt"
-  "../nixos/nvidia-pc/dns/allowed-names.txt"
+  "../nixos/workstation/dns/dns.nix"
+  "../nixos/workstation/dns/blocked-names.txt"
+  "../nixos/workstation/dns/cloaking-rules.txt"
+  "../nixos/workstation/dns/allowed-names.txt"
 )
 
 # Loop through each filename in the array
