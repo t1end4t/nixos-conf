@@ -10,5 +10,9 @@
     taplo # toml formatter
     deno # web-related formatter
     prettierd # other web-related formatter
+
+    # additional packages
+    pyright
+    ruff
   ];
 }
