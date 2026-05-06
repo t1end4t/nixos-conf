@@ -21,7 +21,7 @@ let
       pdf2image
       pdfplumber
       pillow
-      pypdf
+      # pypdf
       python-docx
       python-dotenv
       python-pptx
@@ -38,7 +38,7 @@ let
     ++ lib.optionals (ps ? markitdown) [ markitdown ]
     ++ lib.optionals (ps ? mcp) [ mcp ]
     ++ lib.optionals (ps ? polars) [ polars ]
-    ++ lib.optionals (ps ? pypdf2) [ pypdf2 ]
+    # ++ lib.optionals (ps ? pypdf2) [ pypdf2 ]
     ++ lib.optionals (ps ? scholarly) [ scholarly ]
     ++ lib.optionals (ps ? torch) [ torch ]
   );
