@@ -52,12 +52,16 @@ in
 
     ############ router ############
     # npm set prefix ~/.npm-global
-    # npm install -g omniroute
+    # npm install -g 9router
     nodejs
 
     # uvx --from git+https://github.com/oraios/serena serena
     # skillPython
+    python313Packages.python
     uv
+
+    # other packages
+    bun
 
     ############ codex skill runtimes ############
     # libreoffice-qt
