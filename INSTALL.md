@@ -140,13 +140,19 @@ fi
 
 ### pi-coding-agent
 
-TODO: add exact install command after verifying the official install source/package name.
+```bash
+if ! command -v pi >/dev/null 2>&1 || [ "$(npm info @earendil-works/pi-coding-agent version 2>/dev/null)" != "$(npm list -g --depth=0 @earendil-works/pi-coding-agent 2>/dev/null | grep pi-coding-agent | sed 's/.*@//')" ]; then
+  npm install -g @earendil-works/pi-coding-agent
+else
+  echo "pi up-to-date"
+fi
+```
 
 Check after install:
 
 ```bash
-command -v pi-coding-agent
-pi-coding-agent --version
+command -v pi
+pi --help
 ```
 
 ## 5. Smoke test
