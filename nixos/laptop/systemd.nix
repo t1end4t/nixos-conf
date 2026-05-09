@@ -1,7 +1,3 @@
-{ pkgs, ... }:
-let
-  ROOT = builtins.toString ./.;
-in
 {
   # turn off computer everyday
   # source: https://wiki.nixos.org/wiki/Systemd/timers
