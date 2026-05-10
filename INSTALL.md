@@ -108,6 +108,22 @@ else
 fi
 ```
 
+### Gemini CLI
+
+```bash
+if ! command -v gemini >/dev/null 2>&1 || [ "$(npm info @google/gemini-cli version 2>/dev/null)" != "$(npm list -g --depth=0 @google/gemini-cli 2>/dev/null | grep @google/gemini-cli | sed 's/.*@//')" ]; then
+  npm install -g @google/gemini-cli
+else
+  echo "Gemini CLI up-to-date"
+fi
+```
+
+Open it with:
+
+```bash
+gemini
+```
+
 ### OpenCode
 
 ```bash
@@ -158,7 +174,7 @@ pi --help
 ## 5. Smoke test
 
 ```bash
-for cmd in node npm bun uv python claude codex opencode 9router; do
+for cmd in node npm bun uv python claude codex gemini opencode 9router; do
   if command -v "$cmd" >/dev/null 2>&1; then
     echo "OK: $cmd"
   else
