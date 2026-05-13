@@ -71,13 +71,13 @@ doh.dns.apple.com
 # YouTube
 ###########################
 
-youtube.com
-*.youtube.com
-youtube-nocookie.com
-*.youtube-nocookie.com
-youtubei.googleapis.com
-youtube.googleapis.com
-youtu.be
+youtube.com @not-social-networks
+*.youtube.com @not-social-networks
+youtube-nocookie.com @not-social-networks
+*.youtube-nocookie.com @not-social-networks
+youtubei.googleapis.com @not-social-networks
+youtube.googleapis.com @not-social-networks
+youtu.be @not-social-networks
 
 ###########################
 # Reddit
@@ -99,4 +99,4 @@ twitter.com @not-social-networks
 # Time-based rules
 ###########################
 
-*.* @go-home
+# *.* @go-home
