@@ -8,7 +8,7 @@
       # source: https://man.archlinux.org/man/systemd.time.7
       # force turn off before 10PM until 3AM
       OnCalendar = "*-*-* 22..23,00..02:*:00";
-      Persistent = true;
+      Persistent = false;
       Unit = "shutdown-daily.service";
     };
   };
