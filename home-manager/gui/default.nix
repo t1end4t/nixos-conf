@@ -11,6 +11,7 @@
     ./qt.nix
     ./mako.nix
     ./alacritty.nix
+    ./kitty.nix
     ./fcitx5/fcitx5.nix
     # hyprland is imported per-host (workstation/laptop)
   ];

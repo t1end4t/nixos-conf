@@ -21,6 +21,8 @@
 
     # other packages
     bun
+    cargo
+    gcc
   ];
 
   # remember login

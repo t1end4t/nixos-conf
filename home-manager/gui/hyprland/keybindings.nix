@@ -53,8 +53,8 @@ in
   # apps
   "${mod}, B, exec, firefox"
   "${mod}, M, exec, ${pkgs.thunderbird}/bin/thunderbird"
-  "${mod}, E, exec, ${pkgs.alacritty}/bin/alacritty -e ${pkgs.yazi}/bin/yazi"
-  "${mod}, RETURN, exec, ${pkgs.alacritty}/bin/alacritty"
+  "${mod}, E, exec, ${pkgs.kitty}/bin/kitty -e ${pkgs.yazi}/bin/yazi"
+  "${mod}, RETURN, exec, ${pkgs.kitty}/bin/kitty"
 
   # clipboard
   "${mod}, V, exec, ${pkgs.cliphist}/bin/cliphist list | ${pkgs.rofi}/bin/rofi -dmenu | ${pkgs.cliphist}/bin/cliphist decode | ${pkgs.wl-clipboard}/bin/wl-copy"
