@@ -5,6 +5,8 @@
 [[ $- != *i* ]] && return
 PS1='[\u@\h \W]\$ '
 
-if [[ -z "$ZELLIJ" ]]; then
-  zellij
-fi
+# Zellij autostart disabled to test side-panel rendering without it.
+# Re-enable by uncommenting the block below.
+# if [[ -z "$ZELLIJ" ]]; then
+#   zellij
+# fi
