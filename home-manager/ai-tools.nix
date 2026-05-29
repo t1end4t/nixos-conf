@@ -23,6 +23,7 @@
     bun
     cargo
     gcc
+    (ffmpeg-full.override { withUnfree = true; })
   ];
 
   # remember login
