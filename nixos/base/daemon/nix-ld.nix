@@ -9,5 +9,7 @@
 
     # zed packages
     alsa-lib
+    wayland
+    libxkbcommon
   ];
 }
