@@ -7,9 +7,7 @@
     zlib
     openssl
 
-    # jcode packages
-    krb5
-    e2fsprogs
-
+    # zed packages
+    alsa-lib
   ];
 }
