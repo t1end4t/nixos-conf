@@ -8,6 +8,5 @@
     ./thunar.nix
     ./virt-manager.nix
     ./flatpak.nix
-    ./zed.nix
   ];
 }

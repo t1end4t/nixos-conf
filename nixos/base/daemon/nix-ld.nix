@@ -6,10 +6,5 @@
     stdenv.cc.cc
     zlib
     openssl
-
-    # zed packages
-    alsa-lib
-    wayland
-    libxkbcommon
   ];
 }
