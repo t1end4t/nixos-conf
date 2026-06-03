@@ -19,6 +19,6 @@
     # OPENCODE_DISABLE_CLAUDE_CODE = 0;
 
     # local model only
-    OLLAMA_NO_CLOUD = 1;
+    # OLLAMA_NO_CLOUD = 1;
   };
 }

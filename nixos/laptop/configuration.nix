@@ -40,7 +40,4 @@ in
     NH_FLAKE = "/home/${userName}/nix-dev/nixos-conf";
   };
 
-  # source: https://nixos.wiki/wiki/Sway#Brightness_and_volume
-  # set up brightness
-  programs.light.enable = true;
 }

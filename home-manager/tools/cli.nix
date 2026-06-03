@@ -14,7 +14,7 @@
     just # A handy way to save and run project-specific commands
     unzip # .zip files
     nh # nix cli helper
-    neofetch # system info script
+    fastfetch # system info script
     unar # unrar .rar file
     gh # github cli tools, run `gh auth login`
   ];

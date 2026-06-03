@@ -1,6 +1,11 @@
-{ pkgs, ... }:
+{
+  lib,
+  pkgs,
+  ...
+}:
 let
   ROOT = builtins.toString ./.;
+  keybindings = import "${ROOT}/keybindings.nix" { inherit lib pkgs; };
 in
 {
   imports = [
@@ -13,53 +18,44 @@ in
     enable = true;
     xwayland.enable = true;
 
-    settings = {
-      # daemon
-      exec-once = [
-        "systemctl --user start hyprpolkitagent"
-        "fcitx5" # unikey
-        "hyprpaper" # wallpaper
-        "waybar" # status bar
-        "mako --default-timeout 5000" # notification
-        "wl-paste --watch cliphist store" # clipboard
-      ];
+    settings = keybindings // {
+      # exec = [
+      #   "systemctl --user start hyprpolkitagent"
+      #   "fcitx5"
+      #   "hyprpaper"
+      #   "waybar"
+      #   "mako --default-timeout 5000"
+      #   "wl-paste --watch cliphist store"
+      # ];
 
-      # gui settings
-      general = {
-        gaps_in = 2;
-        gaps_out = 2;
-        layout = "master";
-      };
+      #   config = {
+      #     general = {
+      #       gaps_in = 2;
+      #       gaps_out = 2;
+      #       layout = "master";
+      #     };
 
-      # turn off several effect
-      decoration = {
-        blur.enabled = false;
-        shadow.enabled = false;
-      };
+      #     decoration = {
+      #       blur.enabled = false;
+      #       shadow.enabled = false;
+      #     };
 
-      # touchpad + mouse input configuration (Windows-like behavior)
-      input = {
-        touchpad = {
-          natural_scroll = true; # like Windows/macOS
-          drag_lock = 2; # better drag behavior
-          middle_button_emulation = true;
-        };
-        accel_profile = "adaptive"; # similar to Windows acceleration
-      };
+      #     input = {
+      #       accel_profile = "adaptive";
+      #       touchpad = {
+      #         natural_scroll = true;
+      #         drag_lock = 2;
+      #         middle_button_emulation = true;
+      #       };
+      #     };
 
-      # cursor hiding
-      cursor = {
-        hide_on_key_press = true;
-        inactive_timeout = 3;
-      };
+      #     cursor = {
+      #       hide_on_key_press = true;
+      #       inactive_timeout = 3;
+      #     };
 
-      # turn off animations
-      animations = {
-        enabled = false;
-      };
-
-      # keybindings
-      bind = import "${ROOT}/keybindings.nix" { inherit pkgs; };
+      #     animations.enabled = false;
+      #   };
     };
   };
 }

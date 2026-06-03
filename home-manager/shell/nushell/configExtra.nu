@@ -42,7 +42,7 @@ def ld [level: int = 2] {
     eza -DR --tree --level=($level | into string)
 }
 alias wifi = nmtui
-alias about = neofetch
+alias about = fastfetch
 
 # -----------------------------------------------------
 # GIT
@@ -58,9 +58,9 @@ alias gst = git stash
 alias gcheck = git checkout
 
 # custom prompt
-$env.PROMPT_COMMAND = {||
-    let dir = (pwd)
-    let home = $nu.home-path
-    let shown = ($dir | str replace $home "~")
-    (ansi cyan_bold) + $shown + (ansi reset)
-}
+# $env.PROMPT_COMMAND = {||
+#     let dir = (pwd)
+#     let home = $nu.home-path
+#     let shown = ($dir | str replace $home "~")
+#     (ansi cyan_bold) + $shown + (ansi reset)
+# }
