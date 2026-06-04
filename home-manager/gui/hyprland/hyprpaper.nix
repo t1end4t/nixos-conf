@@ -3,14 +3,16 @@
   lib,
   pkgs,
   ...
-}: let
+}:
+let
   ROOT = builtins.toString ./.;
   wallpaper = "${ROOT}/wallpapers/aesthetic_deer.jpg";
   cfg = config.local.hyprland;
-in {
+in
+{
   options.local.hyprland.wallpaperOutputs = lib.mkOption {
     type = lib.types.listOf lib.types.str;
-    default = [];
+    default = [ ];
   };
 
   config = {
@@ -18,10 +20,12 @@ in {
       hyprpaper # for wallpaper
     ];
 
-    xdg.configFile."hypr/hyprpaper.conf".text = ''
-      preload = ${wallpaper}
-    '' + lib.concatMapStrings (output: ''
-      wallpaper = ${output},${wallpaper}
+    xdg.configFile."hypr/hyprpaper.conf".text = lib.concatMapStrings (output: ''
+      wallpaper {
+        monitor = ${output}
+        path = ${wallpaper}
+      }
+
     '') cfg.wallpaperOutputs;
   };
 }

@@ -8,8 +8,13 @@
     enable = true;
     type = "fcitx5";
     fcitx5 = {
-      ignoreUserConfig = true;
-      addons = with pkgs; [ qt6Packages.fcitx5-unikey ];
+      # ignoreUserConfig = true;
+      waylandFrontend = true;
+      addons = with pkgs; [
+        fcitx5-gtk
+        fcitx5-nord
+        qt6Packages.fcitx5-unikey
+      ];
       settings.inputMethod = {
         "Groups/0" = {
           Name = "Default";
