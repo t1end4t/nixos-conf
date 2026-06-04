@@ -1,16 +1,28 @@
-{ ... }:
-{
-  imports = [ ./common.nix ];
+{...}: {
+  imports = [./common.nix];
 
-  wayland.windowManager.hyprland.settings = {
-    monitor = [
-      "HDMI-A-1,1360x768@60,0x0,1"
-      "eDP-1,1360x768@60,auto-right,1"
-      ",preferred,auto,1"
-    ];
-    workspace = [
-      "1, monitor:eDP-1, default:true"
-      "2, monitor:HDMI-A-1, default:true"
-    ];
-  };
+  local.hyprland.wallpaperOutputs = ["HDMI-A-1" "eDP-1"];
+
+  local.hyprland.hostConfig = ''
+    hl.monitor({
+      output = "HDMI-A-1",
+      mode = "1360x768@60",
+      position = "0x0",
+      scale = 1,
+    })
+
+    hl.monitor({
+      output = "eDP-1",
+      mode = "1360x768@60",
+      position = "auto-right",
+      scale = 1,
+    })
+
+    hl.monitor({
+      output = "",
+      mode = "preferred",
+      position = "auto",
+      scale = 1,
+    })
+  '';
 }

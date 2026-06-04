@@ -1,10 +1,18 @@
 { betterfox, ... }:
+let
+  firefoxOverrides = ''
+
+    /** LOCAL OVERRIDES ***/
+    user_pref("browser.ml.enable", true);
+    user_pref("browser.ml.chat.enabled", true);
+    user_pref("browser.ml.chat.shortcuts", true);
+    user_pref("browser.ml.chat.shortcuts.custom", true);
+    user_pref("browser.ml.chat.sidebar", true);
+  '';
+in
 {
   # source: https://github.com/yokoffing/Betterfox
-  home.file.".mozilla/firefox/default/user.js" = {
-    source = "${betterfox}/user.js";
-    # recursive = true;
-  };
+  programs.firefox.profiles.default.extraConfig = (builtins.readFile "${betterfox}/user.js") + firefoxOverrides;
 
   # ublock setup: https://github.com/yokoffing/filterlists
 

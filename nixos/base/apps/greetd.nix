@@ -1,7 +1,7 @@
 { pkgs, ... }:
 let
   tuigreet = "${pkgs.tuigreet}/bin/tuigreet";
-  session = "${pkgs.sway}/bin/sway";
+  session = "start-hyprland";
 in
 {
   # displayManager

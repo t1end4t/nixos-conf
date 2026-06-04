@@ -10,6 +10,7 @@ in
   # Source: https://discourse.nixos.org/t/declare-firefox-extensions-and-settings/36265
   programs.firefox = {
     enable = true;
+    configPath = ".mozilla/firefox";
     package = (
       pkgs.wrapFirefox (pkgs.firefox-unwrapped.override {
         pipewireSupport = true;
