@@ -11,9 +11,10 @@
     # PLAYWRIGHT_BROWSERS_PATH = "${pkgs.playwright-driver.browsers}";
     # PLAYWRIGHT_SKIP_VALIDATE_HOST_REQUIREMENTS = "true";
 
-    # unset based on suggestion
-    GTK_IM_MODULE = "";
-    QT_IM_MODULE = "";
+    GTK_IM_MODULE = "fcitx";
+    QT_IM_MODULE = "fcitx";
+    XMODIFIERS = "@im=fcitx";
+    SDL_IM_MODULE = "fcitx";
 
     # enable claude config for opencode
     # OPENCODE_DISABLE_CLAUDE_CODE = 0;

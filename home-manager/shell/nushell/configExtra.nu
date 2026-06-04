@@ -23,7 +23,6 @@ source ~/.zoxide.nu
 # ALIASES
 # -----------------------------------------------------
 
-alias ze = zeditor $env.PWD
 def h [file?: string] {
     if $file == null {
         hx $env.PWD
