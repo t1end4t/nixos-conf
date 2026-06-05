@@ -1,14 +1,4 @@
 { pkgs, ... }:
-let
-  yaziWithoutUeberzugpp = pkgs.symlinkJoin {
-    name = "yazi-without-ueberzugpp";
-    paths = [ pkgs.yazi ];
-    buildInputs = [ pkgs.makeWrapper ];
-    postBuild = ''
-      wrapProgram $out/bin/yazi --unset XDG_SESSION_TYPE
-    '';
-  };
-in
 {
   home.packages = with pkgs; [
     chafa # fallback image previews
@@ -23,10 +13,5 @@ in
 
   programs.yazi = {
     enable = true; # terminal file manager
-    package = yaziWithoutUeberzugpp;
-    settings.preview = {
-      max_width = 1000;
-      max_height = 1000;
-    };
   };
 }
