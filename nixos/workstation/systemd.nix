@@ -30,5 +30,4 @@
       ExecStart = "/run/current-system/sw/bin/systemctl poweroff";
     };
   };
-
 }

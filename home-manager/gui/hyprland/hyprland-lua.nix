@@ -14,7 +14,6 @@ in ''
 
   hl.on("hyprland.start", function()
     hl.exec_cmd("systemctl --user start hyprpolkitagent")
-    hl.exec_cmd("${pkgs.fcitx5}/bin/fcitx5")
     hl.exec_cmd("${pkgs.hyprpaper}/bin/hyprpaper")
     hl.exec_cmd("${pkgs.waybar}/bin/waybar")
     hl.exec_cmd("${pkgs.mako}/bin/mako --default-timeout 5000")
