@@ -1,11 +1,9 @@
 {
   pkgs,
   hostConfig ? "",
-}:
-let
+}: let
   ROOT = builtins.toString ./.;
-in
-''
+in ''
   local mod = "SUPER"
 
   local function exec(command)
@@ -52,7 +50,8 @@ in
   hl.bind(mod .. " + K", hl.dsp.focus({ direction = "up" }))
   hl.bind(mod .. " + L", hl.dsp.focus({ direction = "right" }))
 
-  hl.bind(mod .. " + S", exec("sh ${ROOT}/swap_workspaces.sh"))
+  hl.bind(mod .. " + S", exec("sh ${ROOT}/swap_containers.sh"))
+  hl.bind(mod .. " + SHIFT + S", exec("sh ${ROOT}/swap_workspaces.sh"))
 
   hl.bind(mod .. " + SHIFT + H", hl.dsp.window.move({ direction = "left" }))
   hl.bind(mod .. " + SHIFT + J", hl.dsp.window.move({ direction = "down" }))
