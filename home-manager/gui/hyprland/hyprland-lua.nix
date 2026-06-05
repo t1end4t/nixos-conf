@@ -1,9 +1,11 @@
 {
   pkgs,
   hostConfig ? "",
-}: let
+}:
+let
   ROOT = builtins.toString ./.;
-in ''
+in
+''
   local mod = "SUPER"
 
   local function exec(command)
