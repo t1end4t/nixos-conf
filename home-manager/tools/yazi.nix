@@ -1,7 +1,7 @@
 { pkgs, ... }:
 {
   home.packages = with pkgs; [
-    ueberzugpp # required by yazi for wayland
+    chafa # text-based image previews without spawning overlay windows
     file # required by yazi
     ffmpegthumbnailer # yazi plugin for video thumbnails
     unar # yazi plugin for archive preview
