@@ -66,7 +66,7 @@ in
   hl.bind(mod .. " + SHIFT + Q", exec("${pkgs.wlogout}/bin/wlogout"))
   hl.bind(mod .. " + CTRL + L", exec("${pkgs.hyprlock}/bin/hyprlock"))
 
-  hl.bind(mod .. " + Q", hl.dsp.window.kill())
+  hl.bind(mod .. " + Q", hl.dsp.window.close())
   hl.bind(mod .. " + F", hl.dsp.window.fullscreen())
   hl.bind(mod .. " + TAB", exec("${pkgs.hyprland}/bin/hyprctl dispatch workspace previous"))
 

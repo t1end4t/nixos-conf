@@ -1,7 +1,7 @@
 { ... }:
 {
   services.hyprsunset = {
-    enable = false;
+    enable = true;
     settings = {
       max-gamma = 300;
 
