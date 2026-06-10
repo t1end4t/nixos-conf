@@ -1,9 +1,8 @@
-{ ... }:
-{
+{...}: {
   services.hyprsunset = {
     enable = true;
     settings = {
-      max-gamma = 300;
+      max-gamma = 200;
 
       profile = [
         # Morning – Neutral
@@ -12,18 +11,18 @@
           identity = true;
         }
 
-        # Sunset – Warm transition
+        # Evening – Windows Night Light-style warmth
         {
           time = "18:00";
-          temperature = 4200;
-          gamma = 0.9;
+          temperature = 4500;
+          gamma = 1.0;
         }
 
-        # 21:00 – Very warm
+        # Night – Gentle warm filter
         {
           time = "21:00";
-          temperature = 2300;
-          gamma = 0.55;
+          temperature = 3800;
+          gamma = 0.9;
         }
       ];
     };

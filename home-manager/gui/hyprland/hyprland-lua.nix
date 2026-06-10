@@ -20,6 +20,7 @@ in
     hl.exec_cmd("${pkgs.waybar}/bin/waybar")
     hl.exec_cmd("${pkgs.mako}/bin/mako --default-timeout 5000")
     hl.exec_cmd("${pkgs.wl-clipboard}/bin/wl-paste --watch ${pkgs.cliphist}/bin/cliphist store")
+    hl.exec_cmd("${pkgs.hyprsunset}/bin/hyprsunset")
     hl.exec_cmd("fcitx5")
   end)
 
