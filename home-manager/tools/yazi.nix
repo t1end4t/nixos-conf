@@ -1,7 +1,6 @@
 { pkgs, ... }:
 {
   home.packages = with pkgs; [
-    chafa # fallback image previews
     file # required by yazi
     (ffmpeg-full.override { withUnfree = true; })
     _7zz # archive preview

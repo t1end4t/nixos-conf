@@ -33,13 +33,6 @@ def h [file?: string] {
 def l [] {ls | sort-by type}
 alias c = clear
 alias e = exit
-def y [path?: path] {
-    if $path == null {
-        kitty -e yazi
-    } else {
-        kitty -e yazi $path
-    }
-}
 alias yy = yazi
 alias g = lazygit
 alias tp = trash-put

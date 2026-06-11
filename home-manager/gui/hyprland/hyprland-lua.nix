@@ -74,7 +74,7 @@ in
   hl.bind(mod .. " + B", exec("firefox"))
   hl.bind(mod .. " + M", exec("${pkgs.thunderbird}/bin/thunderbird"))
   hl.bind(mod .. " + E", exec("${pkgs.kitty}/bin/kitty -e ${pkgs.yazi}/bin/yazi"))
-  hl.bind(mod .. " + RETURN", exec("${pkgs.alacritty}/bin/alacritty"))
+  hl.bind(mod .. " + RETURN", exec("${pkgs.kitty}/bin/kitty"))
 
   hl.bind(mod .. " + V", exec("${pkgs.cliphist}/bin/cliphist list | ${pkgs.rofi}/bin/rofi -dmenu | ${pkgs.cliphist}/bin/cliphist decode | ${pkgs.wl-clipboard}/bin/wl-copy"))
 
