@@ -7,7 +7,7 @@ Use this guide when working under `home-manager/`.
 
 ## Read By Task
 - GUI stack: `gui/default.nix`, then the specific file in `gui/`
-- Hyprland: `gui/hyprland/common.nix`, `gui/hyprland/keybindings.nix`, plus host file if display-specific.
+- Hyprland: `gui/hyprland/common.nix`, `gui/hyprland/hyprland-lua.nix`, plus host file if display-specific.
 - Waybar: `gui/waybar/waybar.nix`, `gui/waybar/settings.nix`
 - Shells: `shell/default.nix`, then `shell/bash/bash.nix` or `shell/nushell/nushell.nix`
 - Editors/LSP: `editors/default.nix`, `editors/lsp.nix`, `editors/helix/helix.nix`
