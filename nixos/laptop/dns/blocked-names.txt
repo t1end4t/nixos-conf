@@ -99,4 +99,4 @@ twitter.com @not-social-networks
 # Time-based rules
 ###########################
 
-*.* @time-to-sleep
+# *.* @time-to-sleep
