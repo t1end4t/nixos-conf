@@ -1,5 +1,5 @@
 let
-  ROOT = builtins.toString ./.;
+  ROOT = toString ./.;
   main-hosts = builtins.readFile "${ROOT}/main-hosts";
   extra-hosts = builtins.readFile "${ROOT}/extra-hosts";
 in

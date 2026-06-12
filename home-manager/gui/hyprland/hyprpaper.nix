@@ -5,7 +5,7 @@
   ...
 }:
 let
-  ROOT = builtins.toString ./.;
+  ROOT = toString ./.;
   wallpaper = "${ROOT}/wallpapers/aesthetic_deer.jpg";
   cfg = config.local.hyprland;
 in

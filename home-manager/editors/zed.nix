@@ -18,6 +18,8 @@
       extend_comment_on_newline = false;
       completions.lsp_insert_mode = "replace";
 
+      terminal.shell.program = "nu";
+
       indent_guides.enabled = true;
 
       diagnostics.inline = {
@@ -37,6 +39,7 @@
         context = "Workspace";
         bindings = {
           ctrl-m = "terminal_panel::Toggle";
+          ctrl-f = "workspace::ToggleZoom";
           ctrl-h = "workspace::ActivatePaneLeft";
           ctrl-j = "workspace::ActivatePaneDown";
           ctrl-k = "workspace::ActivatePaneUp";
@@ -47,6 +50,7 @@
         context = "Editor";
         bindings = {
           ctrl-m = "terminal_panel::Toggle";
+          ctrl-f = "workspace::ToggleZoom";
           ctrl-h = "workspace::ActivatePaneLeft";
           ctrl-j = "workspace::ActivatePaneDown";
           ctrl-k = "workspace::ActivatePaneUp";
@@ -57,6 +61,7 @@
         context = "VimControl && !menu";
         bindings = {
           ctrl-m = "terminal_panel::Toggle";
+          ctrl-f = "workspace::ToggleZoom";
           ctrl-h = "workspace::ActivatePaneLeft";
           ctrl-j = "workspace::ActivatePaneDown";
           ctrl-k = "workspace::ActivatePaneUp";
@@ -82,6 +87,7 @@
         context = "vim_mode == helix_normal && !menu";
         bindings = {
           ctrl-m = "terminal_panel::Toggle";
+          ctrl-f = "workspace::ToggleZoom";
           ctrl-h = "workspace::ActivatePaneLeft";
           ctrl-j = "workspace::ActivatePaneDown";
           ctrl-k = "workspace::ActivatePaneUp";
@@ -92,6 +98,7 @@
         context = "vim_mode == helix_select && !menu";
         bindings = {
           ctrl-m = "terminal_panel::Toggle";
+          ctrl-f = "workspace::ToggleZoom";
           ctrl-h = "workspace::ActivatePaneLeft";
           ctrl-j = "workspace::ActivatePaneDown";
           ctrl-k = "workspace::ActivatePaneUp";
@@ -146,6 +153,7 @@
         context = "ProjectPanel && not_editing";
         bindings = {
           ctrl-m = "terminal_panel::Toggle";
+          ctrl-f = "workspace::ToggleZoom";
           ctrl-h = "workspace::ActivatePaneLeft";
           ctrl-j = "workspace::ActivatePaneDown";
           ctrl-k = "workspace::ActivatePaneUp";
@@ -156,6 +164,7 @@
         context = "OutlinePanel && not_editing";
         bindings = {
           ctrl-m = "terminal_panel::Toggle";
+          ctrl-f = "workspace::ToggleZoom";
           ctrl-h = "workspace::ActivatePaneLeft";
           ctrl-j = "workspace::ActivatePaneDown";
           ctrl-k = "workspace::ActivatePaneUp";
@@ -166,6 +175,7 @@
         context = "Terminal";
         bindings = {
           ctrl-m = "terminal_panel::Toggle";
+          ctrl-f = "workspace::ToggleZoom";
           ctrl-h = "workspace::ActivatePaneLeft";
           ctrl-j = "workspace::ActivatePaneDown";
           ctrl-k = "workspace::ActivatePaneUp";

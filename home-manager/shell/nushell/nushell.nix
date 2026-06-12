@@ -1,7 +1,7 @@
 { nushell-defaultConfig, ... }:
 let
   extraConfig = builtins.readFile ./configExtra.nu;
-  ROOT = builtins.toString ./.;
+  ROOT = toString ./.;
 in
 {
   programs.nushell = {

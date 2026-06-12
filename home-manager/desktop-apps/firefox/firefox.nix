@@ -1,6 +1,6 @@
 { pkgs, ... }:
 let
-  ROOT = builtins.toString ./.;
+  ROOT = toString ./.;
 in
 {
   imports = [

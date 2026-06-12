@@ -3,7 +3,7 @@
   hostConfig ? "",
 }:
 let
-  ROOT = builtins.toString ./.;
+  ROOT = toString ./.;
 in
 ''
   local mod = "SUPER"

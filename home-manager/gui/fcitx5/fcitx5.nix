@@ -1,6 +1,6 @@
 { ... }:
 let
-  ROOT = builtins.toString ./.;
+  ROOT = toString ./.;
 in
 {
   xdg.configFile."fcitx5/profile" = {

@@ -1,6 +1,6 @@
 { pkgs, ... }:
 let
-  ROOT = builtins.toString ./.;
+  ROOT = toString ./.;
   settings_toml = (builtins.readFile "${ROOT}/config.toml");
   languages_toml = (builtins.readFile "${ROOT}/languages.toml");
 in
@@ -9,8 +9,8 @@ in
     enable = true;
     package = pkgs.unstable.helix;
     defaultEditor = true;
-    settings = (builtins.fromTOML settings_toml);
-    languages = (builtins.fromTOML languages_toml);
+    settings = (fromTOML settings_toml);
+    languages = (fromTOML languages_toml);
   };
 
   # grammar checker

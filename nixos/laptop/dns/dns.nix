@@ -1,5 +1,5 @@
 let
-  ROOT = builtins.toString ./.;
+  ROOT = toString ./.;
   schedules_toml = (builtins.readFile "${ROOT}/schedules.toml");
 in
 {
@@ -44,7 +44,7 @@ in
         allowed_names_file = "${ROOT}/allowed-names.txt";
       };
 
-      schedules = (builtins.fromTOML schedules_toml);
+      schedules = (fromTOML schedules_toml);
     };
   };
 }

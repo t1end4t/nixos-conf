@@ -63,13 +63,13 @@
       ];
 
       userToAttrs = builtins.listToAttrs (
-        builtins.map (user: {
+        map (user: {
           name = user;
           value = null;
         }) users
       );
       hostToAttrs = builtins.listToAttrs (
-        builtins.map (host: {
+        map (host: {
           name = host;
           value = null;
         }) hosts
