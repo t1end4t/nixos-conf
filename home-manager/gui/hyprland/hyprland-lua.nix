@@ -22,7 +22,8 @@ in
     hl.exec_cmd("${pkgs.wl-clipboard}/bin/wl-paste --watch ${pkgs.cliphist}/bin/cliphist store")
     hl.exec_cmd("${pkgs.hyprsunset}/bin/hyprsunset")
     hl.exec_cmd("${pkgs.hypridle}/bin/hypridle")
-    hl.exec_cmd("${pkgs.fcitx5}/bin/fcitx5")
+    hl.exec_cmd("fcitx5")
+
   end)
 
   hl.config({
