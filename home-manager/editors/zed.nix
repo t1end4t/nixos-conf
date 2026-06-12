@@ -184,7 +184,7 @@
       {
         context = "GitPanel";
         bindings = {
-          "space g" = "git_panel::ToggleFocus";
+          # "space g" = "git_panel::ToggleFocus";
           p = "git::Pull";
           shift-p = "git::Push";
         };
@@ -200,13 +200,15 @@
         context = "CommitEditor > Editor";
         bindings = {
           enter = "git::Commit";
+          p = null;
+          shift-p = null;
         };
       }
       {
-        context = "GitPanel && vim_mode == insert";
+        context = "BufferSearchBar";
         bindings = {
-          p = null;
-          shift-p = null;
+          escape = null;
+          ctrl-c = "buffer_search::Dismiss";
         };
       }
       {
