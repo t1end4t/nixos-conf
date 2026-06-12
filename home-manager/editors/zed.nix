@@ -39,6 +39,7 @@
         context = "Workspace";
         bindings = {
           ctrl-m = "terminal_panel::Toggle";
+          ctrl-n = "workspace::NewTerminal";
           ctrl-f = "workspace::ToggleZoom";
           ctrl-h = "workspace::ActivatePaneLeft";
           ctrl-j = "workspace::ActivatePaneDown";
@@ -113,9 +114,12 @@
           left = null;
           right = null;
           escape = null;
+          "space a" = "agent::ToggleFocus";
           "space b" = "tab_switcher::ToggleAll";
           "space e" = "project_panel::ToggleFocus";
           "space f" = "file_finder::Toggle";
+          "space g" = "git_panel::ToggleFocus";
+          "space q" = "workspace::CloseActiveDock";
           "space shift-f" = "file_finder::Toggle";
           "space shift-r" = "editor::Rename";
           "space x" = "pane::CloseActiveItem";
@@ -152,6 +156,9 @@
       {
         context = "ProjectPanel && not_editing";
         bindings = {
+          "space a" = "agent::ToggleFocus";
+          "space g" = "git_panel::ToggleFocus";
+          "space q" = "workspace::CloseActiveDock";
           ctrl-m = "terminal_panel::Toggle";
           ctrl-f = "workspace::ToggleZoom";
           ctrl-h = "workspace::ActivatePaneLeft";
@@ -163,6 +170,9 @@
       {
         context = "OutlinePanel && not_editing";
         bindings = {
+          "space a" = "agent::ToggleFocus";
+          "space g" = "git_panel::ToggleFocus";
+          "space q" = "workspace::CloseActiveDock";
           ctrl-m = "terminal_panel::Toggle";
           ctrl-f = "workspace::ToggleZoom";
           ctrl-h = "workspace::ActivatePaneLeft";
@@ -172,8 +182,39 @@
         };
       }
       {
+        context = "GitPanel";
+        bindings = {
+          "space g" = "git_panel::ToggleFocus";
+          p = "git::Pull";
+          shift-p = "git::Push";
+        };
+      }
+      {
+        context = "GitPanel && ChangesList && !GitBranchSelector";
+        bindings = {
+          space = "git::ToggleStaged";
+          c = "git_panel::FocusEditor";
+        };
+      }
+      {
+        context = "CommitEditor > Editor";
+        bindings = {
+          enter = "git::Commit";
+        };
+      }
+      {
+        context = "GitPanel && vim_mode == insert";
+        bindings = {
+          p = null;
+          shift-p = null;
+        };
+      }
+      {
         context = "Terminal";
         bindings = {
+          "space a" = "agent::ToggleFocus";
+          "space g" = "git_panel::ToggleFocus";
+          "space q" = "workspace::CloseActiveDock";
           ctrl-m = "terminal_panel::Toggle";
           ctrl-f = "workspace::ToggleZoom";
           ctrl-h = "workspace::ActivatePaneLeft";
