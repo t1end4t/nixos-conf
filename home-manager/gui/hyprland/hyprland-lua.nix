@@ -21,7 +21,8 @@ in
     hl.exec_cmd("${pkgs.mako}/bin/mako --default-timeout 5000")
     hl.exec_cmd("${pkgs.wl-clipboard}/bin/wl-paste --watch ${pkgs.cliphist}/bin/cliphist store")
     hl.exec_cmd("${pkgs.hyprsunset}/bin/hyprsunset")
-    hl.exec_cmd("fcitx5")
+    hl.exec_cmd("${pkgs.hypridle}/bin/hypridle")
+    hl.exec_cmd("${pkgs.fcitx5}/bin/fcitx5")
   end)
 
   hl.config({
@@ -69,7 +70,7 @@ in
 
   hl.bind(mod .. " + Q", hl.dsp.window.close())
   hl.bind(mod .. " + F", hl.dsp.window.fullscreen())
-  hl.bind(mod .. " + TAB", exec("${pkgs.hyprland}/bin/hyprctl dispatch workspace previous"))
+  hl.bind(mod .. " + TAB", exec([[${pkgs.hyprland}/bin/hyprctl eval 'hl.dispatch("workspace previous")']]))
 
   hl.bind(mod .. " + B", exec("firefox"))
   hl.bind(mod .. " + M", exec("${pkgs.thunderbird}/bin/thunderbird"))
