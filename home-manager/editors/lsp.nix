@@ -1,6 +1,7 @@
-{pkgs, ...}: {
+{ pkgs, ... }: {
   home.packages = with pkgs; [
     nil # lsp for nix
+    nixd # other lsp for nix (zed editor)
     bash-language-server # lsp fo sh
     markdown-oxide # lsp for markdown
 

@@ -15,6 +15,7 @@
     ];
     sessionVariables = {
       NIXOS_OZONE_WL = 1;
+      XKB_CONFIG_ROOT = "${pkgs.xkeyboard_config}/share/X11/xkb";
     };
   };
 
