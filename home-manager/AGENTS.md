@@ -2,7 +2,7 @@ Use this guide when working under `home-manager/`.
 
 ## Start Here
 - Home entrypoint: `default.nix`
-- Shared user config: `home.nix`, `base.nix`, `environment.nix`
+- Shared user config: `default.nix`, `base.nix`, `environment.nix`
 - Host entrypoints: `hosts/laptop.nix`, `hosts/workstation.nix`
 
 ## Read By Task

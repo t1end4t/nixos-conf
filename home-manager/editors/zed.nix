@@ -1,4 +1,10 @@
 { pkgs, ... }: {
+  # home.packages = [
+  #   (pkgs.writeShellScriptBin "zed" ''
+  #     exec ${pkgs.unstable.zed-editor}/bin/zeditor "$@"
+  #   '')
+  # ];
+
   programs.zed-editor = {
     enable = true;
     package = pkgs.unstable.zed-editor;
@@ -8,6 +14,9 @@
     ];
     userSettings = {
       helix_mode = true;
+      agent_ui_font_size = 18;
+      agent_buffer_font_size = 16;
+      buffer_font_size = 16;
       middle_click_paste = false;
       current_line_highlight = "line";
       show_wrap_guides = true;

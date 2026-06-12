@@ -27,4 +27,7 @@
       };
     };
   };
+
+  services.gnome.gnome-keyring.enable = true;
+  services.dbus.packages = [ pkgs.gnome-keyring ];
 }
