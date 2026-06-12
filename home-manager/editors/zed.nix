@@ -182,9 +182,9 @@
         };
       }
       {
-        context = "GitPanel";
+        context = "GitPanel && vim_mode == helix_normal";
         bindings = {
-          # "space g" = "git_panel::ToggleFocus";
+          "space g" = "git_panel::ToggleFocus";
           p = "git::Pull";
           shift-p = "git::Push";
         };
@@ -202,6 +202,7 @@
           enter = "git::Commit";
           p = null;
           shift-p = null;
+          "space g" = null;
         };
       }
       {
