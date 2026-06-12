@@ -114,11 +114,10 @@
           left = null;
           right = null;
           escape = null;
-          "space a" = "agent::ToggleFocus";
-          "space b" = "tab_switcher::ToggleAll";
-          "space e" = "project_panel::ToggleFocus";
+          "space a" = "agent::Toggle";
+          "space e" = "project_panel::Toggle";
           "space f" = "file_finder::Toggle";
-          "space g" = "git_panel::ToggleFocus";
+          "space g" = "git_panel::Toggle";
           "space q" = "workspace::CloseActiveDock";
           "space shift-f" = "file_finder::Toggle";
           "space shift-r" = "editor::Rename";
@@ -156,8 +155,9 @@
       {
         context = "ProjectPanel && not_editing";
         bindings = {
-          "space a" = "agent::ToggleFocus";
-          "space g" = "git_panel::ToggleFocus";
+          "space a" = "agent::Toggle";
+          "space e" = "project_panel::Toggle";
+          "space g" = "git_panel::Toggle";
           "space q" = "workspace::CloseActiveDock";
           ctrl-m = "terminal_panel::Toggle";
           ctrl-f = "workspace::ToggleZoom";
@@ -170,8 +170,8 @@
       {
         context = "OutlinePanel && not_editing";
         bindings = {
-          "space a" = "agent::ToggleFocus";
-          "space g" = "git_panel::ToggleFocus";
+          "space a" = "agent::Toggle";
+          "space g" = "git_panel::Toggle";
           "space q" = "workspace::CloseActiveDock";
           ctrl-m = "terminal_panel::Toggle";
           ctrl-f = "workspace::ToggleZoom";
@@ -182,41 +182,10 @@
         };
       }
       {
-        context = "GitPanel && vim_mode == helix_normal";
-        bindings = {
-          "space g" = "git_panel::ToggleFocus";
-          p = "git::Pull";
-          shift-p = "git::Push";
-        };
-      }
-      {
-        context = "GitPanel && ChangesList && !GitBranchSelector";
-        bindings = {
-          space = "git::ToggleStaged";
-          c = "git_panel::FocusEditor";
-        };
-      }
-      {
-        context = "CommitEditor > Editor";
-        bindings = {
-          enter = "git::Commit";
-          p = null;
-          shift-p = null;
-          "space g" = null;
-        };
-      }
-      {
-        context = "BufferSearchBar";
-        bindings = {
-          escape = null;
-          ctrl-c = "buffer_search::Dismiss";
-        };
-      }
-      {
         context = "Terminal";
         bindings = {
-          "space a" = "agent::ToggleFocus";
-          "space g" = "git_panel::ToggleFocus";
+          "space a" = "agent::Toggle";
+          "space g" = "git_panel::Toggle";
           "space q" = "workspace::CloseActiveDock";
           ctrl-m = "terminal_panel::Toggle";
           ctrl-f = "workspace::ToggleZoom";
