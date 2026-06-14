@@ -10,6 +10,6 @@
 
   programs.kitty.font = {
     name = "Lilex Nerd Font Propo";
-    size = 10;
+    size = 11;
   };
 }
