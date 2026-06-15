@@ -193,9 +193,14 @@
       {
         context = "Terminal";
         bindings = {
-          "space a" = "agent::Toggle";
-          "space g" = "git_panel::Toggle";
-          "space q" = "workspace::CloseActiveDock";
+          "space a" = null;
+          "space e" = null;
+          "space f" = null;
+          "space g" = null;
+          "space q" = null;
+          "space shift-f" = null;
+          "space shift-r" = null;
+          "space x" = null;
           ctrl-m = "terminal_panel::Toggle";
           ctrl-f = "workspace::ToggleZoom";
           ctrl-h = "workspace::ActivatePaneLeft";
