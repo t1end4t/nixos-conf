@@ -71,29 +71,29 @@ doh.dns.apple.com
 # YouTube
 ###########################
 
-youtube.com @not-social-networks
-*.youtube.com @not-social-networks
-youtube-nocookie.com @not-social-networks
-*.youtube-nocookie.com @not-social-networks
-youtubei.googleapis.com @not-social-networks
-youtube.googleapis.com @not-social-networks
-youtu.be @not-social-networks
+# youtube.com @not-social-networks
+# *.youtube.com @not-social-networks
+# youtube-nocookie.com @not-social-networks
+# *.youtube-nocookie.com @not-social-networks
+# youtubei.googleapis.com @not-social-networks
+# youtube.googleapis.com @not-social-networks
+# youtu.be @not-social-networks
 
 ###########################
 # Reddit
 ###########################
 
-reddit.com @not-social-networks
-*.reddit.com @not-social-networks
+# reddit.com @not-social-networks
+# *.reddit.com @not-social-networks
 
 ###########################
 # X / Twitter
 ###########################
 
-x.com @not-social-networks
-*.x.com @not-social-networks
-twitter.com @not-social-networks
-*.twitter.com @not-social-networks
+# x.com @not-social-networks
+# *.x.com @not-social-networks
+# twitter.com @not-social-networks
+# *.twitter.com @not-social-networks
 
 ###########################
 # Time-based rules
