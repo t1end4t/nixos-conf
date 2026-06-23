@@ -99,4 +99,4 @@ doh.dns.apple.com
 # Time-based rules
 ###########################
 
-*.* @go-home
+# *.* @go-home
