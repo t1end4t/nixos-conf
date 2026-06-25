@@ -6,8 +6,8 @@
     wantedBy = [ "timers.target" ];
     timerConfig = {
       # source: https://man.archlinux.org/man/systemd.time.7
-      # force turn off before 10PM until 4AM
-      OnCalendar = "*-*-* 22..23,00..03:*:00";
+      # force turn off before 11PM until 4AM
+      OnCalendar = "*-*-* 23,00..03:*:00";
       Persistent = false;
       Unit = "shutdown-daily.service";
     };
