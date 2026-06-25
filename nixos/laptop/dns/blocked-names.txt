@@ -1,0 +1,74 @@
+###########################
+#        Blocklist        #
+###########################
+
+## Rules for name-based query blocking, one per line
+##
+## Example of valid patterns:
+##
+## ads.*         | matches anything with an "ads." prefix
+## *.example.com | matches example.com and all names within that zone such as www.example.com
+## example.com   | identical to the above
+## =example.com  | block example.com but not *.example.com
+## *sex*         | matches any name containing that substring
+## ads[0-9]*     | matches "ads" followed by one or more digits
+## ads*.example* | *, ? and [] can be used anywhere, but prefixes/suffixes are faster
+
+###########################
+# Ads / Tracking
+###########################
+
+ad.*
+ads.*
+banner.*
+banners.*
+creatives.*
+oas.*
+oascentral.*
+stats.*
+tag.*
+telemetry.*
+tracker.*
+
+###########################
+# Local / Network
+###########################
+
+*.local
+eth0.me
+*.workgroup
+
+###########################
+# Prevent Apple Private Relay
+###########################
+
+mask.apple-dns.net
+mask.icloud.com
+mask-api.icloud.com
+doh.dns.apple.com
+
+###########################
+# Manga / Anime / Novels
+###########################
+
+*manga*
+*anime*
+*truyen*
+
+###########################
+# NSFW
+###########################
+
+*sex*
+*porn*
+*rule34*
+*hentai*
+*vlxx*
+*sextop1*
+*nangcuc*
+
+###########################
+# Time-based rules
+###########################
+
+*.* @time-to-sleep
