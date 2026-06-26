@@ -1,9 +1,4 @@
-Use this guide when working under `modules/`.
-
-## Start Here
-- NixOS modules: `nixos/default.nix`
-- Home Manager modules: `home-manager/default.nix`
-- Flake export/import wiring: `../flake.nix`
+Use this guide when working under `modules/`. See `INDEX.md` for the navigation map.
 
 ## Constraints
 - Add reusable options here only when multiple configs need them.

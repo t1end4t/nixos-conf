@@ -1,8 +1,4 @@
-Use this guide when working under `scripts/`.
-
-## Start Here
-- Setup script: `init.sh`
-- Secret file helpers: `gpg-files.sh`, `remove-gpg-files.sh`
+Use this guide when working under `scripts/`. See `INDEX.md` for the navigation map.
 
 ## Constraints
 - Treat scripts as user-machine operations; avoid destructive behavior without explicit confirmation.

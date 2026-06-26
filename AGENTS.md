@@ -1,29 +1,10 @@
-Use this guide when working in this repository.
+Use this guide when working in this repository. See `INDEX.md` for the navigation map.
 
 ## Overview
 
 NixOS flake configuration for two hosts: `laptop` and `workstation`.
 Home Manager manages the user environment. `nixpkgs` is stable, with
 `nixpkgs-unstable` exposed as `pkgs.unstable`.
-
-## Start Here
-
-- Host wiring and inputs: `flake.nix`
-- `nixos/<host>/configuration.nix` — system configuration
-- `nixos/<host>/hardware-configuration.nix` — auto-generated hardware config
-- `home-manager/hosts/<host>.nix` — user home configuration
-- `nixos/AGENTS.md`, `home-manager/AGENTS.md`, and other nested `AGENTS.md`
-  files provide narrower instructions for their subtrees.
-
-## Layout
-
-- `nixos/base/` — shared NixOS modules imported by all hosts.
-- `nixos/<host>/` — host-specific system config.
-- `home-manager/` — shared and host-specific user config.
-- `modules/` — reusable NixOS/Home Manager option modules.
-- `overlays/` — package overrides applied from `flake.nix`.
-- `pkgs/` — local package definitions.
-- `scripts/` — machine setup and helper scripts.
 
 ## Constraints
 

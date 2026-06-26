@@ -1,11 +1,7 @@
-Use this guide when working under `home-manager/gui/fcitx5/`.
+Use this guide when working under `home-manager/gui/fcitx5/`. See `INDEX.md` for the navigation map.
 
-## Purpose
+## Scope
 - Home Manager-managed fcitx5 user profile.
-
-## Files
-- `fcitx5.nix` wires `xdg.configFile."fcitx5/profile"`.
-- `profile` is the fcitx5 input-method profile content.
 
 ## Gotchas
 - Keep system fcitx5 daemon/package config outside this directory.

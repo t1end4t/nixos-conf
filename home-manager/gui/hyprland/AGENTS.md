@@ -1,14 +1,8 @@
-Use this guide when working under `home-manager/gui/hyprland/`.
+Use this guide when working under `home-manager/gui/hyprland/`. See `INDEX.md` for the navigation map.
 
 ## Purpose
 
 Hyprland Home Manager configuration shared by laptop and workstation.
-
-## Start Here
-
-- `common.nix` — shared Hyprland enablement and generated Lua config wiring.
-- `hyprland-lua.nix` — shared Lua config, input behavior, and keybindings.
-- `laptop.nix` and `workstation.nix` — host-specific monitor/layout Lua snippets.
 
 ## Conventions
 

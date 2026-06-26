@@ -1,8 +1,4 @@
-Use this guide when working under `overlays/`.
-
-## Start Here
-- Overlay definitions: `default.nix`
-- Overlay application: `../flake.nix`
+Use this guide when working under `overlays/`. See `INDEX.md` for the navigation map.
 
 ## Constraints
 - Keep package overrides narrow and documented by package name.

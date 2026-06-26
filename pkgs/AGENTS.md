@@ -1,8 +1,4 @@
-Use this guide when working under `pkgs/`.
-
-## Start Here
-- Local package definitions: `default.nix`
-- Package exposure/wiring: `../flake.nix`
+Use this guide when working under `pkgs/`. See `INDEX.md` for the navigation map.
 
 ## Constraints
 - Add local packages here only when they are repo-owned or not suitable as simple package references.
