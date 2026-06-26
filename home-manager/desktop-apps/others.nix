@@ -6,7 +6,6 @@
     networkmanagerapplet # NetworkManager control applet for GNOME
     discord # to know more things
     gnome-pomodoro # focus time
-    gnome-calendar # calendar app
   ];
 
   # programs.obs-studio = {

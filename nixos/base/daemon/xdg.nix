@@ -29,13 +29,5 @@
   };
 
   services.dbus.packages = [ pkgs.gnome-keyring ];
-
   services.gnome.gnome-keyring.enable = true;
-
-  # to use gnome calendar
-  # source: https://wiki.nixos.org/wiki/GNOME/Calendar
-
-  # to setup online account: nix-shell -p gnome-control-center --run "env XDG_CURRENT_DESKTOP=GNOME gnome-control-center"
-  services.gnome.gnome-online-accounts.enable = true;
-  services.gnome.evolution-data-server.enable = true;
 }
