@@ -14,6 +14,7 @@
 
       userSettings = {
         "claudeCode.useTerminal" = true;
+        "editor.minimap.enabled" = false;
       };
     };
   };
