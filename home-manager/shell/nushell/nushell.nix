@@ -1,6 +1,9 @@
-{ nushell-defaultConfig, ... }:
+{ nushell-defaultConfig, pkgs, ... }:
 let
-  extraConfig = builtins.readFile ./configExtra.nu;
+  extraConfig = builtins.replaceStrings
+    [ "exec ^zellij" "^zellij" ]
+    [ "exec ${pkgs.zellij}/bin/zellij" "^${pkgs.zellij}/bin/zellij" ]
+    (builtins.readFile ./configExtra.nu);
   ROOT = toString ./.;
 in
 {

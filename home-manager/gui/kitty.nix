@@ -5,7 +5,7 @@
     settings = {
       background_opacity = "0.95";
       confirm_os_window_close = 0;
-      shell = "${pkgs.zellij}/bin/zellij";
+      shell = "${pkgs.nushell}/bin/nu";
       allow_remote_control = "socket-only";
       listen_on = "unix:@mykitty";
       window_padding_width = 6;

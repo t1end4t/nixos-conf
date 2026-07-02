@@ -17,7 +17,7 @@
         opacity = 0.95;
       };
 
-      terminal.shell.program = "${pkgs.zellij}/bin/zellij";
+      terminal.shell.program = "${pkgs.nushell}/bin/nu";
     };
   };
 }
