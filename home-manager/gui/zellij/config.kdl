@@ -17,12 +17,11 @@ keybinds {
         bind "Ctrl n" { NewPane; }
         bind "Ctrl f" { ToggleFocusFullscreen; }
         bind "Ctrl g" {
-            LaunchOrFocusPlugin "zellij:session-manager" {
+            Run "nu" "-c" "source ~/.config/zellij/session-picker.nu" {
                 floating true
-                move_to_focused_tab true
-                welcome_screen true
+                close_on_exit true
+                name "sessions"
             }
-            SwitchToMode "Locked"
         }
         bind "Alt s" { SwitchToMode "Scroll"; }
         bind "Ctrl m" { ToggleFloatingPanes; SwitchToMode "Normal"; }
