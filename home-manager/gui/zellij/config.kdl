@@ -26,11 +26,6 @@ keybinds {
 
         // tab
         bind "Ctrl t" { NewTab; SwitchToMode "Normal"; }
-        bind "Ctrl g" { Run "lzj" {
-            floating true
-            close_on_exit true
-        }; SwitchToMode "Normal"; }
-
         bind "Alt 1" { GoToTab 1; SwitchToMode "Normal"; }
         bind "Alt 2" { GoToTab 2; SwitchToMode "Normal"; }
         bind "Alt 3" { GoToTab 3; SwitchToMode "Normal"; }

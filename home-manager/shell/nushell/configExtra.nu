@@ -31,6 +31,16 @@ def h [file?: string] {
     }
 }
 def l [] {ls | sort-by type}
+def zj [session: string = main] {
+    mkdir ~/.local/state/zellij
+    $session | save -f ~/.local/state/zellij/latest
+
+    if ($env.ZELLIJ? | is-empty) {
+        ^zellij attach -c $session
+    } else {
+        ^zellij action switch-session $session
+    }
+}
 alias c = clear
 alias e = exit
 alias yy = yazi

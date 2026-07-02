@@ -1,11 +1,11 @@
-{ config, pkgs, ... }: {
+{ pkgs, ... }: {
   programs.kitty = {
     enable = true;
 
     settings = {
       background_opacity = "0.95";
       confirm_os_window_close = 0;
-      shell = "${pkgs.zellij}/bin/zellij attach -c main";
+      shell = "${pkgs.bash}/bin/bash -lc 'exec ${pkgs.zellij}/bin/zellij attach -c \"$(cat \"\${XDG_STATE_HOME:-$HOME/.local/state}/zellij/latest\" 2>/dev/null || printf main)\"'";
       allow_remote_control = "socket-only";
       listen_on = "unix:@mykitty";
       window_padding_width = 6;
