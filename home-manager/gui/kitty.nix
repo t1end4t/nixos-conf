@@ -1,11 +1,11 @@
-{ pkgs, ... }: {
+{ config, pkgs, ... }: {
   programs.kitty = {
     enable = true;
 
     settings = {
       background_opacity = "0.95";
       confirm_os_window_close = 0;
-      shell = "${pkgs.nushell}/bin/nu";
+      shell = "${pkgs.zellij}/bin/zellij attach -c main";
       allow_remote_control = "socket-only";
       listen_on = "unix:@mykitty";
       window_padding_width = 6;
