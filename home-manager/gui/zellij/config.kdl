@@ -16,6 +16,14 @@ keybinds {
         // pane
         bind "Ctrl n" { NewPane; }
         bind "Ctrl f" { ToggleFocusFullscreen; }
+        bind "Ctrl g" {
+            LaunchOrFocusPlugin "zellij:session-manager" {
+                floating true
+                move_to_focused_tab true
+                welcome_screen true
+            }
+            SwitchToMode "Locked"
+        }
         bind "Alt s" { SwitchToMode "Scroll"; }
         bind "Ctrl m" { ToggleFloatingPanes; SwitchToMode "Normal"; }
 
@@ -35,6 +43,10 @@ keybinds {
         bind "Alt 7" { GoToTab 7; SwitchToMode "Normal"; }
         bind "Alt 8" { GoToTab 8; SwitchToMode "Normal"; }
         bind "Alt 9" { GoToTab 9; SwitchToMode "Normal"; }
+    }
+
+    locked {
+        bind "Ctrl g" { CloseFocus; SwitchToMode "Normal"; }
     }
 
     scroll {
