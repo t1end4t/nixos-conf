@@ -13,6 +13,7 @@
     trash-cli # alternative for rm
     just # A handy way to save and run project-specific commands
     unzip # .zip files
+    unrar # .rar file
     nh # nix cli helper
     fastfetch # system info script
     unar # unrar .rar file
