@@ -15,7 +15,7 @@
     mime = {
       enable = true;
       defaultApplications = {
-        "application/pdf" = "sioyek.desktop";
+        "application/pdf" = "firefox.desktop";
         "image/png" = "imv.desktop";
         "image/jpg" = "imv.desktop";
         "video/mp4" = "mpv.desktop";
