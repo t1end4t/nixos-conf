@@ -4,3 +4,22 @@
     /* filter: grayscale(100%) !important; */
   /* } */
 /* } */
+
+/* Block YouTube Shorts. WebsiteFilter only catches full page loads;
+   in-app (SPA) navigation bypasses it, so hide the Shorts UI here. */
+@-moz-document domain(youtube.com) {
+  /* the Shorts player itself (works even after SPA navigation) */
+  ytd-shorts,
+  /* sidebar + mini sidebar entries */
+  ytd-guide-entry-renderer:has(a[title="Shorts"]),
+  ytd-mini-guide-entry-renderer[aria-label="Shorts"],
+  /* Shorts shelves on home, search, and watch pages */
+  ytd-rich-section-renderer:has([is-shorts]),
+  ytd-reel-shelf-renderer,
+  grid-shelf-view-model:has(ytm-shorts-lockup-view-model),
+  /* any remaining links into Shorts */
+  a[href^="/shorts"],
+  ytd-video-renderer:has(a[href^="/shorts"]) {
+    display: none !important;
+  }
+}
