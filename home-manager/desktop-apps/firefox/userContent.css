@@ -1,9 +1,9 @@
 /* apply grayscale for content in firefox */
-/* @-moz-document url-prefix(http) { */
-  /* html { */
-    /* filter: grayscale(100%) !important; */
-  /* } */
-/* } */
+@-moz-document url-prefix(http) {
+  html {
+    filter: grayscale(100%) !important;
+  }
+}
 
 /* Block YouTube Shorts. WebsiteFilter only catches full page loads;
    in-app (SPA) navigation bypasses it, so hide the Shorts UI here. */
