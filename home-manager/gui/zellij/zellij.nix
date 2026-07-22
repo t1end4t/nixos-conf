@@ -13,8 +13,4 @@ in
   xdg.configFile."zellij/config.kdl" = {
     source = "${ROOT}/config.kdl";
   };
-
-  xdg.configFile."zellij/session-picker.nu" = {
-    source = "${ROOT}/session-picker.nu";
-  };
 }

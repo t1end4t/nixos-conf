@@ -17,10 +17,9 @@ keybinds {
         bind "Ctrl n" { NewPane; }
         bind "Ctrl f" { ToggleFocusFullscreen; }
         bind "Ctrl g" {
-            Run "nu" "-c" "source ~/.config/zellij/session-picker.nu" {
+            LaunchOrFocusPlugin "session-manager" {
                 floating true
-                close_on_exit true
-                name "sessions"
+                move_to_focused_tab true
             }
         }
         bind "Alt s" { SwitchToMode "Scroll"; }
@@ -42,10 +41,6 @@ keybinds {
         bind "Alt 7" { GoToTab 7; SwitchToMode "Normal"; }
         bind "Alt 8" { GoToTab 8; SwitchToMode "Normal"; }
         bind "Alt 9" { GoToTab 9; SwitchToMode "Normal"; }
-    }
-
-    locked {
-        bind "Ctrl g" { CloseFocus; SwitchToMode "Normal"; }
     }
 
     scroll {
