@@ -6,6 +6,14 @@ $env.config = {
     show_banner: false
     keybindings: []
 }
+$env.config.hooks.pre_prompt = [
+    {||
+        if not ($env.ZELLIJ_SESSION_NAME? | is-empty) {
+            mkdir ~/.local/state/zellij
+            $env.ZELLIJ_SESSION_NAME | save -f ~/.local/state/zellij/latest
+        }
+    }
+]
 source ~/.local/share/atuin/init.nu
 
 # add to PATH
