@@ -13,6 +13,10 @@
       font-awesome # for waybar
       papirus-icon-theme # for rofi
 
+      # other font
+      carlito # Calibri clone (body text)
+      caladea # Cambria clone (headers)
+
       # font to pptx
       (google-fonts.override {
         fonts = [
