@@ -7,7 +7,7 @@
     timerConfig = {
       # source: https://man.archlinux.org/man/systemd.time.7
       # force turn off before 9PM until 4AM
-      OnCalendar = "*-*-* 18..23,00..04:*:00";
+      OnCalendar = "*-*-* 21..23,00..04:*:00";
       Persistent = true;
       Unit = "shutdown-daily.service";
     };
