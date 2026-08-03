@@ -18,6 +18,7 @@
     fastfetch # system info script
     unar # unrar .rar file
     gh # github cli tools, run `gh auth login`
+    unstable.git-xet
   ];
 
   programs.bat.enable = true; # alternative of cat
