@@ -44,7 +44,7 @@ def zj [session: string = main] {
     $session | save -f ~/.local/state/zellij/latest
 
     if ($env.ZELLIJ? | is-empty) {
-        ^zellij attach -c $session
+        ^zellij attach --forget -c $session
     } else {
         ^zellij action switch-session $session
     }

@@ -7,8 +7,7 @@ on_force_close "detach"
 pane_frames false
 mouse_mode false
 show_startup_tips false
-session_serialization true
-serialize_pane_viewport true
+session_serialization false
 
 // remap some keys prevent override from zellij 
 keybinds {
