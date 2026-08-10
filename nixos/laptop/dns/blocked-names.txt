@@ -107,4 +107,4 @@ twitter.com @not-social-networks
 # Time-based rules
 ###########################
 
-# *.* @end-of-day
+*.* @end-of-day
