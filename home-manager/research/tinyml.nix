@@ -3,7 +3,7 @@
   pkgs,
   ...
 }: let
-  stedgeaiRoot = "${config.home.homeDirectory}/.local/opt/stedgeai";
+  stedgeaiRoot = "${config.home.homeDirectory}/.local/opt/stedgeai/4.0";
 in {
   home.packages = with pkgs; [
     gcc-arm-embedded
