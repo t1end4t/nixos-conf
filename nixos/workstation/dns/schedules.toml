@@ -1,17 +1,37 @@
-[end-of-day]
-mon = [{ after = '17:30', before = '4:00' }]
-tue = [{ after = '17:30', before = '4:00' }]
-wed = [{ after = '17:30', before = '4:00' }]
-thu = [{ after = '17:30', before = '4:00' }]
-fri = [{ after = '17:30', before = '4:00' }]
-sat = [{ after = '17:30', before = '4:00' }]
-sun = [{ after = '17:30', before = '4:00' }]
+[work-focus]
+mon = [
+  { after = '07:00', before = '18:30' },
+  { after = '19:30', before = '21:30' },
+]
+tue = [
+  { after = '07:00', before = '18:30' },
+  { after = '19:30', before = '21:30' },
+]
+wed = [
+  { after = '07:00', before = '18:30' },
+  { after = '19:30', before = '21:30' },
+]
+thu = [
+  { after = '07:00', before = '18:30' },
+  { after = '19:30', before = '21:30' },
+]
+fri = [
+  { after = '07:00', before = '18:30' },
+  { after = '19:30', before = '21:30' },
+]
 
-[not-social-networks]
-mon = [{ after = '4:00', before = '12:00' }]
-tue = [{ after = '4:00', before = '12:00' }]
-wed = [{ after = '4:00', before = '12:00' }]
-thu = [{ after = '4:00', before = '12:00' }]
-fri = [{ after = '4:00', before = '12:00' }]
-sat = [{ after = '4:00', before = '12:00' }]
-sun = [{ after = '4:00', before = '12:00' }]
+[no-youtube]
+mon = [{ after = '07:00', before = '18:30' }]
+tue = [{ after = '07:00', before = '18:30' }]
+wed = [{ after = '07:00', before = '18:30' }]
+thu = [{ after = '07:00', before = '18:30' }]
+fri = [{ after = '07:00', before = '18:30' }]
+
+[sleep]
+mon = [{ after = '22:00', before = '05:00' }]
+tue = [{ after = '22:00', before = '05:00' }]
+wed = [{ after = '22:00', before = '05:00' }]
+thu = [{ after = '22:00', before = '05:00' }]
+fri = [{ after = '22:00', before = '05:00' }]
+sat = [{ after = '23:00', before = '05:00' }]
+sun = [{ after = '22:00', before = '05:00' }]
