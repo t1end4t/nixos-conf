@@ -78,4 +78,4 @@ youtu.be @no-youtube
 # Optional: sleep shutdown
 ###########################
 
-*.* @sleep
+# *.* @sleep
