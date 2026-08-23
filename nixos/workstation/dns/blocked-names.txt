@@ -74,8 +74,3 @@ youtubei.googleapis.com @no-youtube
 youtube.googleapis.com @no-youtube
 youtu.be @no-youtube
 
-###########################
-# Optional: sleep shutdown
-###########################
-
-*.* @sleep
