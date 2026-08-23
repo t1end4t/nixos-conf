@@ -76,13 +76,6 @@
     default_area = "menupanel";
   };
 
-  # Authenticator app to login github
-  # "authenticator@mymindstorm" = {
-  #   install_url = "https://addons.mozilla.org/firefox/downloads/latest/auth-helper/latest.xpi";
-  #   installation_mode = "force_installed";
-  #   default_area = "menupanel";
-  # };
-
   # uBlock Origin
   "uBlock0@raymondhill.net" = {
     install_url = "https://addons.mozilla.org/firefox/downloads/latest/ublock-origin/latest.xpi";
@@ -104,101 +97,10 @@
     default_area = "menupanel";
   };
 
-  # LeechBlock NG
-  # "leechblockng@proginosko.com" = {
-  #   install_url = "https://addons.mozilla.org/firefox/downloads/latest/leechblock-ng/latest.xpi";
-  #   installation_mode = "force_installed";
-  #   default_area = "menupanel";
-  # };
-
   # Disconnect
   "2.0@disconnect.me" = {
     install_url = "https://addons.mozilla.org/firefox/downloads/latest/disconnect/latest.xpi";
     installation_mode = "force_installed";
     default_area = "menupanel";
   };
-
-  # Hide recommend in twitch
-  # "{4262db2c-adc6-481f-b8e3-828877c148b1}" = {
-  #   install_url = "https://addons.mozilla.org/firefox/downloads/latest/remove-twitch-recommendations/latest.xpi";
-  #   installation_mode = "force_installed";
-  #   default_area = "menupanel";
-  # };
-
-  # Popup Blocker Ultimate
-  # "{60B7679C-BED9-11E5-998D-8526BB8E7F8B}" = {
-  #   install_url = "https://addons.mozilla.org/firefox/downloads/latest/popup-blocker-ultimate/latest.xpi";
-  #   installation_mode = "force_installed";
-  #   default_area = "menupanel";
-  # };
-
-  # FastForward
-  # "addon@fastforward.team" = {
-  #   install_url = "https://addons.mozilla.org/firefox/downloads/latest/fastforwardteam/latest.xpi";
-  #   installation_mode = "force_installed";
-  #   default_area = "menupanel";
-  # };
-
-  # productivity tools (including pomodoro and tracking time)
-  # "toggl-button@toggl.com" = {
-  #   install_url = "https://addons.mozilla.org/firefox/downloads/latest/toggl-button-time-tracker/latest.xpi";
-  #   installation_mode = "force_installed";
-  #   default_area = "navbar";
-  # };
-
-  # Tab Session Manager
-  # "Tab-Session-Manager@sienori" = {
-  #   install_url = "https://addons.mozilla.org/firefox/downloads/latest/tab-session-manager/latest.xpi";
-  #   installation_mode = "force_installed";
-  #   default_area = "navbar";
-  # };
-
-  # Rust Search Extension
-  # "{04188724-64d3-497b-a4fd-7caffe6eab29}" = {
-  #   install_url = "https://addons.mozilla.org/firefox/downloads/latest/rust-search-extension/latest.xpi";
-  #   installation_mode = "force_installed";
-  #   default_area = "menupanel";
-  # };
-
-  # Zhongwen: The Popular Chinese Learning Tool
-  # "{dedb3663-6f13-4c6c-bf0f-5bd111cb2c79}" = {
-  #   install_url = "https://addons.mozilla.org/firefox/downloads/latest/zhongwen/latest.xpi";
-  #   installation_mode = "force_installed";
-  #   default_area = "menupanel";
-  # };
-
-  # C/C++ Search Extension
-  # "{e737d9cb-82de-4f23-83c6-76f70a82229c}" = {
-  #   install_url = "https://addons.mozilla.org/firefox/downloads/latest/c-c-search-extension/latest.xpi";
-  #   installation_mode = "force_installed";
-  #   default_area = "menupanel";
-  # };
-
-  # Edge Translate
-  # "nickyfeng@edgetranslate.com" = {
-  #   install_url = "https://addons.mozilla.org/firefox/downloads/latest/edge_translate/latest.xpi";
-  #   installation_mode = "force_installed";
-  #   default_area = "menupanel";
-  # };
-
-  # Simple Tab Groups
-  # "simple-tab-groups@drive4ik" = {
-  #   install_url = "https://addons.mozilla.org/firefox/downloads/latest/simple-tab-groups/latest.xpi";
-  #   installation_mode = "force_installed";
-  #   default_area = "navbar";
-  # };
-
-  # Limit time for using distract
-  # "{26ebede3-10ce-443c-bb0e-7f490cad0ec8}" = {
-  #   install_url = "https://addons.mozilla.org/firefox/downloads/latest/limit-limit-distracting-sites/latest.xpi";
-  #   installation_mode = "force_installed";
-  #   default_area = "menupanel";
-  # };
-
-  # NixOS Packages Search Engine
-  # "{eceab40b-230a-4560-98ed-185ad010633f}" = {
-  #   install_url = "https://addons.mozilla.org/firefox/downloads/latest/nixos-packages-search-engine/latest.xpi";
-  #   installation_mode = "force_installed";
-  #   default_area = "menupanel";
-  # };
 }
