@@ -1,6 +1,7 @@
 {
   imports = [
     ./bluetooth.nix
+    ./chrome.nix
     ./dconf.nix
     ./docker.nix
     ./greetd.nix
