@@ -73,8 +73,3 @@ youtube-nocookie.com @no-youtube
 youtubei.googleapis.com @no-youtube
 youtube.googleapis.com @no-youtube
 youtu.be @no-youtube
-
-###########################
-# Out of work time
-###########################
-*.* @go-home
