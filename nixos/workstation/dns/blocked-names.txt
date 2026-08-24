@@ -77,4 +77,4 @@ youtu.be @no-youtube
 ###########################
 # Out of work time
 ###########################
-*.* @sleep
+*.* @go-home
