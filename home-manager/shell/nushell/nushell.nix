@@ -9,8 +9,8 @@ in
 {
   programs.nushell = {
     enable = true;
-    configFile.source = "${nushell-defaultConfig}/crates/nu-utils/src/default_files/default_config.nu";
-    envFile.source = "${nushell-defaultConfig}/crates/nu-utils/src/default_files/default_env.nu";
+    configFile.source = "${nushell-defaultConfig}/crates/nu-config/default_files/default_config.nu";
+    envFile.source = "${nushell-defaultConfig}/crates/nu-config/default_files/default_env.nu";
 
     extraConfig = ''
       ${extraConfig}
