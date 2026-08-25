@@ -5,7 +5,7 @@
     settings = {
       background_opacity = "0.95";
       confirm_os_window_close = 0;
-      shell = "${pkgs.bash}/bin/bash -lc 'exec ${pkgs.zellij}/bin/zellij attach --forget -c \"$(cat \"\${XDG_STATE_HOME:-$HOME/.local/state}/zellij/latest\" 2>/dev/null || printf main)\"'";
+      shell = "${pkgs.bash}/bin/bash -lc 'exec ${pkgs.zellij}/bin/zellij attach -c \"$(cat \"\${XDG_STATE_HOME:-$HOME/.local/state}/zellij/latest\" 2>/dev/null || printf main)\"'";
       allow_remote_control = "socket-only";
       listen_on = "unix:@mykitty";
       window_padding_width = 6;
