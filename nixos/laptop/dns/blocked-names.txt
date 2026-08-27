@@ -73,3 +73,8 @@ youtube-nocookie.com @no-youtube
 youtubei.googleapis.com @no-youtube
 youtube.googleapis.com @no-youtube
 youtu.be @no-youtube
+
+###########################
+# Turn off computer
+###########################
+*.* @sleep
