@@ -12,6 +12,10 @@
       # for codex and claude-code
       bubblewrap
       socat
+
+      # for claude-desktop cowork VM
+      qemu_kvm
+      virtiofsd
     ];
     sessionVariables = {
       NIXOS_OZONE_WL = 1;
@@ -22,5 +26,10 @@
   systemd.tmpfiles.rules = [
     "d /usr/bin 0755 root root -"
     "L /usr/bin/bwrap - - - - ${pkgs.bubblewrap}/bin/bwrap"
+    # cowork looks up these Debian paths directly
+    "L+ /usr/bin/virtiofsd - - - - ${pkgs.virtiofsd}/bin/virtiofsd"
+    "d /usr/share/OVMF 0755 root root -"
+    "L+ /usr/share/OVMF/OVMF_CODE.fd - - - - ${pkgs.OVMF.firmware}"
+    "L+ /usr/share/OVMF/OVMF_VARS.fd - - - - ${pkgs.OVMF.variables}"
   ];
 }
