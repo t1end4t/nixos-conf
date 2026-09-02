@@ -23,10 +23,10 @@ sat = [
   { after = '07:00', before = '18:30' },
   { after = '19:30', before = '21:30' },
 ]
-sun = [
-  { after = '07:00', before = '18:30' },
-  { after = '19:30', before = '21:30' },
-]
+# sun = [
+#   { after = '07:00', before = '18:30' },
+#   { after = '19:30', before = '21:30' },
+# ]
 
 [no-youtube]
 mon = [{ after = '07:00', before = '18:30' }]
@@ -35,7 +35,7 @@ wed = [{ after = '07:00', before = '18:30' }]
 thu = [{ after = '07:00', before = '18:30' }]
 fri = [{ after = '07:00', before = '18:30' }]
 sat = [{ after = '07:00', before = '18:30' }]
-sun = [{ after = '07:00', before = '18:30' }]
+# sun = [{ after = '07:00', before = '18:30' }]
 
 [sleep]
 mon = [{ after = '22:00', before = '05:00' }]
