@@ -77,4 +77,4 @@ youtu.be @no-youtube
 ###########################
 # Turn off computer
 ###########################
-# *.* @sleep
+*.* @sleep
