@@ -8,7 +8,7 @@ in
     ./systemd.nix
     ./swap.nix
     ../base
-    ./dns/dns.nix
+    # ./dns/dns.nix
     ./nvidia.nix
   ];
 

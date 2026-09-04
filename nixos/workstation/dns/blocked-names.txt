@@ -44,37 +44,6 @@ doh.dns.apple.com
 *nangcuc*
 
 ###########################
-# Work-hours distractions
-###########################
-
-# Reddit
-reddit.com @work-focus
-*.reddit.com @work-focus
-
-# X / Twitter
-x.com @work-focus
-*.x.com @work-focus
-twitter.com @work-focus
-*.twitter.com @work-focus
-
-# Facebook
-facebook.com @work-focus
-*.facebook.com @work-focus
-
-# Instagram
-instagram.com @work-focus
-*.instagram.com @work-focus
-
-# YouTube - stricter schedule
-youtube.com @no-youtube
-*.youtube.com @no-youtube
-youtube-nocookie.com @no-youtube
-*.youtube-nocookie.com @no-youtube
-youtubei.googleapis.com @no-youtube
-youtube.googleapis.com @no-youtube
-youtu.be @no-youtube
-
-###########################
 # Turn off computer
 ###########################
 *.* @go-home
