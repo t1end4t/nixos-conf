@@ -26,6 +26,9 @@
     bun
     cargo
     gcc
+
+    # for multi-agents
+    tmux
   ];
 
   # remember login
