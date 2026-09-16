@@ -7,7 +7,6 @@
     ./gui
     ./shell
     ./tools
-    ./rclone.nix
     ./ai-tools.nix
   ];
 }

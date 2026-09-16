@@ -4,7 +4,7 @@
 - `default.nix` — shared Home Manager imports.
 - `hosts/laptop.nix` — laptop user config.
 - `hosts/workstation.nix` — workstation user config.
-- `base.nix`, `environment.nix`, `rclone.nix`, `ai-tools.nix` — common user packages/settings.
+- `base.nix`, `environment.nix`, `ai-tools.nix` — common user packages/settings.
 
 ## Areas
 - `gui/INDEX.md` — GUI map.
