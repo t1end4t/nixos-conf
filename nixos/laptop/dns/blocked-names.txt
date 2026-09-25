@@ -69,4 +69,4 @@ doh.dns.apple.com
 ###########################
 # Turn off computer
 ###########################
-*.* @sleep
+# *.* @sleep
