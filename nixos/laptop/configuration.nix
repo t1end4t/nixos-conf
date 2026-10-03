@@ -28,12 +28,16 @@ in
       "docker"
       "libvirtd"
       "dialout"
+      "plugdev"
     ];
     packages = [
       # source: https://github.com/Misterio77/nix-starter-configs?tab=readme-ov-file#use-home-manager-as-a-nixos-module
       inputs.home-manager.packages.${pkgs.stdenv.hostPlatform.system}.default
     ];
   };
+
+  users.groups.plugdev = { };
+  services.udev.packages = [ pkgs.openocd ];
 
   environment.sessionVariables = {
     # source: https://github.com/vimjoyer/nix-helper-video?tab=readme-ov-file#defining-flake
