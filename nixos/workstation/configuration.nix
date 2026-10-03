@@ -27,9 +27,14 @@ in
       "video"
       "docker"
       "libvirtd"
+      "dialout"
+      "plugdev"
     ];
     packages = [ inputs.home-manager.packages.${pkgs.stdenv.hostPlatform.system}.default ];
   };
+
+  users.groups.plugdev = { };
+  services.udev.packages = [ pkgs.openocd ];
 
   environment.sessionVariables = {
     # source: https://github.com/vimjoyer/nix-helper-video?tab=readme-ov-file#defining-flake
