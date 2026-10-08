@@ -204,7 +204,6 @@ menupopup, panel { &::part(content) { height: auto !important; } }
 /* Change color of normal tabs */
 tab:not([selected="true"]) {
 	background-color: var(--tab-inactive-bg-color) !important;
-	color: var(--identity-icon-color, var(--tab-inactive-fg-fallback-color)) !important;
 }
 
 tab {
@@ -243,6 +242,10 @@ tab {
 	--tab-label-mask-size: 1em !important;
 	/* fix pinned tab behaviour on overflow */
 	overflow-clip-margin: 0 !important;
+}
+
+#tabbrowser-tabs .tabbrowser-tab:not([selected]) .tab-content {
+	color: var(--identity-icon-color, var(--tab-inactive-fg-fallback-color)) !important;
 }
 
 /* Tab: selected colors */
