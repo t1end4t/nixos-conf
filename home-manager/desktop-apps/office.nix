@@ -6,4 +6,6 @@
     obsidian # second brain
     inkscape # vector image for papers
   ];
+
+  programs.sioyek.enable = true;
 }

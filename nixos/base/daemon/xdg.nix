@@ -15,7 +15,7 @@
     mime = {
       enable = true;
       defaultApplications = {
-        "application/pdf" = "firefox.desktop";
+        "application/pdf" = "sioyek.desktop";
         "application/msword" = "writer.desktop";
         "application/rtf" = "writer.desktop";
         "application/vnd.ms-excel" = "calc.desktop";

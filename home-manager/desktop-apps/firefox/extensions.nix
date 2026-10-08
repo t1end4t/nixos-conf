@@ -1,10 +1,10 @@
 {
-  # Catppuccin-mocha-blue
-  "{88b098c8-19be-421e-8ffa-85ddd1f3f004}" = {
-    install_url = "https://addons.mozilla.org/firefox/downloads/latest/catppuccin-mocha-blue/latest.xpi";
-    installation_mode = "force_installed";
-    allowed_types = "theme";
-  };
+  # # Catppuccin-mocha-blue
+  # "{88b098c8-19be-421e-8ffa-85ddd1f3f004}" = {
+  #   install_url = "https://addons.mozilla.org/firefox/downloads/latest/catppuccin-mocha-blue/latest.xpi";
+  #   installation_mode = "force_installed";
+  #   allowed_types = "theme";
+  # };
 
   # Dark reader
   "addon@darkreader.org" = {
