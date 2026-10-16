@@ -6,6 +6,7 @@
   home.packages = with pkgs; [
     chatgpt
     claude-desktop
+    orca
 
     ############ claude-code ############
     # curl -fsSL https://claude.ai/install.sh | bash
