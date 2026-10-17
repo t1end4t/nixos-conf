@@ -4,8 +4,6 @@
 }:
 {
   home.packages = with pkgs; [
-    chatgpt
-    claude-desktop
     orca
 
     ############ claude-code ############

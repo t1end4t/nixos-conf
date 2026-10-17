@@ -2,7 +2,5 @@
 # You can build them using 'nix build .#example'
 { pkgs }:
 {
-  chatgpt = import ./chatgpt.nix { inherit pkgs; };
-  claude-desktop = import ./claude-desktop.nix { inherit pkgs; };
   orca = import ./orca.nix { inherit pkgs; };
 }
