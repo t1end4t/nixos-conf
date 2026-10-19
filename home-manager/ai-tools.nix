@@ -5,7 +5,6 @@
 }:
 {
   home.packages = with pkgs; [
-    orca
     (writeShellApplication {
       name = "codex-run";
       runtimeInputs = [
