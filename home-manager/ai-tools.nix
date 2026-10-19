@@ -1,10 +1,22 @@
 {
   pkgs,
+  lib,
   ...
 }:
 {
   home.packages = with pkgs; [
     orca
+    (writeShellApplication {
+      name = "codex-run";
+      runtimeInputs = [
+        tmux
+        zellij
+        coreutils
+        jq
+        util-linux
+      ];
+      text = builtins.readFile ../scripts/codex-run.sh;
+    })
 
     ############ claude-code ############
     # curl -fsSL https://claude.ai/install.sh | bash
@@ -29,6 +41,11 @@
     # for multi-agents
     tmux
   ];
+
+  home.activation.agentPanes = lib.hm.dag.entryAfter [ "writeBoundary" ] ''
+    run ${pkgs.python3}/bin/python ${../scripts/setup-agent-panes.py} \
+      ${lib.escapeShellArg "${pkgs.python3}/bin/python ${../scripts/claude-pane.py}"}
+  '';
 
   # remember login
   services.gnome-keyring.enable = true;
