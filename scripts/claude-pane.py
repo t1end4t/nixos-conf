@@ -8,6 +8,14 @@ import sys
 import time
 
 
+def summary(name, data):
+    for key in ("file_path", "path", "command", "pattern", "url", "query", "description", "prompt"):
+        if value := data.get(key):
+            value = " ".join(str(value).split())
+            return f"[{name}] {value[:117] + '...' if len(value) > 120 else value}"
+    return f"[{name}]"
+
+
 def show(record):
     message = record.get("message", {})
     if record.get("type") not in ("assistant", "user"):
@@ -19,9 +27,10 @@ def show(record):
         if block.get("type") == "text":
             text = block.get("text", "")
         elif block.get("type") == "tool_use":
-            text = f"[{block.get('name', 'tool')}] {json.dumps(block.get('input', {}))}"
-        elif block.get("type") == "tool_result":
-            text = json.dumps(block.get("content", ""))
+            data = block.get("input", {})
+            text = summary(block.get("name", "tool"), data if isinstance(data, dict) else {})
+        elif block.get("type") == "tool_result" and block.get("is_error"):
+            text = "[tool failed; details in Claude transcript]"
         else:
             continue
         print(re.sub(r"[\x00-\x08\x0b-\x1f\x7f]", "", text), flush=True)

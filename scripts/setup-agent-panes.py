@@ -30,7 +30,7 @@ instructions = """## Visible Background Commands
 - Keep the main agent on the left. The first job opens a right column; later jobs stack below the previous viewer. Do not create extra columns or nest Zellij.
 - Keep quick inspections in the normal command tool. If the launcher fails, report the error; do not silently fall back to hidden execution.
 - Read output with `tmux -L codex capture-pane -pJ -S -200 -t '=NAME:'`. Check completion with `tmux -L codex display -p -t '=NAME:' '#{pane_dead} #{pane_dead_status}'`: `1 0` means success; `0` means running. Launcher success does not mean job success.
-- Completed panes remain visible. Closing a viewer does not stop its job. Do not kill sessions or send input to existing user panes without permission.
+- Successful jobs close their viewer panes automatically; logs and exit status remain in tmux. Failed jobs stay visible. Closing a viewer does not stop its job. Do not kill sessions or send input to existing user panes without permission.
 - Claude subagent hooks automatically open read-only transcript panes. Do not launch another worker just to display the same subagent.
 """
 for relative in (".codex/AGENTS.md", ".claude/CLAUDE.md"):
@@ -39,4 +39,11 @@ for relative in (".codex/AGENTS.md", ".claude/CLAUDE.md"):
     text = path.read_text() if path.exists() else ""
     if "## Visible Background Commands" not in text:
         path.write_text(text.rstrip() + "\n\n" + instructions)
+    else:
+        updated = text.replace(
+            "Completed panes remain visible.",
+            "Successful jobs close their viewer panes automatically; logs and exit status remain in tmux. Failed jobs stay visible.",
+        )
+        if updated != text:
+            path.write_text(updated)
 print("Agent panes configured for Codex and Claude.")

@@ -63,6 +63,7 @@ zellij_viewer() {
   pane=$(zellij --session "$ZELLIJ_SESSION_NAME" run --no-focus --direction "$direction" --name "codex: $name" -- sh -c "$attach") || return 1
   [[ $pane =~ ^terminal_[0-9]+$ ]] || return 1
   printf '%s\n' "$pane" >"$state"
+  viewer_pane=$pane
 }
 
 orca_viewer() {
@@ -84,7 +85,9 @@ orca_viewer() {
     [[ $new != *$'\n'* ]] || return 1
     [ -n "$new" ] && break
   done
-  [ -n "$new" ] && printf '%s\n' "$new" >"$state"
+  [ -n "$new" ] || return 1
+  printf '%s\n' "$new" >"$state"
+  viewer_pane=$new
 }
 
 if [ -n "${ORCA_TERMINAL_HANDLE:-}" ]; then viewer=orca_viewer; else viewer=zellij_viewer; fi
@@ -92,6 +95,25 @@ if [ -n "${ORCA_TERMINAL_HANDLE:-}" ]; then viewer=orca_viewer; else viewer=zell
   echo "codex-run: viewer failed; job still exists. Attach with: $attach" >&2
   exit 1
 }
+
+close_when_done() {
+  local status
+  while status=$(t display -p -t "=$name:" '#{pane_dead} #{pane_dead_status}'); do
+    case $status in
+      '1 0')
+        if [ "$viewer" = orca_viewer ]; then
+          "$ORCA_CLI_BIN_DIR/orca" terminal close --terminal "$viewer_pane"
+        else
+          zellij --session "$ZELLIJ_SESSION_NAME" action close-pane --pane-id "$viewer_pane"
+        fi
+        return
+        ;;
+      1\ *) return ;;
+    esac
+    sleep 1
+  done
+}
+close_when_done 9>&- </dev/null >/dev/null 2>&1 &
 
 cat <<MSG
 started: $name
