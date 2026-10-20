@@ -8,5 +8,6 @@
     ./boot.nix
     ./pipewire.nix
     ./nix-ld.nix
+    ./tailscale.nix
   ];
 }
