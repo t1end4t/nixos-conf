@@ -10,16 +10,16 @@
 
     # uvx --from git+https://github.com/oraios/serena serena
     # skillPython
-    python314Packages.python
-    uv
+    # python314Packages.python
+    # uv
 
     # other packages
-    bun
-    cargo
-    gcc
+    # bun
+    # cargo
+    # gcc
 
     # for multi-agents
-    tmux
+    # tmux
   ];
 
   # remember login
