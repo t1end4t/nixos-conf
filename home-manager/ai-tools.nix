@@ -10,7 +10,7 @@
 
     # uvx --from git+https://github.com/oraios/serena serena
     # skillPython
-    python313Packages.python
+    python314Packages.python
     uv
 
     # other packages
