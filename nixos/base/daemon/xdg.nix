@@ -41,4 +41,5 @@
 
   services.dbus.packages = [ pkgs.gnome-keyring ];
   services.gnome.gnome-keyring.enable = true;
+  services.gnome.at-spi2-core.enable = true;
 }
