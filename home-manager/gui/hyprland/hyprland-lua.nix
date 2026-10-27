@@ -1,11 +1,9 @@
 {
   pkgs,
   hostConfig ? "",
-}:
-let
+}: let
   ROOT = toString ./.;
-in
-''
+in ''
   local mod = "SUPER"
 
   local function exec(command)
@@ -27,6 +25,9 @@ in
   end)
 
   hl.config({
+    misc = {
+      focus_on_activate = true,
+    },
     general = {
       gaps_in = 2,
       gaps_out = 2,
