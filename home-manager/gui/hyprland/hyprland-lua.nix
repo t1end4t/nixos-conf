@@ -74,7 +74,7 @@ in ''
   hl.bind(mod .. " + F", hl.dsp.window.fullscreen())
   hl.bind(mod .. " + TAB", exec([[${pkgs.hyprland}/bin/hyprctl eval 'hl.dispatch("workspace previous")']]))
 
-  hl.bind(mod .. " + B", exec("firefox"))
+  hl.bind(mod .. " + B", exec("${pkgs.brave}/bin/brave"))
   hl.bind(mod .. " + M", exec("${pkgs.thunderbird}/bin/thunderbird"))
   hl.bind(mod .. " + E", exec("${pkgs.kitty}/bin/kitty -e ${pkgs.yazi}/bin/yazi"))
   hl.bind(mod .. " + RETURN", exec("${pkgs.kitty}/bin/kitty"))
