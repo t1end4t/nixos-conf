@@ -2,8 +2,8 @@
 
 ## Files
 - `default.nix` — imports.
-- `firefox/INDEX.md` — Firefox map.
-- `brave.nix` — Brave installation and default browser associations.
+- `firefox/INDEX.md` — Firefox config and default browser associations.
+- `brave.nix` — Brave installation and extensions.
 - `office.nix` — office apps and Sioyek PDF reader.
 - `thunderbird.nix` — mail client.
 - `virt_manager.nix` — virtualization UI.

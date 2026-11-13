@@ -4,6 +4,7 @@
     ./thunderbird.nix
     ./others.nix
     ./office.nix
+    ./firefox/firefox.nix
     ./brave.nix
   ];
 }

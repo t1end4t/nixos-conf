@@ -1,11 +1,20 @@
-{ pkgs, ... }:
-let
+{pkgs, ...}: let
   ROOT = toString ./.;
-in
-{
+in {
   imports = [
     ./betterfox.nix
   ];
+
+  home.sessionVariables.BROWSER = "firefox";
+
+  xdg.mimeApps = {
+    enable = true;
+    defaultApplications = {
+      "text/html" = "firefox.desktop";
+      "x-scheme-handler/http" = "firefox.desktop";
+      "x-scheme-handler/https" = "firefox.desktop";
+    };
+  };
 
   # Source: https://discourse.nixos.org/t/declare-firefox-extensions-and-settings/36265
   programs.firefox = {
@@ -14,7 +23,7 @@ in
     package = (
       pkgs.wrapFirefox (pkgs.firefox-unwrapped.override {
         pipewireSupport = true;
-      }) { }
+      }) {}
     );
 
     profiles = {
@@ -60,10 +69,10 @@ in
       };
 
       # source: about:support
-      ExtensionSettings = (import ./extensions.nix);
+      ExtensionSettings = import ./extensions.nix;
 
       # source: https://github.com/mozilla/policy-templates/blob/master/docs/index.md#websitefilter
-      WebsiteFilter = (import ./filter.nix);
+      WebsiteFilter = import ./filter.nix;
     };
   };
 }
