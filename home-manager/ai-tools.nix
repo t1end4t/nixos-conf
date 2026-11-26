@@ -1,12 +1,12 @@
 { pkgs, ... }:
 {
+  programs.mise = {
+    enable = true;
+    enableBashIntegration = true;
+  };
+
   home.packages = with pkgs; [
     # curl -fsSL https://opencode.ai/install | bash
-
-    ############ router ############
-    # npm set prefix ~/.npm-global
-    # npm install -g 9router
-    nodejs
 
     # uvx --from git+https://github.com/oraios/serena serena
     # skillPython
