@@ -5,9 +5,9 @@ in
 {
   home.packages = with pkgs; [
     fzf
-    # jq # already installed
-    python3
     zellij # terminal workspace
+    # jq # already installed
+    # python3
   ];
 
   xdg.configFile."zellij/config.kdl" = {

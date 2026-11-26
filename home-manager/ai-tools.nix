@@ -4,6 +4,12 @@
     enable = true;
     enableBashIntegration = true;
     enableNushellIntegration = true;
+    globalConfig.tools = {
+      node = "lts";
+      "npm:@anthropic-ai/claude-code" = "latest";
+      "npm:@openai/codex" = "latest";
+      "npm:9router" = "latest";
+    };
   };
 
   home.packages = with pkgs; [
